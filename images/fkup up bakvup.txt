@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from www.premierexports.com.pk/moter_bike_gloves.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:24:21 GMT -->
+<head><meta charset="utf-8"><script data-ad-client="ca-pub-7202765609359744" async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script><!--[if IE 9 ]><html class="ie9" lang="en"><![endif]--><!--[if (gt IE 9)|!(IE)]><!--><!--<![endif]-->
+	<title>Premier Exports Private Ltd</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><!--meta info--><meta name="author" content=""><meta name="keywords" content=""><meta name="description" content="">
+	<link href="images/logo.png" rel="icon" type="image/ico" /><!--stylesheet include-->
+	<link href="css/flexslider.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/owl.carousel.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/owl.transitions.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/jquery.custom-scrollbar.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" media="all" rel="stylesheet" type="text/css" /><!--font include-->
+	<link href="css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body><!--boxed layout-->
+<div class="wide_layout relative w_xs_auto"><!--markup header type 2-->
+<header role="banner"><!--header top part--><!--header bottom part-->
+<section class="h_bot_part container">
+<div class="clearfix row">
+<div class="col-lg-6 col-md-6 col-sm-4 t_xs_align_c"><a class="logo m_xs_bottom_15 d_xs_inline_b" href="index-2.html"><img alt="" src="images/logo.png" /> </a></div>
+
+<div class="col-lg-6 col-md-6 col-sm-8 p_top_10">
+<dl class="l_height_medium header_border_centre">
+	<dt class="f_size_large">Premier Exports Private Limited<br />
+	Head Office: House No. 213 Block G3 M.A Jauhar Town, Lahore , Pakistan.</dt>
+</dl>
+<style type="text/css">.button {
+  background-color:#ff0000;
+  border: 2px solid #ff0000;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {border-radius: 4px;}
+</style>
+<a class="button" href="covid_19.html">COVID-19</a>
+<img src= "images/iso_logo.png">
+<img src= "images/ce_logo.png">
+<img src= "images/lcci_logo.png"></div>
+</div>
+</section>
+<!--main menu container-->
+
+<div class="container">
+<section class="menu_wrap type_4 relative clearfix t_xs_align_c m_bottom_20"><!--button for responsive menu--><button class="r_corners centered_db d_none tr_all_hover d_xs_block m_bottom_25" id="menu_button"></button><!--main menu-->
+
+<nav class="f_left f_xs_none d_xs_none t_xs_align_l" role="navigation">
+<ul class="horizontal_list main_menu clearfix">
+	<li class="current relative f_xs_none m_xs_bottom_5"><a class="tr_delay_hover color_light tt_uppercase" href="index-2.html"><b>Home</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_5"><a class="tr_delay_hover color_light tt_uppercase" href="about_us.html"><b>About us</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_5"><a class="tr_delay_hover color_light tt_uppercase" href="ceo_message.html"><b>Company</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_5"><a class="tr_delay_hover color_light tt_uppercase" href="inquiry_form.html"><b>Inquiry Form</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_5"><a class="tr_delay_hover color_light tt_uppercase" href="contact_us.html"><b>Contact Us</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_5"><a class="tr_delay_hover color_light tt_uppercase" href="leather_hides.html"><b>Leather Hides</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_5"><a class="tr_delay_hover color_light tt_uppercase" href="leather_info.html"><b>Leather Guide</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_10"><a class="tr_delay_hover color_light tt_uppercase" href="covid_19.html"><b>COVID-19</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_10"><a class="tr_delay_hover color_light tt_uppercase" href="accreditations.html"><b>Accreditations</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_10"><b><span style="background-color:#FF0000;">Download Catalog</span></b></li>
+</ul>
+</nav>
+</section>
+</div>
+</header>
+<!--slider with banners-->
+
+<section class="container">
+<div class="row clearfix"><!--banners-->
+<div class="col-lg-3 col-md-3 col-sm-3 t_xs_align_c s_banners"><a class="d_block d_xs_inline_b m_bottom_20 animate_ftr" href="#"><img alt="" src="images/banner_img_7.jpg" /> </a> <a class="d_block d_xs_inline_b m_xs_left_5 animate_ftr m_mxs_left_0" href="#"> <img alt="" src="images/banner_img_8.jpg" /> </a></div>
+<!--slider-->
+
+<div class="col-lg-9 col-md-9 col-sm-9 m_xs_bottom_30">
+<div class="flexslider animate_ftr long">
+<ul class="slides">
+	<li><img alt="" data-custom-thumb="images/slide_01.jpg" src="images/slide_105.jpg" /></li>
+	<li><img alt="" data-custom-thumb="images/slide_03.jpg" src="images/slide_106.jpg" /></li>
+	<li><img alt="" data-custom-thumb="images/slide_02.jpg" src="images/slide_107.jpg" /></li>
+	<li><img alt="" data-custom-thumb="images/slide_07.jpg" src="images/slide_108.jpg" /></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!--content-->
+
+<div class="page_content_offset">
+<div class="container"><!--banners-->
+<div class="row clearfix">
+<aside class="col-lg-3 col-md-3 col-sm-3 m_xs_bottom_30"><!--widgets-->
+<figure class="widget animate_ftr shadow r_corners wrapper m_bottom_30">
+<figcaption>
+<h3 class="color_light">Products</h3>
+</figcaption>
+
+<div class="widget_content"><!--Categories list------------------------------------------------------------------------------------->
+<ul class="categories_list">
+	<li><a class="f_size_small color_dark d_block relative" href="moter_bike_gloves.html">Motor Bike Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="cycling_gloves.html">Cycling Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="sports_gloves.html">Gym Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="fashion_gloves.html">Fashion Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="leather_jackets.html">Leather Jackets </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="leather_bags.html">Leather Bags &amp; Belts </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="fire_fighting_gloves.html">Fire Fighting Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="cotton_gloves.html">Cotton Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="work_wear.html">Work Wear</a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="cutresistant.html">Cut Resistant Gloves</a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="splitleather.html">Split Leather Gloves</a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="welding.html">Welding Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="leatherfit.html">Leather Fit Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="hydrofugegloves.html">Hydrofuge Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="synthetic.html">Synthetic Leather Gloves </a></li>
+	<li><a class="f_size_small color_dark e_block relative" href="covid.html">COVID Protection </a></li>
+</ul>
+</div>
+</figure>
+<!--compare products--><!--wishlist--><!--banner--><a class="widget animate_ftr d_block r_corners m_bottom_30" href="#"><img alt="" src="images/banner_img_6.jpg" /> </a> <!--Bestsellers--> <!--tags--></aside>
+<!-- Product Details single file ------------------------------------------------------------------------------>
+
+<section class="col-lg-9 col-md-9 col-sm-9"><!--products-->
+<section class="products_container a_type_2 category_grid clearfix m_bottom_25"><!--product item--><!-- Product 1 ---------------------------------------------------------------------------------->
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7001.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7001.png" width="120" height="120" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7001.html">PE 7001</a></h6>
+</figure>
+</div>
+<!-- Product 2 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7002.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7002.png" width="120" height="120" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7002.html">PE 7002</a></h6>
+</figure>
+</div>
+<!-- Product 3 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7003.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7003.png" width="120" height="120" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7003.html">PE 7003</a></h6>
+</figure>
+</div>
+<!-- Product 4 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7004.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7004.png" width="120" height="120" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7004.html">PE 7004</a></h6>
+</figure>
+</div>
+<!-- Product 5 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7005.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7005.png" width="120" height="120" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7005.html">PE 7005</a></h6>
+</figure>
+</div>
+<!-- Product 6 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7006.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7006.png" width="120" height="120" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7006.html">PE 7006</a></h6>
+</figure>
+</div>
+<!-- Product 7 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7007.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7007.png" width="120" height="120" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7007.html">PE 7007</a></h6>
+</figure>
+</div>
+<!-- Product 8 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7008.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7008.png" width="120" height="120" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7008.html">PE 7008</a></h6>
+</figure>
+</div>
+<!-- Product 9 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7009.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7009.png" width="120" height="120" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7009.html">PE 7009</a></h6>
+</figure>
+</div>
+<!-- Product 10 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7010.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7010.png" width="120" height="120" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7010.html">PE 7010</a></h6>
+</figure>
+</div>
+<!-- Product 11 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7011.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7011.png" width="120" height="120" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7011.html">PE 7011</a></h6>
+</figure>
+</div>
+<!-- Product 12 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7012.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7012.png" width="120" height="120"/> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7012.html">PE 7012</a></h6>
+</figure>
+</div>
+<!-- Product 13 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7013.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7013.png" width="120" height="120"/> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7013.html">PE 7013</a></h6>
+</figure>
+</div>
+<!-- Product 14 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7014.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7014.png" width="120" height="120"/> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7014.html">PE 7014</a></h6>
+</figure>
+</div>
+<!-- Product 15 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7015.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7015.png" width="120" height="120"/> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7015.html">PE 7015</a></h6>
+</figure>
+</div>
+<!-- Product 16 ----------------------------------------------------------------------------------><!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="products_detail/pe_7016.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products_detail/motor_bike/pe_7016.png" width="120" height="120"/> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="products_detail/pe_7016.html">PE71016</a></h6>
+</figure>
+</div>
+</section>
+</section>
+</div>
+</div>
+</div>
+<!--markup footer---------------------------------------------------------------------------------->
+
+<footer class="type_2" id="footer">
+<div class="footer_top_part">
+<div class="container t_align_c"><!--social icons-->
+<ul class="clearfix d_inline_b horizontal_list social_icons">
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="index-2.html">Home </a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="about_us.html">About us </a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="ceo_message.html">Company </a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="inquiry_form.html">Inquiry Form </a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="contact_us.html">Contact us </a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="leather_hides.html">Leather Hides </a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="leather_info.html">Leather Guide</a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="accreditations.html">Accreditations</a></li>
+</ul>
+</div>
+</div>
+<!-- Scroll Bars --> 
+<marquee behavior="scroll" direction="left"> <img alt="Split leather" height="110" src="images/j1.png" width="120" /> <img alt="Split leather" height="110" src="images/j2.png" width="120" /> <img alt="Split leather" height="110" src="images/j3.png" width="120" /> <img alt="Split leather" height="110" src="images/j4.png" width="120" /> <img alt="Split leather" height="110" src="images/j5.png" width="120" /> <img alt="Split leather" height="110" src="images/j6.png" width="120" /> <img alt="Split leather" height="110" src="images/j7.png" width="120" /> <img alt="Split leather" height="110" src="images/j8.png" width="120" /> </marquee> 
+
+<marquee behavior="scroll" direction="right"> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5001.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5002.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5003.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5004.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5005.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5006.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5007.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5008.png" width="120" /> </marquee> 
+
+<marquee behavior="scroll" direction="left"> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5001.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5002.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5004.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5006.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5008.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5010.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5012.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5014.png" width="120" /> </marquee>
+
+<!--copyright part-->
+
+<div class="footer_bottom_part">
+<div class="container clearfix t_mxs_align_c">
+<p class="f_left f_mxs_none m_mxs_bottom_10">Copyright &copy; 2018 Premier Exports (Pvt.) Limited. All Rights Reserved</p>
+
+<ul class="f_right horizontal_list clearfix f_mxs_none d_mxs_inline_b">
+	<li>Design By: https://mdgcode.wordpress.com</li>
+</ul>
+</div>
+</div>
+</footer>
+</div>
+<!--social widgets-->
+
+<ul class="social_widgets d_xs_none"><!--facebook-->
+	<li class="relative"><button class="sw_button t_align_c facebook"></button>
+
+	<div class="sw_content">
+	<h3 class="color_dark m_bottom_20">Join Us on Facebook</h3>
+	<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fenvato&amp;width=235&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=438889712801266" style="border:none; overflow:hidden; width:235px; height:258px;"></iframe></div>
+	</li>
+	<!--twitter feed-->
+	<li class="relative"><button class="sw_button t_align_c twitter"></button>
+	<div class="sw_content">
+	<h3 class="color_dark m_bottom_20">Latest Tweets</h3>
+
+	<div class="twitterfeed m_bottom_25"></div>
+	<a class="button_type_4 d_inline_b r_corners tr_all_hover color_light tw_color" href="https://twitter.com/" role="button">Follow on Twitter</a></div>
+	</li>
+	<script src="js/jquery-2.1.0.min.js"></script><script src="js/retina.js"></script><script src="js/jquery.flexslider-min.js"></script><script src="js/waypoints.min.js"></script><script src="js/jquery.isotope.min.js"></script><script src="js/owl.carousel.min.js"></script><script src="js/jquery.tweet.min.js"></script><script src="js/jquery.custom-scrollbar.js"></script><script src="js/scripts.js"></script><script type="text/javascript" src="s7.addthis.com/js/300/addthis_widget.html#pubid=xa-5306f8f674bfda4c"></script>
+</ul>
+
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script></body>
+
+<!-- Mirrored from www.premierexports.com.pk/moter_bike_gloves.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:32:09 GMT -->
+</html>

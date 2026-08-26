@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OEM & Private Label — Premier Exports</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Premier Exports - Leading manufacturer and exporter of premium leather safety gloves, cycling gloves, motor bike gloves, and leather products in Pakistan." />
+    <meta name="keywords" content="Premier Exports, leather gloves, safety gloves, cycling gloves, motor bike gloves, leather jackets, Pakistan, Lahore, OEM, Private Label" />
+    <meta name="author" content="Premier Exports (Pvt) Ltd" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        /* ============================================================
+           ROOT & RESET (same as practice.html)
+           ============================================================ */
+        :root {
+            --primary: #c0392b;
+            --primary-dark: #a93226;
+            --primary-light: #e74c3c;
+            --primary-gradient: linear-gradient(135deg, #c0392b, #e74c3c);
+            --dark: #0d0d0d;
+            --dark-card: #1a1a1a;
+            --dark-surface: #242424;
+            --light: #f8f9fa;
+            --gray: #888;
+            --gray-light: #eaeaea;
+            --shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+            --shadow-hover: 0 30px 80px rgba(0, 0, 0, 0.18);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --font: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font);
+            background: #f4f5f7;
+            color: #1a1a1a;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ============================================================
+           SCROLLBAR
+           ============================================================ */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--dark);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        /* ============================================================
+           REVEAL ANIMATIONS
+           ============================================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-60px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(60px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.92);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal-scale.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* ============================================================
+           TOP BAR (same as practice)
+           ============================================================ */
+        .top-bar {
+            background: var(--dark);
+            color: #aaa;
+            font-size: 13px;
+            padding: 8px 0;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .top-bar a {
+            color: #aaa;
+            transition: color 0.3s;
+            margin-left: 18px;
+        }
+        .top-bar a:hover {
+            color: #fff;
+        }
+        .top-bar .top-left span {
+            margin-right: 6px;
+        }
+        .top-bar .top-left i {
+            color: var(--primary);
+            margin-right: 4px;
+        }
+
+        /* ============================================================
+           MAIN HEADER (same as practice)
+           ============================================================ */
+        .main-header {
+            background: #fff;
+            padding: 16px 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.92);
+            transition: box-shadow 0.3s;
+        }
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            font-size: 22px;
+            letter-spacing: -0.5px;
+            color: var(--dark, #0d0d0d);
+        }
+        .logo img {
+            height: 56px;
+            width: auto;
+        }
+        .logo span {
+            color: var(--primary, #c0392b);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .header-certifications {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .header-certifications img {
+            height: 36px;
+            width: auto;
+            background: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+            object-fit: contain;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .header-certifications img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 768px) {
+            .main-header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo img {
+                height: 40px;
+            }
+            .logo {
+                font-size: 18px;
+            }
+            .header-certifications {
+                gap: 6px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .header-certifications img {
+                height: 28px;
+                padding: 3px 6px;
+            }
+        }
+        @media (max-width: 480px) {
+            .header-certifications img {
+                height: 22px;
+                padding: 2px 4px;
+            }
+            .logo img {
+                height: 32px;
+            }
+            .logo {
+                font-size: 16px;
+            }
+        }
+
+        /* ============================================================
+           NAVIGATION (same as practice)
+           ============================================================ */
+        .nav-wrapper {
+            background: var(--dark);
+            position: sticky;
+            top: 88px;
+            z-index: 999;
+            border-bottom: 2px solid var(--primary);
+        }
+        .nav-wrapper .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        .nav-links a {
+            color: #ccc;
+            padding: 14px 20px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            transition: all 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #fff;
+            background: rgba(192, 57, 43, 0.15);
+            border-bottom-color: var(--primary);
+        }
+        .nav-links a .highlight {
+            background: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            color: #fff;
+            margin-left: 4px;
+        }
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 8px 12px;
+        }
+
+        /* ============================================================
+           OEM HERO
+           ============================================================ */
+        .oem-hero {
+            position: relative;
+            min-height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 60px 0;
+            background: #0d0d0d;
+        }
+        .oem-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.60);
+            z-index: 1;
+        }
+        .oem-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 80% 20%, rgba(192, 57, 43, 0.20), transparent 60%),
+                        radial-gradient(circle at 20% 80%, rgba(192, 57, 43, 0.08), transparent 50%);
+            z-index: 1;
+            pointer-events: none;
+        }
+        .oem-hero .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+        }
+        .oem-hero h1 {
+            font-size: 48px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+        }
+        .oem-hero h1 span {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .oem-hero p {
+            font-size: 18px;
+            color: #ccc;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        .oem-hero-video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        /* ============================================================
+           OEM CONTENT
+           ============================================================ */
+        .oem-content {
+            padding: 50px 0 70px;
+            background: #f4f5f7;
+        }
+        .oem-content .container {
+            max-width: 1100px;
+        }
+
+        /* Intro paragraph */
+        .oem-intro {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 32px 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f0f0f0;
+            margin-bottom: 35px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .oem-intro:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+        .oem-intro p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #444;
+            margin: 0;
+        }
+        .oem-intro p strong {
+            color: var(--dark);
+        }
+
+        /* Two-column: Private Label + OEM */
+        .oem-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            margin-bottom: 40px;
+        }
+        .oem-card {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 32px 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f0f0f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--primary);
+        }
+        .oem-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+        }
+        .oem-card.oem-card-alt {
+            border-top-color: #d97706;
+        }
+        .oem-card h3 {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 14px;
+            letter-spacing: -0.3px;
+        }
+        .oem-card h3 span {
+            color: var(--primary);
+        }
+        .oem-card.oem-card-alt h3 span {
+            color: #d97706;
+        }
+        .oem-card p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 14px;
+        }
+        .oem-card ul {
+            padding-left: 20px;
+            margin: 0;
+            list-style: none;
+        }
+        .oem-card ul li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            color: #444;
+            line-height: 1.5;
+        }
+        .oem-card ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 700;
+        }
+        .oem-card.oem-card-alt ul li::before {
+            color: #d97706;
+        }
+        .oem-card ul li strong {
+            color: var(--dark);
+        }
+
+        /* Technical Capabilities Table */
+        .capabilities-section {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 32px 36px 36px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f0f0f0;
+            margin-bottom: 35px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .capabilities-section:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+        .capabilities-section h2 {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 16px;
+            letter-spacing: -0.3px;
+        }
+        .capabilities-section h2 span {
+            color: var(--primary);
+        }
+
+        .capabilities-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        .capabilities-table thead th {
+            background: var(--dark);
+            color: #fff;
+            padding: 14px 16px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .capabilities-table thead th:first-child {
+            border-radius: 8px 0 0 0;
+        }
+        .capabilities-table thead th:last-child {
+            border-radius: 0 8px 0 0;
+        }
+        .capabilities-table tbody td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+            color: #444;
+            line-height: 1.5;
+        }
+        .capabilities-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        .capabilities-table tbody td:first-child {
+            font-weight: 700;
+            color: var(--dark);
+        }
+        .capabilities-table tbody tr:hover td {
+            background: #fafafa;
+        }
+
+        /* Why partner */
+        .why-partner {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 32px 36px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f0f0f0;
+            border-left: 4px solid var(--primary);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .why-partner:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+        .why-partner h2 {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+        .why-partner h2 span {
+            color: var(--primary);
+        }
+        .why-partner p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.8;
+            margin: 0;
+        }
+        .why-partner p strong {
+            color: var(--dark);
+        }
+
+        /* Contact block at bottom */
+        .oem-contact-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+            margin-top: 35px;
+            background: var(--dark);
+            border-radius: var(--radius);
+            padding: 32px 36px;
+            color: #ccc;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .oem-contact-block:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+        .oem-contact-block .contact-item {
+            text-align: center;
+        }
+        .oem-contact-block .contact-item .label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .oem-contact-block .contact-item .value {
+            display: block;
+            font-size: 15px;
+            color: #fff;
+            font-weight: 500;
+        }
+        .oem-contact-block .contact-item .value a {
+            color: var(--primary);
+        }
+        .oem-contact-block .contact-item .value a:hover {
+            text-decoration: underline;
+        }
+
+        /* ============================================================
+           TRUST BANNER & FOOTER (same as practice)
+           ============================================================ */
+        .trust-banner {
+            background: var(--dark);
+            padding: 40px 0;
+            margin: 20px 0 0;
+        }
+        .trust-banner .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: #ccc;
+        }
+        .trust-item i {
+            font-size: 32px;
+            color: var(--primary);
+        }
+        .trust-item h6 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 2px;
+        }
+        .trust-item p {
+            font-size: 13px;
+            color: #777;
+            margin: 0;
+        }
+
+        footer {
+            background: var(--dark);
+            color: #aaa;
+            padding: 50px 0 0;
+        }
+        footer .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        footer .footer-brand h4 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        footer .footer-brand h4 span {
+            color: var(--primary);
+        }
+        footer .footer-brand p {
+            font-size: 14px;
+            max-width: 300px;
+            line-height: 1.7;
+        }
+        footer .footer-col h6 {
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        footer .footer-col a {
+            display: block;
+            color: #888;
+            font-size: 14px;
+            padding: 4px 0;
+            transition: color 0.3s, padding-left 0.3s;
+        }
+        footer .footer-col a:hover {
+            color: #fff;
+            padding-left: 6px;
+        }
+        footer .social-row {
+            display: flex;
+            gap: 14px;
+            margin-top: 16px;
+        }
+        footer .social-row a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #fff;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        footer .social-row a:hover {
+            transform: translateY(-4px);
+        }
+        footer .social-row .fb:hover { background: #1877F2; }
+        footer .social-row .tw:hover { background: #1DA1F2; }
+        footer .social-row .ig:hover { background: #E4405F; }
+        footer .social-row .amz:hover { background: #FF9900; }
+        footer .copyright {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #2a2a2a;
+            margin-top: 20px;
+        }
+
+        /* ============================================================
+           RESPONSIVE
+           ============================================================ */
+        @media (max-width: 992px) {
+            .oem-grid {
+                grid-template-columns: 1fr;
+            }
+            .oem-contact-block {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+            .capabilities-table {
+                font-size: 13px;
+            }
+            .capabilities-table thead th,
+            .capabilities-table tbody td {
+                padding: 10px 12px;
+            }
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: var(--dark);
+                padding: 10px 0;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .nav-links a {
+                padding: 12px 20px;
+                border-bottom: 1px solid #2a2a2a;
+            }
+            .nav-toggle {
+                display: block;
+            }
+            .oem-hero h1 {
+                font-size: 32px;
+            }
+            .oem-hero p {
+                font-size: 15px;
+            }
+            .oem-intro {
+                padding: 24px 20px;
+            }
+            .oem-card {
+                padding: 24px 20px;
+            }
+            .capabilities-section {
+                padding: 24px 18px;
+                overflow-x: auto;
+            }
+            .capabilities-table {
+                font-size: 12px;
+                min-width: 600px;
+            }
+            .why-partner {
+                padding: 24px 20px;
+            }
+            .oem-contact-block {
+                grid-template-columns: 1fr;
+                padding: 24px 20px;
+                gap: 12px;
+            }
+            footer .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .trust-banner .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+        @media (max-width: 480px) {
+            .oem-hero h1 {
+                font-size: 26px;
+            }
+            .oem-card h3 {
+                font-size: 19px;
+            }
+            .capabilities-section h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================================
+    TOP BAR
+    ============================================================ -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-left">
+                <span><i class="fas fa-phone"></i> +92-42-1234567</span>
+                <span><i class="fas fa-envelope"></i> info@premierexports.pk</span>
+            </div>
+            <div class="top-right">
+                <a href="#"><i class="fas fa-user"></i> Login</a>
+                <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    MAIN HEADER
+    ============================================================ -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Premier Exports" />
+                <span>Premier</span>Exports
+            </a>
+            <div class="header-actions">
+                <div class="header-certifications">
+                    <img src="images/reach.png" alt="REACH">
+                    <img src="images/iso_logo.png" alt="ISO">
+                    <img src="images/ce_logo.png" alt="CE">
+                    <img src="images/lcci.png" alt="LCCI">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================
+    NAVIGATION
+    ============================================================ -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About</a>
+                <a href="ceo_message.html">Company</a>
+                <a href="inquiry_form.html">Inquiry</a>
+                <a href="contact_us.html">Contact</a>
+                <a href="safety_signs.html">Industrial</a>
+                <a href="leather_info.html">Sports</a>
+                <a href="covid_19.html">Apparel</a>
+                <a href="accreditations.html">Certifications</a>
+                <a href="download_cat.html"><span class="highlight">Download</span></a>
+                <a href="oem.html" class="active">OEM</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    OEM HERO
+    ============================================================ -->
+    <section class="oem-hero">
+        <video class="oem-hero-video-bg" autoplay loop muted playsinline>
+            <source src="images/Create_a_premium_cinematic_pro.mp4" type="video/mp4">
+            <img src="images/ChatGPT Image Aug 14, 2026, 08_08_32 PM.png" alt="OEM & Private Label">
+        </video>
+        <div class="container">
+            <h1>Private Label &amp; <span>OEM</span></h1>
+            <p>End‑to‑end contract manufacturing solutions for global leather glove brands — from concept to production.</p>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    OEM CONTENT
+    ============================================================ -->
+    <section class="oem-content">
+        <div class="container">
+
+            <!-- Intro -->
+            <div class="oem-intro reveal">
+                <p>
+                    As a premier, vertically integrated leather gloves manufacturer, we offer comprehensive
+                    <strong>Private Label</strong> and <strong>Original Equipment Manufacturer (OEM)</strong>
+                    services tailored to international importers, safety distributors, and premium apparel brands.
+                    Operating under strict regulatory compliances and global quality benchmarks, we transform raw,
+                    high-grade hides into high-performance hand protection, backed by precision engineering,
+                    technical documentation support, and robust scale capacity.
+                </p>
+            </div>
+
+            <!-- Two columns: Private Label + OEM -->
+            <div class="oem-grid reveal">
+                <div class="oem-card">
+                    <h3>Private Labeling <span>(White Label)</span></h3>
+                    <p>
+                        Accelerate your market entry with our catalog of field-proven, market-ready glove
+                        designs. Seamlessly integrate your branding into established, high-demand products.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Custom Branding:</strong> High-definition logo embossing, debossing,
+                            heat transfers, and premium woven labels.
+                        </li>
+                        <li>
+                            <strong>Packaging &amp; Retail Ready:</strong> Custom header cards, barcodes
+                            (EAN/UPC), specialized hangtags, and compliant polybags.
+                        </li>
+                        <li>
+                            <strong>Low Initial Investment:</strong> Lower Minimum Order Quantities (MOQs)
+                            utilizing our pre-tested, standardized glove patterns.
+                        </li>
+                    </ul>
+                </div>
+                <div class="oem-card oem-card-alt">
+                    <h3>OEM <span>Manufacturing</span></h3>
+                    <p>
+                        Bring your proprietary designs, material blueprints, and unique technical
+                        specifications to life. We offer complete custom tooling and structural engineering
+                        from scratch.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Bespoke Pattern Development:</strong> Custom sizing, ergonomic
+                            adjustments, and specialized thread configurations.
+                        </li>
+                        <li>
+                            <strong>Advanced Fabric Fusion:</strong> Combining premium leather with Kevlar®,
+                            Nomex®, high-grip silicones, or impact-resistant TPR shells.
+                        </li>
+                        <li>
+                            <strong>Confidentiality Assured:</strong> Strict intellectual property protection
+                            and exclusive mold/pattern retention.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Technical Capabilities Table -->
+            <div class="capabilities-section reveal">
+                <h2>Technical Capabilities &amp; <span>Material Operations</span></h2>
+                <div style="overflow-x:auto;">
+                    <table class="capabilities-table">
+                        <thead>
+                            <tr>
+                                <th>Segment</th>
+                                <th>Operational &amp; Technical Scope</th>
+                                <th>Quality &amp; Compliance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Leather Sourcing &amp; Tanning</td>
+                                <td>
+                                    Premium Goatskin, Cowhide, Sheepskin, and durable Split Suede.
+                                    Specialized treatments for water repellency, oil resistance, and
+                                    enhanced fire-retardancy.
+                                </td>
+                                <td rowspan="3" style="vertical-align:middle;">
+                                    • <strong>CE Certified</strong> Options<br>
+                                    • EN 388 (Mechanical Risks)<br>
+                                    • EN 407 (Thermal Risks)<br>
+                                    • ISO 9001:2015 QC<br>
+                                    • State Bank of Pakistan (SBP) compliant documentation for
+                                    seamless international trade.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Industrial &amp; Biker Gear</td>
+                                <td>
+                                    Heavy-duty mechanics' gloves, TIG/MIG welding gauntlets, driver gloves,
+                                    assembly wear, and custom shock-absorbing dirt/motorbike gear.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Scale &amp; Capacity</td>
+                                <td>
+                                    Equipped with state-of-the-art hydraulic leather clicker presses,
+                                    advanced heavy-duty sewing lines, and automated grading systems to
+                                    handle high-volume export contracts.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Why Partner -->
+            <div class="why-partner reveal">
+                <h2>Why <span>Partner</span> With Us?</h2>
+                <p>
+                    Our facility blends deep industrial heritage with modern global compliance frameworks.
+                    We provide complete transparency through <strong>Technical Data Sheets (TDS)</strong>,
+                    precise European/US sizing matrices, and meticulous batch tracking. From standard
+                    commercial invoicing and bills of lading to automated customs clearance protocols, we guarantee
+                    an uninterrupted, reliable supply chain for your brand.
+                </p>
+            </div>
+
+            <!-- Contact Block -->
+            <div class="oem-contact-block reveal">
+                <div class="contact-item">
+                    <span class="label">Global Export Division</span>
+                    <span class="value">B2B Contracting &amp; Licensing</span>
+                </div>
+                <div class="contact-item">
+                    <span class="label">Production Hub</span>
+                    <span class="value">Industrial Area, Sialkot , Lahore, Pakistan</span>
+                </div>
+                <div class="contact-item">
+                    <span class="label">Corporate Inquiries</span>
+                    <span class="value"><a href="mailto:info@premierexports.com.pk">info@premierexports.com.pk</a></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TRUST BANNER (same as practice)
+    ============================================================ -->
+    <div class="trust-banner">
+        <div class="container">
+            <div class="trust-item">
+                <i class="fas fa-truck"></i>
+                <div>
+                    <h6>Free Shipping</h6>
+                    <p>On orders over $500</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                    <h6>Premium Quality</h6>
+                    <p>ISO &amp; CE certified</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-undo-alt"></i>
+                <div>
+                    <h6>Easy Returns</h6>
+                    <p>30‑day return policy</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-headset"></i>
+                <div>
+                    <h6>24/7 Support</h6>
+                    <p>Dedicated team</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    FOOTER (same as practice)
+    ============================================================ -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h4>Premier<span>Exports</span></h4>
+                    <p>Leading manufacturer and exporter of premium leather safety gloves, cycling gloves, motor bike gloves, and leather products in Pakistan.</p>
+                    <div class="social-row">
+                        <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="tw"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="amz"><i class="fab fa-amazon"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h6>Quick Links</h6>
+                    <a href="index.html">Home</a>
+                    <a href="about_us.html">About Us</a>
+                    <a href="ceo_message.html">Company</a>
+                    <a href="inquiry_form.html">Inquiry</a>
+                    <a href="contact_us.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h6>Products</h6>
+                    <a href="moter_bike_gloves.html">Motor Bike Gloves</a>
+                    <a href="cycling_gloves.html">Cycling Gloves</a>
+                    <a href="sports_gloves.html">Gym Gloves</a>
+                    <a href="leather_jackets.html">Leather Jackets</a>
+                    <a href="work_wear.html">Work Wear</a>
+                </div>
+                <div class="footer-col">
+                    <h6>Support</h6>
+                    <a href="privacypolicy.html">Privacy Policy</a>
+                    <a href="returnsrefund.html">Returns &amp; Refunds</a>
+                    <a href="shipping.html">Shipping</a>
+                    <a href="tc.html">Terms &amp; Conditions</a>
+                    <a href="download_cat.html">Download Catalog</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Premier Exports (Pvt.) Limited. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script>
+        // Mobile nav toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('open');
+        });
+
+        // SCROLL REVEAL
+        function observeReveals() {
+            const els = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+            els.forEach(el => observer.observe(el));
+        }
+        observeReveals();
+
+        // HEADER SCROLL SHADOW
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 40) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>

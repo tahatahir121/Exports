@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier Exports — Premium Leather Safety Gloves</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Premier Exports - Leading manufacturer and exporter of premium leather safety gloves, cycling gloves, motor bike gloves, and leather products in Pakistan." />
+    <meta name="keywords" content="Premier Exports, leather gloves, safety gloves, cycling gloves, motor bike gloves, leather jackets, Pakistan, Lahore" />
+    <meta name="author" content="Premier Exports (Pvt) Ltd" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        /* ============================================================
+                   ROOT & RESET
+                   ============================================================ */
+        :root {
+            --primary: #c0392b;
+            --primary-dark: #a93226;
+            --primary-light: #e74c3c;
+            --primary-gradient: linear-gradient(135deg, #c0392b, #e74c3c);
+            --dark: #0d0d0d;
+            --dark-card: #1a1a1a;
+            --dark-surface: #242424;
+            --light: #f8f9fa;
+            --gray: #888;
+            --gray-light: #eaeaea;
+            --shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+            --shadow-hover: 0 30px 80px rgba(0, 0, 0, 0.18);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --font: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font);
+            background: #f4f5f7;
+            color: #1a1a1a;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ============================================================
+                   SCROLLBAR
+                   ============================================================ */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--dark);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        /* ============================================================
+                   REVEAL ANIMATIONS
+                   ============================================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-60px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(60px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.92);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal-scale.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* ============================================================
+                   HEADER
+                   ============================================================ */
+        .top-bar {
+            background: var(--dark);
+            color: #aaa;
+            font-size: 13px;
+            padding: 8px 0;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .top-bar a {
+            color: #aaa;
+            transition: color 0.3s;
+            margin-left: 18px;
+        }
+
+        .top-bar a:hover {
+            color: #fff;
+        }
+
+        .top-bar .top-left span {
+            margin-right: 6px;
+        }
+
+        .top-bar .top-left i {
+            color: var(--primary);
+            margin-right: 4px;
+        }
+
+/* ===== MAIN HEADER ===== */
+.main-header {
+    background: #fff;
+    padding: 16px 0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.92);
+    transition: box-shadow 0.3s;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    color: var(--dark, #0d0d0d);
+}
+
+.logo img {
+    height: 56px;
+    width: auto;
+}
+
+.logo span {
+    color: var(--primary, #c0392b);
+}
+
+/* ===== HEADER ACTIONS (certifications only) ===== */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-certifications {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-certifications img {
+    height: 36px;
+    width: auto;
+    background: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-certifications img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .header-certifications {
+        gap: 6px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-certifications img {
+        height: 28px;
+        padding: 3px 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-certifications img {
+        height: 22px;
+        padding: 2px 4px;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+}
+        /* ============================================================
+                   NAVIGATION
+                   ============================================================ */
+        .nav-wrapper {
+            background: var(--dark);
+            position: sticky;
+            top: 88px;
+            z-index: 999;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .nav-wrapper .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+
+        .nav-links a {
+            color: #ccc;
+            padding: 14px 20px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            transition: all 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #fff;
+            background: rgba(192, 57, 43, 0.15);
+            border-bottom-color: var(--primary);
+        }
+
+        .nav-links a .highlight {
+            background: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            color: #fff;
+            margin-left: 4px;
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 8px 12px;
+        }
+
+        /* ============================================================
+                   HERO
+                   ============================================================ */
+.hero {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 60px 0;
+    margin-bottom: 20px;
+    background: #0d0d0d; /* fallback while video loads */
+}
+
+/* Dark overlay for better text readability */
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+/* Optional: keep the red glow accent */
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 80% 20%, rgba(192, 57, 43, 0.20), transparent 60%),
+                radial-gradient(circle at 20% 80%, rgba(192, 57, 43, 0.08), transparent 50%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 800px; /* limits width for better readability */
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 24px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #fff;
+    letter-spacing: -1.5px;
+    margin-bottom: 16px;
+}
+
+.hero-content h1 span {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto 28px;
+    line-height: 1.7;
+}
+
+.hero-content .btn-group {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 34px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: var(--primary-gradient, linear-gradient(135deg, #c0392b, #e74c3c));
+    color: #fff;
+    box-shadow: 0 8px 30px rgba(192, 57, 43, 0.35);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(192, 57, 43, 0.45);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.btn-outline:hover {
+    border-color: #c0392b;
+    background: rgba(192, 57, 43, 0.15);
+    transform: translateY(-3px);
+}
+
+.hero-stats {
+    display: flex;
+    gap: 50px;
+    margin-top: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-stats .stat h3 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.hero-stats .stat h3 span {
+    color: #c0392b;
+}
+
+.hero-stats .stat p {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+}
+
+/* ===== BACKGROUND VIDEO ===== */
+.hero-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 400px;
+        padding: 40px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .hero-stats {
+        gap: 24px;
+    }
+
+    .hero-stats .stat h3 {
+        font-size: 22px;
+    }
+
+    .btn {
+        padding: 10px 22px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .hero-stats {
+        gap: 16px;
+    }
+
+    .hero-stats .stat h3 {
+        font-size: 18px;
+    }
+
+    .hero-stats .stat p {
+        font-size: 12px;
+    }
+}
+
+        /* ============================================================
+                   CATEGORY TABS / FILTERS
+                   ============================================================ */
+        .category-tabs {
+            padding: 30px 0 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .category-tabs button {
+            padding: 10px 26px;
+            border-radius: 50px;
+            border: 2px solid #e0e0e0;
+            background: #fff;
+            font-weight: 600;
+            font-size: 14px;
+            color: #555;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: var(--font);
+        }
+
+        .category-tabs button:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .category-tabs button.active {
+            background: var(--primary-gradient);
+            color: #fff;
+            border-color: var(--primary);
+            box-shadow: 0 8px 25px rgba(192, 57, 43, 0.3);
+        }
+
+        /* ============================================================
+                   PRODUCTS SECTION
+                   ============================================================ */
+        .products-section {
+            padding: 30px 0 70px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            position: relative;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 50px;
+            height: 4px;
+            background: var(--primary-gradient);
+            border-radius: 4px;
+        }
+
+        .section-header .view-all {
+            color: var(--primary);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: gap 0.3s;
+        }
+
+        .section-header .view-all:hover {
+            gap: 14px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+            gap: 28px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            cursor: pointer;
+            padding: 20px 16px 18px;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(192, 57, 43, 0.10);
+        }
+
+        .product-card .card-img {
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .product-card .card-img img {
+            max-height: 140px;
+            width: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .card-img img {
+            transform: scale(1.06);
+        }
+
+        .product-card .card-badge {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background: var(--primary);
+            color: #fff;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .product-card .card-wishlist {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(255, 255, 255, 0.85);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            font-size: 16px;
+            color: #999;
+            cursor: pointer;
+            transition: all 0.3s;
+            backdrop-filter: blur(4px);
+        }
+
+        .product-card .card-wishlist:hover {
+            background: var(--primary);
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        .product-card h6 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        /* Removed .card-price and .add-btn styles as they are no longer used */
+
+        /* ============================================================
+                   CART SIDEBAR (kept but will be empty)
+                   ============================================================ */
+        .cart-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(6px);
+            z-index: 2000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+
+        .cart-overlay.open {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .cart-sidebar {
+            position: fixed;
+            top: 0;
+            right: -420px;
+            width: 400px;
+            max-width: 92vw;
+            height: 100%;
+            background: #fff;
+            z-index: 2001;
+            transition: right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .cart-sidebar.open {
+            right: 0;
+        }
+
+        .cart-sidebar .cart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cart-sidebar .cart-header h3 {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .cart-sidebar .cart-header h3 span {
+            color: var(--primary);
+        }
+
+        .cart-sidebar .cart-header .close-btn {
+            background: none;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: #999;
+            transition: color 0.3s;
+        }
+
+        .cart-sidebar .cart-header .close-btn:hover {
+            color: var(--primary);
+        }
+
+        .cart-items {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px 0;
+        }
+
+        .cart-item {
+            display: flex;
+            gap: 14px;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            animation: slideInItem 0.3s ease;
+        }
+
+        @keyframes slideInItem {
+            0% {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .cart-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: #f5f5f5;
+        }
+
+        .cart-item .item-info {
+            flex: 1;
+        }
+
+        .cart-item .item-info h6 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .cart-item .item-info .item-price {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .cart-item .item-qty {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .cart-item .item-qty button {
+            background: #f0f0f0;
+            border: none;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 14px;
+        }
+
+        .cart-item .item-qty button:hover {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .cart-item .item-qty span {
+            font-weight: 600;
+            min-width: 24px;
+            text-align: center;
+        }
+
+        .cart-item .remove-btn {
+            background: none;
+            border: none;
+            color: #ccc;
+            cursor: pointer;
+            font-size: 18px;
+            transition: color 0.3s;
+            align-self: center;
+        }
+
+        .cart-item .remove-btn:hover {
+            color: var(--primary);
+        }
+
+        .cart-footer {
+            border-top: 1px solid #eee;
+            padding-top: 16px;
+        }
+
+        .cart-footer .cart-total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        .cart-footer .cart-total .total-price {
+            color: var(--primary);
+        }
+
+        .cart-footer .checkout-btn {
+            width: 100%;
+            padding: 14px;
+            background: var(--primary-gradient);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: var(--font);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .cart-footer .checkout-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 30px rgba(192, 57, 43, 0.35);
+        }
+
+        .cart-empty {
+            text-align: center;
+            padding: 40px 0;
+            color: #999;
+        }
+
+        .cart-empty i {
+            font-size: 48px;
+            margin-bottom: 12px;
+            opacity: 0.3;
+        }
+
+        /* ============================================================
+                   TRUST BANNER
+                   ============================================================ */
+        .trust-banner {
+            background: var(--dark);
+            padding: 40px 0;
+            margin: 20px 0 0;
+        }
+
+        .trust-banner .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: #ccc;
+        }
+
+        .trust-item i {
+            font-size: 32px;
+            color: var(--primary);
+        }
+
+        .trust-item h6 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 2px;
+        }
+
+        .trust-item p {
+            font-size: 13px;
+            color: #777;
+            margin: 0;
+        }
+
+        /* ============================================================
+                   FOOTER
+                   ============================================================ */
+        footer {
+            background: var(--dark);
+            color: #aaa;
+            padding: 50px 0 0;
+        }
+
+        footer .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        footer .footer-brand h4 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        footer .footer-brand h4 span {
+            color: var(--primary);
+        }
+
+        footer .footer-brand p {
+            font-size: 14px;
+            max-width: 300px;
+            line-height: 1.7;
+        }
+
+        footer .footer-col h6 {
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        footer .footer-col a {
+            display: block;
+            color: #888;
+            font-size: 14px;
+            padding: 4px 0;
+            transition: color 0.3s, padding-left 0.3s;
+        }
+
+        footer .footer-col a:hover {
+            color: #fff;
+            padding-left: 6px;
+        }
+
+        footer .social-row {
+            display: flex;
+            gap: 14px;
+            margin-top: 16px;
+        }
+
+        footer .social-row a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #fff;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+
+        footer .social-row a:hover {
+            transform: translateY(-4px);
+        }
+
+        footer .social-row .fb:hover {
+            background: #1877F2;
+        }
+        footer .social-row .tw:hover {
+            background: #1DA1F2;
+        }
+        footer .social-row .ig:hover {
+            background: #E4405F;
+        }
+        footer .social-row .amz:hover {
+            background: #FF9900;
+        }
+
+        footer .copyright {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #2a2a2a;
+            margin-top: 20px;
+        }
+
+        /* ============================================================
+                   FLOATING WHATSAPP
+                   ============================================================ */
+        .wa-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 900;
+            background: #25D366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 32px;
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s;
+            animation: pulseWA 2.5s ease-in-out infinite;
+        }
+
+        .wa-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
+        }
+
+        @keyframes pulseWA {
+            0%,
+            100% {
+                box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 8px 50px rgba(37, 211, 102, 0.6);
+            }
+        }
+
+        /* ============================================================
+                   TOAST NOTIFICATION (kept but may not be used)
+                   ============================================================ */
+        .toast {
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: var(--dark);
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+            z-index: 3000;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.4s ease;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+            pointer-events: all;
+        }
+
+        .toast i {
+            color: #27ae60;
+            font-size: 20px;
+        }
+
+        /* ============================================================
+                   RESPONSIVE
+                   ============================================================ */
+        @media (max-width: 1024px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-content .btn-group {
+                justify-content: center;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .hero-image img {
+                max-height: 280px;
+            }
+
+            footer .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: var(--dark);
+                padding: 10px 0;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 12px 20px;
+                border-bottom: 1px solid #2a2a2a;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .hero-content h1 {
+                font-size: 34px;
+            }
+
+            .hero-stats {
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .hero-stats .stat h3 {
+                font-size: 22px;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 16px;
+            }
+
+            .product-card {
+                padding: 14px 12px;
+            }
+
+            .product-card .card-img {
+                height: 120px;
+            }
+            .product-card .card-img img {
+                max-height: 100px;
+            }
+
+            .cart-sidebar {
+                width: 100%;
+                max-width: 100%;
+                right: -100%;
+            }
+
+            .cart-sidebar.open {
+                right: 0;
+            }
+
+            footer .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .trust-banner .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .section-header h2 {
+                font-size: 24px;
+            }
+
+            .category-tabs button {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+
+            .main-header .container {
+                flex-wrap: wrap;
+            }
+
+            .logo img {
+                height: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 26px;
+            }
+
+            .hero-content p {
+                font-size: 15px;
+            }
+
+            .btn {
+                padding: 10px 22px;
+                font-size: 13px;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                gap: 12px;
+            }
+
+            .product-card h6 {
+                font-size: 13px;
+            }
+        }
+
+        /* ============================================================
+                   LOADING SKELETON (optional)
+                   ============================================================ */
+        .skeleton {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            border-radius: 8px;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================================
+    TOP BAR
+    ============================================================ -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-left">
+                <span><i class="fas fa-phone"></i> +92-42-1234567</span>
+                <span><i class="fas fa-envelope"></i> info@premierexports.pk</span>
+            </div>
+            <div class="top-right">
+                <a href="#"><i class="fas fa-user"></i> Login</a>
+                <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    MAIN HEADER
+    ============================================================ -->
+<header class="main-header" id="mainHeader">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Premier Exports" />
+            <span>Premier</span>Exports
+        </a>
+
+        <div class="header-actions">
+            <!-- Certifications placed here instead of cart/theme -->
+            <div class="header-certifications">
+                <img src="images/reach.png" alt="REACH">
+                <img src="images/iso_logo.png" alt="ISO">
+                <img src="images/ce_logo.png" alt="CE">
+                <img src="images/lcci.png" alt="LCCI">
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- ============================================================
+    NAVIGATION
+    ============================================================ -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="about_us.html">About</a>
+                <a href="ceo_message.html">Company</a>
+                <a href="inquiry_form.html">Inquiry</a>
+                <a href="contact_us.html">Contact</a>
+                <a href="safety_signs.html">Industrial</a>
+                <a href="leather_info.html">Sports</a>
+                <a href="covid_19.html">Apparel</a>
+                <a href="accreditations.html">Certifications</a>
+                <a href="download_cat.html"><span class="highlight">Download</span></a>
+                <a href="oem.html">OEM</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- ============================================================
+    HERO
+    ============================================================ -->
+<section class="hero">
+    <!-- Background Video -->
+    <video class="hero-video-bg" autoplay loop muted playsinline>
+        <source src="images/Create_a_premium_cinematic_pro (1).mp4" type="video/mp4">
+        <!-- Fallback image if video fails -->
+        <img src="images/ChatGPT Image Aug 14, 2026, 08_08_32 PM.png" alt="Premium Leather Gloves">
+    </video>
+
+    <!-- Content on top of video -->
+    <div class="container">
+        <div class="hero-content">
+            <h1>Premium <span>Leather</span> Safety Gloves</h1>
+            <p>Discover world-class craftsmanship — from motor bike gloves to industrial safety gear, made in Pakistan for the global market.</p>
+
+
+        </div>
+    </div>
+</section>
+
+    <!-- ============================================================
+    CATEGORY FILTERS
+    ============================================================ -->
+    <div class="container">
+        <div class="category-tabs" id="categoryTabs">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="motor">Motor Bike</button>
+            <button data-filter="cycling">Cycling</button>
+            <button data-filter="gym">Gym</button>
+            <button data-filter="fashion">Fashion</button>
+            <button data-filter="safety">Safety</button>
+            <button data-filter="jackets">Jackets</button>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    PRODUCTS
+    ============================================================ -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <!-- Products injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TRUST BANNER
+    ============================================================ -->
+    <div class="trust-banner">
+        <div class="container">
+            <div class="trust-item">
+                <i class="fas fa-truck"></i>
+                <div>
+                    <h6>Free Shipping</h6>
+                    <p>On orders over $500</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                    <h6>Premium Quality</h6>
+                    <p>ISO &amp; CE certified</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-undo-alt"></i>
+                <div>
+                    <h6>Easy Returns</h6>
+                    <p>30-day return policy</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-headset"></i>
+                <div>
+                    <h6>24/7 Support</h6>
+                    <p>Dedicated team</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h4>Premier<span>Exports</span></h4>
+                    <p>Leading manufacturer and exporter of premium leather safety gloves, cycling gloves, motor bike gloves, and leather products in Pakistan.</p>
+                    <div class="social-row">
+                        <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="tw"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="amz"><i class="fab fa-amazon"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h6>Quick Links</h6>
+                    <a href="index.html">Home</a>
+                    <a href="about_us.html">About Us</a>
+                    <a href="ceo_message.html">Company</a>
+                    <a href="inquiry_form.html">Inquiry</a>
+                    <a href="contact_us.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h6>Products</h6>
+                    <a href="moter_bike_gloves.html">Motor Bike Gloves</a>
+                    <a href="cycling_gloves.html">Cycling Gloves</a>
+                    <a href="sports_gloves.html">Gym Gloves</a>
+                    <a href="fashion_gloves.html">Fashion Gloves</a>
+                    <a href="leather_jackets.html">Leather Jackets</a>
+                    <a href="leather_bags.html">Leather Bags &amp; Belts</a>
+                    <a href="fire_fighting_gloves.html">Fire Fighting Gloves</a>
+                    <a href="cutresistant.html">Cut Resistant Gloves</a>
+                    <a href="welding.html">Welding Gloves</a>
+                    <a href="splitleather.html">Split Leather Gloves</a>
+                    <a href="leatherfit.html">Leather Fit Gloves</a>
+                    <a href="hydrofugegloves.html">Hydrofuge Gloves</a>
+                    <a href="synthetic.html">Synthetic Leather Gloves</a>
+                    <a href="covid.html">Hospital Wear</a>
+                    <a href="impact_resistant_gloves.html">Impact Resistant Gloves</a>
+                    <a href="apparel.html">T-Shirts / Hoodies</a>
+                    <a href="work_wear.html">Work Wear</a>
+                    <a href="cotton_gloves.html">Cotton Gloves</a>
+                </div>
+                <div class="footer-col">
+                    <h6>Support</h6>
+                    <a href="privacypolicy.html">Privacy Policy</a>
+                    <a href="returnsrefund.html">Returns &amp; Refunds</a>
+                    <a href="shipping.html">Shipping</a>
+                    <a href="tc.html">Terms &amp; Conditions</a>
+                    <a href="download_cat.html">Download Catalog</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Premier Exports (Pvt.) Limited. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    CART SIDEBAR (kept but will always be empty since no add-to-cart)
+    ============================================================ -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your <span>Cart</span></h3>
+            <button class="close-btn" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Your cart is empty.</p>
+                <p style="font-size:13px;color:#bbb;">Start adding some products!</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span class="total-price" id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">
+                <i class="fas fa-lock"></i> Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    TOAST
+    ============================================================ -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMsg">Added to cart!</span>
+    </div>
+
+    <!-- ============================================================
+    FLOATING WHATSAPP
+    ============================================================ -->
+    <a href="https://wa.me/92421234567" target="_blank" class="wa-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script>
+ // ============================================================
+// PRODUCT DATA (UPDATED with all categories)
+// ============================================================
+const products = [
+    { id: 1, name: 'Motor Bike Gloves', price: 45.99, category: 'motor', img: 'images/products/abw07.png',
+        badge: 'Best Seller' },
+    { id: 2, name: 'Cycling Gloves', price: 32.50, category: 'cycling', img: 'images/products/pe2003.png',
+        badge: 'New' },
+    { id: 3, name: 'Gym Gloves', price: 28.99, category: 'gym', img: 'images/products/ads01.png', badge: '' },
+    { id: 4, name: 'Fashion Gloves', price: 39.00, category: 'fashion', img: 'images/products/pe6001.png',
+        badge: 'Trending' },
+    { id: 5, name: 'Leather Jacket', price: 89.99, category: 'jackets', img: 'images/products/ahr03.png',
+        badge: 'Premium' },
+    { id: 6, name: 'Leather Bags & Belts', price: 55.00, category: 'bags', img: 'images/products/amg50.png',
+        badge: '' },
+    { id: 7, name: 'Fire Fighting Gloves', price: 55.00, category: 'safety', img: 'images/products/ff.png',
+        badge: '' },
+    { id: 8, name: 'Cut Resistant Gloves', price: 48.00, category: 'safety', img: 'images/products/cutresistant1.png',
+        badge: '' },
+    { id: 9, name: 'Welding Gloves', price: 42.50, category: 'safety', img: 'images/products/welding1.png',
+        badge: '' },
+    { id: 10, name: 'Split Leather Gloves', price: 35.00, category: 'safety', img: 'images/products/splitleather1.png',
+        badge: '' },
+    { id: 11, name: 'Leather Fit Gloves', price: 38.00, category: 'motor', img: 'images/products/leatherfit1.png',
+        badge: '' },
+    { id: 12, name: 'Hydrofuge Gloves', price: 40.00, category: 'safety', img: 'images/products/hydrofuge1.png',
+        badge: '' },
+    { id: 13, name: 'Synthetic Leather Gloves', price: 30.00, category: 'motor',
+        img: 'images/products/syntheticfit1.png', badge: '' },
+    { id: 14, name: 'Hospital Wear', price: 22.00, category: 'safety', img: 'images/products/j1.jpg', badge: '' },
+    { id: 15, name: 'Impact Resistant Gloves', price: 52.00, category: 'safety', img: 'images/products/pe_200.jpeg',
+        badge: 'New' },
+    { id: 16, name: 'T-Shirts / Hoodies', price: 25.00, category: 'fashion', img: 'images/products/tex.png',
+        badge: '' },
+    { id: 17, name: 'Work Wear', price: 35.00, category: 'safety', img: 'images/products/work_wear_placeholder.jpg',
+        badge: '' },
+    { id: 18, name: 'Cotton Gloves', price: 15.00, category: 'safety', img: 'images/products/cotton_gloves_placeholder.jpg',
+        badge: '' }
+];
+
+// ============================================================
+// CART STATE (kept but no longer used)
+// ============================================================
+let cart = JSON.parse(localStorage.getItem('premierCart')) || [];
+
+function saveCart() {
+    localStorage.setItem('premierCart', JSON.stringify(cart));
+    updateCartUI();
+}
+
+function updateCartUI() {
+    const count = cart.reduce((sum, item) => sum + item.qty, 0);
+    document.getElementById('cartCount').textContent = count;
+
+    const itemsContainer = document.getElementById('cartItems');
+    const totalEl = document.getElementById('cartTotal');
+
+    if (cart.length === 0) {
+        itemsContainer.innerHTML = `
+                <div class="cart-empty">
+                    <i class="fas fa-shopping-bag"></i>
+                    <p>Your cart is empty.</p>
+                    <p style="font-size:13px;color:#bbb;">Start adding some products!</p>
+                </div>
+            `;
+        totalEl.textContent = '$0.00';
+        return;
+    }
+
+    let html = '';
+    let total = 0;
+
+    cart.forEach((item, index) => {
+        const prod = products.find(p => p.id === item.id);
+        if (!prod) return;
+        const subtotal = prod.price * item.qty;
+        total += subtotal;
+
+        html += `
+                <div class="cart-item">
+                    <img src="${prod.img}" alt="${prod.name}" />
+                    <div class="item-info">
+                        <h6>${prod.name}</h6>
+                        <div class="item-price">$${prod.price.toFixed(2)}</div>
+                        <div class="item-qty">
+                            <button onclick="updateQty(${index}, -1)">−</button>
+                            <span>${item.qty}</span>
+                            <button onclick="updateQty(${index}, 1)">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-btn" onclick="removeItem(${index})">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+            `;
+    });
+
+    itemsContainer.innerHTML = html;
+    totalEl.textContent = '$' + total.toFixed(2);
+}
+
+function updateQty(index, delta) {
+    if (cart[index]) {
+        cart[index].qty += delta;
+        if (cart[index].qty <= 0) {
+            cart.splice(index, 1);
+        }
+        saveCart();
+    }
+}
+
+function removeItem(index) {
+    cart.splice(index, 1);
+    saveCart();
+}
+
+function addToCart(productId) {
+    const prod = products.find(p => p.id === productId);
+    if (!prod) return;
+
+    const existing = cart.find(item => item.id === productId);
+    if (existing) {
+        existing.qty += 1;
+    } else {
+        cart.push({ id: productId, qty: 1 });
+    }
+
+    saveCart();
+    showToast(`${prod.name} added to cart!`);
+}
+
+function toggleCart() {
+    const overlay = document.getElementById('cartOverlay');
+    const sidebar = document.getElementById('cartSidebar');
+    overlay.classList.toggle('open');
+    sidebar.classList.toggle('open');
+    document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
+}
+
+function checkout() {
+    if (cart.length === 0) {
+        showToast('Your cart is empty!');
+        return;
+    }
+    alert('Thank you for your order! This is a demo store.');
+    cart = [];
+    saveCart();
+    toggleCart();
+    showToast('Order placed successfully!');
+}
+
+// ============================================================
+// TOAST
+// ============================================================
+let toastTimer;
+
+function showToast(msg) {
+    const toast = document.getElementById('toast');
+    document.getElementById('toastMsg').textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove('show'), 2800);
+}
+
+// ============================================================
+// PRODUCT PAGE MAPPING (UPDATED with all 18 categories)
+// ============================================================
+const productPageMap = {
+    'Motor Bike Gloves': 'moter_bike_gloves.html',
+    'Cycling Gloves': 'cycling_gloves.html',
+    'Gym Gloves': 'sports_gloves.html',
+    'Fashion Gloves': 'fashion_gloves.html',
+    'Leather Jacket': 'leather_jackets.html',
+    'Leather Bags & Belts': 'leather_bags.html',
+    'Fire Fighting Gloves': 'fire_fighting_gloves.html',
+    'Cut Resistant Gloves': 'cutresistant.html',
+    'Welding Gloves': 'welding.html',
+    'Split Leather Gloves': 'splitleather.html',
+    'Leather Fit Gloves': 'leatherfit.html',
+    'Hydrofuge Gloves': 'hydrofugegloves.html',
+    'Synthetic Leather Gloves': 'synthetic.html',
+    'Hospital Wear': 'covid.html',
+    'Impact Resistant Gloves': 'impact_resistant_gloves.html',
+    'T-Shirts / Hoodies': 'apparel.html',
+    'Work Wear': 'work_wear.html',
+    'Cotton Gloves': 'cotton_gloves.html'
+};
+
+// ============================================================
+// RENDER PRODUCTS (with click navigation)
+// ============================================================
+function renderProducts(filter = 'all') {
+    const grid = document.getElementById('productGrid');
+    const filtered = filter === 'all' ? products : products.filter(p => p.category === filter);
+
+    if (filtered.length === 0) {
+        grid.innerHTML =
+            `<p style="grid-column:1/-1;text-align:center;color:#999;padding:40px 0;">No products found in this category.</p>`;
+        return;
+    }
+
+    let html = '';
+    filtered.forEach(p => {
+        const pageUrl = productPageMap[p.name] || 'inquiry_form.html';
+        html += `
+                <div class="product-card reveal-scale" data-id="${p.id}" data-url="${pageUrl}">
+                    ${p.badge ? `<div class="card-badge">${p.badge}</div>` : ''}
+                    <button class="card-wishlist" aria-label="Wishlist" onclick="event.stopPropagation();">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <div class="card-img">
+                        <img src="${p.img}" alt="${p.name}" loading="lazy" />
+                    </div>
+                    <h6>${p.name}</h6>
+                    <!-- Price and Add to Cart button removed -->
+                </div>
+            `;
+    });
+
+    grid.innerHTML = html;
+
+    // Add click listeners to product cards
+    document.querySelectorAll('.product-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const url = this.dataset.url;
+            if (url) {
+                window.location.href = url;
+            }
+        });
+    });
+
+    observeReveals();
+}
+
+// ============================================================
+// CATEGORY FILTERS
+// ============================================================
+document.querySelectorAll('#categoryTabs button').forEach(btn => {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('#categoryTabs button').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        renderProducts(this.dataset.filter);
+    });
+});
+
+// ============================================================
+// MOBILE NAV
+// ============================================================
+document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('open');
+});
+
+// ============================================================
+// THEME — DISABLED (toggle button removed)
+// ============================================================
+// Theme functionality has been removed. The site uses the default light theme.
+
+// ============================================================
+// SCROLL REVEAL (Intersection Observer)
+// ============================================================
+function observeReveals() {
+    const els = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    els.forEach(el => observer.observe(el));
+}
+
+// ============================================================
+// HEADER SCROLL SHADOW
+// ============================================================
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('mainHeader');
+    if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+// ============================================================
+// INIT
+// ============================================================
+renderProducts('all');
+updateCartUI();
+
+// Re-observe after render
+setTimeout(observeReveals, 200);
+
+// ============================================================
+// KEYBOARD: ESC to close cart
+// ============================================================
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const overlay = document.getElementById('cartOverlay');
+        if (overlay.classList.contains('open')) {
+            toggleCart();
+        }
+    }
+});
+
+// ============================================================
+// SLIDER (optional — only runs if elements exist)
+// ============================================================
+const sliderTrack = document.getElementById('sliderTrack');
+if (sliderTrack) {
+    let sliderIndex = 0;
+    const slides = sliderTrack.children;
+    const totalSlides = slides.length;
+    const dotsContainer = document.getElementById('sliderDots');
+
+    if (dotsContainer && totalSlides > 0) {
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement('span');
+            dot.className = 'dot' + (i === 0 ? ' active' : '');
+            dot.dataset.index = i;
+            dot.addEventListener('click', function() {
+                goToSlide(parseInt(this.dataset.index));
+            });
+            dotsContainer.appendChild(dot);
+        }
+    }
+
+    function goToSlide(index) {
+        sliderIndex = index;
+        if (sliderIndex < 0) sliderIndex = totalSlides - 1;
+        if (sliderIndex >= totalSlides) sliderIndex = 0;
+        sliderTrack.style.transform = 'translateX(-' + (sliderIndex * 100) + '%)';
+
+        const dots = document.querySelectorAll('.slider-dots .dot');
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === sliderIndex);
+        });
+    }
+
+    function moveSlider(direction) {
+        goToSlide(sliderIndex + direction);
+    }
+
+    let sliderInterval = setInterval(function() {
+        moveSlider(1);
+    }, 5000);
+
+    const sliderContainer = document.querySelector('.slider-container');
+    if (sliderContainer) {
+        sliderContainer.addEventListener('mouseenter', function() {
+            clearInterval(sliderInterval);
+        });
+        sliderContainer.addEventListener('mouseleave', function() {
+            sliderInterval = setInterval(function() {
+                moveSlider(1);
+            }, 5000);
+        });
+    }
+
+    goToSlide(0);
+}
+    </script>
+
+</body>
+</html>

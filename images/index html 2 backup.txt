@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from www.premierexports.com.pk/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:13:49 GMT -->
+<head><meta charset="utf-8"><!--[if IE 9 ]><html class="ie9" lang="en"><![endif]--><!--[if (gt IE 9)|!(IE)]><!--<![endif]-->
+	<title>PREMIER EXPORTS (PRIVATE) LIMITED LEATHER SAFETY GLOVES PAKISTAN</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><!--meta info--><meta name="author" content="MDG IT Solutions   https://mdgcode.wordpress.com"><meta name="keywords" content="Premier Exports Gloves Premier Exports Lahore Premier Exports Pakistan Premier Exports Leather Gloves Leather Lahore Leather Pakistan Leather Best Leather Cycling Gloves Cycling Lahore Cycling Pakistan Cycling Best Cycling Fashion Gloves Fashion Lahore Fashion Pakistan Fashion Best Feshion Motor Bike Gloves Motor Bike Lahore Moter Bike Pakistan Moter Bike Best Moter Bike Leather Jackets Leather Jackets Lahore Leather Jackets Pakistan Leather Jackets Best Leather Jackets Leather Bags & Belts Leather Bags & Belts Lahore Leather Bags & Belts Pakistan Leather Bags & Belts Best Leather Bags & Belts Sports Gloves Sports Gloves Sports Gloves Pakistan Sports Gloves Best Sports Gloves Gloves Lahore Pakistan Best Gloves Lahore Pakistan Best"><meta name="description" content="Premier Exports Leading Gloves supplier Company of Lahore Pakistan">
+	<link href="images/logo.png" rel="icon" type="image/ico" /><!--stylesheet include-->
+	<link href="css/flexslider.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/jquery.custom-scrollbar.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" media="all" rel="stylesheet" type="text/css" /><!--font include-->
+	<link href="css/font-awesome.min.css" rel="stylesheet" /><meta name="google-site-verification" content="M2AlnWYmTBiZdySuSp7mXY7FnLU3D15QJOEBXh5fLKE" /><script data-ad-client="ca-pub-7202765609359744" async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script><!-- Hotjar Tracking Code for https://www.premierexports.com.pk --><script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2728101,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-220066763-1">
+</script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-220066763-1');
+</script>
+</head>
+<body><!--boxed layout-->
+<div class="wide_layout relative w_xs_auto">
+<header role="banner"><!--header top part--><!--header bottom part-->
+<section class="h_bot_part container">
+<div class="clearfix row">
+<div class="col-lg-6 col-md-6 col-sm-4 t_xs_align_c"><a class="logo m_xs_bottom_15 d_xs_inline_b" href="index-2.html"><img alt="" src="images/logo.png" /> </a></div>
+
+<div class="col-lg-6 col-md-6 col-sm-8 p_top_10">
+<dl class="l_height_medium header_border_centre">
+	<dt class="f_size_large"><span style="font-size:18px;">Premier Exports Private Limited<br />
+	Head Office: House No. 213 Block G3 M.A Jauhar Town, Lahore, Pakistan.</span></dt>
+</dl>
+<style type="text/css">.button {
+  background-color:#ff0000;
+  border: 2px solid #ff0000;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {border-radius: 4px;}
+</style>
+<a class="button" href="covid_19.html">COVID-19</a> <img src="images/iso_logo.png" /> <img src="images/ce_logo.png" /> <img src="images/lcci_logo.png" /></div>
+</div>
+</section>
+<marquee behavior="scroll" direction="left">100% Genuine Leather &nbsp; &nbsp; Info@premierexports.com.pk &nbsp; &nbsp; Phone: +92 323 731 85 92 &nbsp;&nbsp;Leather gloves &nbsp;&nbsp;Leather Jackets&nbsp;&nbsp;Leather bags&nbsp;&nbsp;Work wear&nbsp;&nbsp;P.P.E&nbsp;&nbsp;COVID protection</marquee> <!--main menu container-->
+
+<div class="container">
+<section class="menu_wrap type_4 relative clearfix t_xs_align_c m_bottom_20"><!--button for responsive menu--><button class="r_corners centered_db d_none tr_all_hover d_xs_block m_bottom_25" id="menu_button"></button><!--main menu-->
+
+<nav class="f_left f_xs_none d_xs_none t_xs_align_l" role="navigation">
+<ul class="horizontal_list main_menu clearfix">
+	<li class="current relative f_xs_none m_xs_bottom_10"><a class="tr_delay_hover color_light tt_uppercase" href="index-2.html"><b>Home</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_10"><a class="tr_delay_hover color_light tt_uppercase" href="about_us.html"><b>About us</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_10"><a class="tr_delay_hover color_light tt_uppercase" href="ceo_message.html"><b>Company</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_10"><a class="tr_delay_hover color_light tt_uppercase" href="inquiry_form.html"><b>Inquiry Form</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_10"><a class="tr_delay_hover color_light tt_uppercase" href="contact_us.html"><b>Contact Us</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_10"><a class="tr_delay_hover color_light tt_uppercase" href="safety_signs.html"><b>Safety Signs</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_10"><a class="tr_delay_hover color_light tt_uppercase" href="leather_info.html"><b>Leather Guide</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_10"><a class="tr_delay_hover color_light tt_uppercase" href="covid_19.html"><b>COVID-19</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_10"><a class="tr_delay_hover color_light tt_uppercase" href="accreditations.html"><b>Accreditations</b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_10"><a class="tr_delay_hover color_light tt_uppercase" href="download_cat.html"><b><span style="background-color:#FF0000;">DOWNLOAD CATALOG</span></b></a> <!--sub menu--></li>
+	<li class="relative f_xs_none m_xs_bottom_10"><a class="tr_delay_hover color_light tt_uppercase" href="events/index_1.html"><b>Safety blog</b></a> <!--sub menu--></li>
+</ul>
+</nav>
+</section>
+</div>
+</header>
+<marquee behavior="scroll" direction="left"> <img alt="Split leather" height="250" src="images/j1.jpg" width="250" /> <img alt="Split leather" height="250" src="images/j2.jpg" width="250" /> <img alt="Split leather" height="250" src="images/j3.jpg" width="250" /> <img alt="Split leather" height="250" src="images/j4.jpg" width="250" /> <img alt="Split leather" height="250" src="images/j5.jpg" width="250" /> <img alt="Split leather" height="250" src="images/j6.jpg" width="250" /> <img alt="Split leather" height="250" src="images/j7.jpg" width="250" /> <img alt="Split leather" height="250" src="images/j8.jpg" width="250" /> </marquee> <!--slider with banners-->
+
+<section class="container">
+<div class="row clearfix"><!--banners-->
+<div class="col-lg-3 col-md-3 col-sm-3 t_xs_align_c s_banners"><a class="d_block d_xs_inline_b m_bottom_20 animate_ftr" href="#"><img alt="" src="images/slide_04.jpg" /> </a> <a class="d_block d_xs_inline_b m_xs_left_5 animate_ftr m_mxs_left_0" href="#"> <img alt="" src="images/banner_img_8.jpg" /> </a></div>
+<!--slider-->
+
+<div class="col-lg-9 col-md-9 col-sm-9 m_xs_bottom_30">
+<div class="flexslider animate_ftr long"><img class="mySlides" height="450" src="images/slide_04.jpg" style="width:860px" /> <img class="mySlides" height="450" src="images/slide_05.jpg" style="width:860px" /> <img class="mySlides" height="450" src="images/slide_06.jpg" style="width:860px" /> <img class="mySlides" height="450" src="images/slide_07.jpg" style="width:860px" /> <span style="font-size:11px;"><img class="mySlides" height="450" src="images/slide_08.jpg" style="width:860px" /></span> <img class="mySlides" height="450" src="images/slide_09.jpg" style="width:860px" /> <img class="mySlides" height="450" src="images/slide_10.jpg" style="width:860px" /> <img class="mySlides" height="450" src="images/slide_11.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_12.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_13.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_14.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_15.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_16.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_17.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_18.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_19.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_20.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_21.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_22.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_23.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_24.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_25.jpg" style="width:860px" /><img class="mySlides" height="450" src="images/slide_26.jpg" style="width:860px" /></div>
+</div>
+</div>
+</section>
+<!--content-->
+
+<div class="page_content_offset">
+<div class="container"><!--banners-->
+<div class="row clearfix">
+<aside class="col-lg-3 col-md-3 col-sm-3 m_xs_bottom_30"><!--widgets-->
+<figure class="widget animate_ftr shadow r_corners wrapper m_bottom_30">
+<figcaption>
+<h3 class="color_light">Products</h3>
+</figcaption>
+
+<div class="widget_content"><!--Categories list------------------------------------------------------------------------------------->
+<ul class="categories_list">
+	<li><a class="f_size_small color_dark d_block relative" href="moter_bike_gloves.html">Motor Bike Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="cycling_gloves.html">Cycling Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="sports_gloves.html">Gym Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="fashion_gloves.html">Fashion Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="leather_jackets.html">Leather Jackets </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="leather_bags.html">Leather Bags &amp; Belts </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="fire_fighting_gloves.html">Fire Fighting Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="cotton_gloves.html">Cotton Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="work_wear.html">Work Wear </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="cutresistant.html">Cut Resistant Gloves</a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="splitleather.html">Split Leather Gloves</a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="welding.html">Welding Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="leatherfit.html">Leather Fit Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="hydrofugegloves.html">Hydrofuge Gloves </a></li>
+	<li><a class="f_size_small color_dark d_block relative" href="synthetic.html">Synthetic Leather Gloves </a></li>
+	<li><a class="f_size_small color_dark e_block relative" href="covid.html">COVID Protection </a></li>
+</ul>
+</div>
+</figure>
+<!--compare products--><!--wishlist--><!--banner--><a class="widget animate_ftr d_block r_corners m_bottom_30" href="#"><img alt="" src="images/banner_img_6.jpg" /> </a> <!--Bestsellers--> <!--tags--></aside>
+<!-- Product on index page --------------------------------------------------------------------------------->
+
+<section class="col-lg-9 col-md-9 col-sm-9"><!--products-->
+<section class="products_container a_type_2 category_grid clearfix m_bottom_25"><!--product item--><!--product item-->
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="moter_bike_gloves.html"><!--hot product--> <!--<span class="hot_stripe"><img src="images/hot_product.png" alt=""></span>--> <img alt="" class="tr_all_hover" src="products/abw07.png" /> </a> <!--description and price of productMoter_Bike_gloves-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="moter_bike_gloves.html">Motor Bike Gloves </a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="cycling_gloves.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/PE2003.png" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="cycling_gloves.html">Cycling Gloves</a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="sports_gloves.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/ads01.png" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="sports_gloves.html">Gym Gloves </a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="fashion_gloves.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/PE6001.png" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="fashion_gloves.html">Fashion Gloves</a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="leather_jackets.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/ahr03.png" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="leather_jackets.html">Leather Jackets</a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="leather_bags.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/AMG50.png" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="leather_bags.html">Leather Bags &amp; Belts </a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="fire_fighting_gloves.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/FF.png" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="fire_fighting_gloves.html">Fire Fighting Gloves </a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="cotton_gloves.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/CG.png" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="cotton_gloves.html">Cotton Gloves </a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="work_wear.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/WW.png" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="work_wear.html">Work Wear </a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="cutresistant.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/cutresistant1.png" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="cutresistant.html">Cut Resistant Gloves </a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="splitleather.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/splitleather1.png" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="splitleather.html">Split Leather Gloves </a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="welding.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/welding1.png" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="welding.html">Welding Gloves </a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="leatherfit.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/leatherfit1.png" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="leatherfit.html">Leather Fit Gloves </a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="hydrofugegloves.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/hydrofuge1.png" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="hydrofugegloves.html">Hydrofuge Gloves </a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="synthetic.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/syntheticfit1.png" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="synthetic.html">Synthetic Leather Gloves </a></h6>
+</figure>
+</div>
+<!--product item-->
+
+<div class="product_item hit w_xs_full">
+<figure class="r_corners photoframe animate_ftb type_2 t_align_c tr_all_hover shadow relative"><!--product preview--><a class="d_block relative pp_wrap m_bottom_15" href="covid.html"><!--hot product--> <img alt="" class="tr_all_hover" src="products/j1.jpg" /> </a> <!--description and price of product-->
+
+<h6 class="m_bottom_10"><a class="color_dark" href="covid.html">COVID Protection </a></h6>
+</figure>
+</div>
+</section>
+<!--Jquery--><script src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!--Floating WhatsApp css--></section>
+</div>
+</div>
+</div>
+</div>
+<!-- Start of HubSpot Embed Code --><script type="text/javascript" id="hs-script-loader" async defer src="../js-eu1.hs-scripts.com/25610241.json"></script><!-- End of HubSpot Embed Code --></body>
+<link href="../rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css" rel="stylesheet" /><!--Floating WhatsApp javascript--><script type="text/javascript" src="../rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script><!--Div where the WhatsApp will be rendered-->
+<div id="WAButton"></div>
+<a href="https://wa.me/!!!923237318592!!!?text=Hi%20Atif,%20I%20am%20sending%20you%20this%20message%20because%20I%20am%20interested%20in%20your%20business!" style="text-decoration: none;" target="_blank"><img height="50" src="../i.ibb.co/N9P0K9H/239px-Whats-App-svg.png" width="50" /> </a> <a href="https://wa.me/!!!923237318592!!!?text=Hi%20Atif,%20I%20am%20sending%20you%20this%20message%20because%20I%20am%20interested%20in%20your%20business!" target="_blank"> Send Message </a> <!-- Scroll Bars --> <marquee behavior="scroll" direction="left"> <img alt="Split leather" height="110" src="images/j1.png" width="120" /> <img alt="Split leather" height="110" src="images/j2.png" width="120" /> <img alt="Split leather" height="110" src="images/j3.png" width="120" /> <img alt="Split leather" height="110" src="images/j4.png" width="120" /> <img alt="Split leather" height="110" src="images/j5.png" width="120" /> <img alt="Split leather" height="110" src="images/j6.png" width="120" /> <img alt="Split leather" height="110" src="images/j7.png" width="120" /> <img alt="Split leather" height="110" src="images/j8.png" width="120" /> </marquee> <marquee behavior="scroll" direction="right"> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5001.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5002.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5003.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5004.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5005.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5006.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5007.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/splitleather/pe_5008.png" width="120" /> </marquee> <marquee behavior="scroll" direction="left"> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5001.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5002.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5004.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5006.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5008.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5010.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5012.png" width="120" /> <img alt="Split leather" height="110" src="products_detail/leather_gloves/pe5014.png" width="120" /> </marquee> <!-- hitwebcounter Code START --> <!-- hitwebcounter Code START --> <a href="https://www.hitwebcounter.com/" target="_blank"> <img alt="web counter" border="2" src="https://hitwebcounter.com/counter/counter.php?page=7903638&amp;style=0027&amp;nbdigits=8&amp;type=page&amp;initCount=1" title="Free Counter" /></a>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td align="center"><!-- hitwebcounter Code START --><a href="http://www.hitwebcounter.com/" target="_blank"><img alt="---" border="0" src="http://hitwebcounter.com/counter/counter.php?page=6942380&amp;style=0036&amp;nbdigits=5&amp;type=page&amp;initCount=0" title="----" /> </a><br />
+			<!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com/" style="font-family: Geneva, Arial, Helvetica; 
+                                        font-size: 9px; color: #9C9795; text-decoration: none ;" target="_blank" title="Visitors Total"><strong>Visitors Total </strong> </a></td>
+		</tr>
+	</tbody>
+</table>
+<!--markup footer-->
+
+<footer class="type_1" id="footer">
+<div class="footer_top_part">
+<div class="container t_align_c"><!--social icons-->
+<ul class="clearfix d_inline_b horizontal_list social_icons">
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="index-2.html">Home </a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="about_us.html">About us </a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="ceo_message.html">Company </a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="inquiry_form.html">Inquiry Form </a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="contact_us.html">Contact us </a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="safety_signs.html">Safety signs </a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="leather_info.html">Leather Guide</a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="accreditations.html">Accreditations</a></li>
+	<li class="m_bottom_5 relative"><a class="r_corners t_align_c tr_delay_hover f_size_ex_large" href="accreditations.html">Events</a></li>
+</ul>
+</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap"><a href="https://www.facebook.com/premier.coltd.7" rel="noopener noreferrer" style="text-decoration:none;border:0;width:36px;height:36px;padding:0;margin:3px;color:#36e911;" target="_blank"><svg class="niftybutton-facebook" data-name="Facebook" data-tag="fac" preserveaspectratio="xMidYMid meet" style="display:block;fill:currentColor" viewbox="0 0 512 512"> <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path> </svg></a><a href="https://twitter.com/exports_premier" rel="noopener noreferrer" style="text-decoration:none;border:0;width:36px;height:36px;padding:0;margin:3px;color:#36e911;" target="_blank"><svg class="niftybutton-twitter" data-name="Twitter" data-tag="twi" preserveaspectratio="xMidYMid meet" style="display:block;fill:currentColor" viewbox="0 0 512 512"> <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"></path> </svg></a><a href="https://instagram.com/premier_exportsltd" rel="noopener noreferrer" style="text-decoration:none;border:0;width:36px;height:36px;padding:0;margin:3px;color:#36e911;" target="_blank"><svg class="niftybutton-instagram" data-name="Instagram" data-tag="ins" preserveaspectratio="xMidYMid meet" style="display:block;fill:currentColor" viewbox="0 0 512 512"> <path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z"></path> <path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z"></path> <circle cx="351.5" cy="160.5" r="21.5"></circle> </svg></a><a href="https://amazon.com/?_encoding=UTF8&amp;camp=1789&amp;creative=9325&amp;linkCode=ur2&amp;tag=storypodca-20&amp;linkId=2P4S6EY6B462X4AR" rel="noopener noreferrer" style="text-decoration:none;border:0;width:36px;height:36px;padding:0;margin:3px;color:#36e911;" target="_blank"><svg class="niftybutton-amazon" data-name="Amazon" data-tag="ama" preserveaspectratio="xMidYMid meet" style="display:block;fill:currentColor" viewbox="0 0 512 512"> <path d="M370.66 299.18c-8.7-12.06-18-21.86-18-44.22v-74.33c0-31.49 2.2-60.42-21.02-82.1-18.28-17.57-48.63-23.76-71.83-23.76-45.38 0-96.05 16.94-106.68 73.04-1.15 5.95 3.22 9.12 7.13 9.96l46.21 5.03c4.35-.23 7.47-4.48 8.29-8.79 3.97-19.31 20.16-28.64 38.35-28.64 9.83 0 20.99 3.64 26.8 12.38 6.69 9.84 5.78 23.27 5.78 34.63v6.19c-27.66 3.08-63.82 5.15-89.71 16.53-29.88 12.91-50.88 39.24-50.88 77.96 0 49.58 31.27 74.36 71.43 74.36 33.92 0 52.46-8 78.64-34.68 8.7 12.53 11.5 18.63 27.39 31.8a9.821 9.821 0 0 0 11.25-1.12l.12.11c9.5-8.48 26.81-23.52 36.58-31.69 3.88-3.14 3.23-8.32.15-12.66zm-84.94-72.07h-.02c0 18.6.44 34.06-8.92 50.59-7.58 13.45-19.64 21.71-33 21.71-18.33 0-29.02-13.95-29.02-34.6 0-40.64 36.46-48.04 70.96-48.04v10.34zM387.54 373.45c-41.49 22.22-86.58 32.93-127.62 32.93-60.8 0-119.68-21.03-167.3-55.95-4.18-3.05-7.26 2.33-3.79 6.28 44.16 50.21 102.45 80.41 167.22 80.41 46.21 0 99.86-18.33 136.88-52.75 6.12-5.7.87-14.27-5.39-10.92z"></path> <path d="M397.65 406.91c-1.37 3.43 1.57 4.83 4.68 2.22 20.22-16.91 25.44-52.33 21.3-57.43-4.11-5.07-39.43-9.45-60.99 5.69-3.32 2.33-2.75 5.54.94 5.09 12.15-1.45 39.18-4.71 43.98 1.48 4.81 6.18-5.36 31.61-9.91 42.95z"></path> </svg></a></div>
+<!--copyright part-->
+
+<div class="footer_bottom_part">
+<div class="container clearfix t_mxs_align_c">
+<p class="f_left f_mxs_none m_mxs_bottom_10">Copyright &copy; 2020 Premier Exports (Pvt.) Limited. All Rights Reserved</p>
+
+<ul class="f_right horizontal_list clearfix f_mxs_none d_mxs_inline_b">
+	<li>Design By: https://mdgcode.wordpress.com</li>
+</ul>
+</div>
+</div>
+</footer>
+<!--social widgets-->
+
+<ul class="social_widgets d_xs_none"><!--facebook-->
+	<li class="relative"><button class="sw_button t_align_c facebook"></button>
+
+	<div class="sw_content">
+	<h3 class="color_dark m_bottom_20">Join Us on Facebook</h3>
+	<iframe allow="encrypted-media" allowtransparency="true" frameborder="0" height="0" scrolling="no" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPremier-Exports-Pvt-Limited-260070417921502%2F&amp;tabs=timeline&amp;width=0&amp;height=0&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId" style="border:none;overflow:hidden" width="0"></iframe></div>
+	</li>
+	<!--twitter feed-->
+	<li class="relative"><button class="sw_button t_align_c twitter"></button>
+	<div class="sw_content">
+	<h3 class="color_dark m_bottom_20">Latest Tweets</h3>
+
+	<div class="twitterfeed m_bottom_25"></div>
+	<a class="button_type_4 d_inline_b r_corners tr_all_hover color_light tw_color" href="https://twitter.com/exports_premier" role="button">Follow on Twitter</a></div>
+	</li>
+	<!--scripts include--><script src="js/jquery-2.1.0.min.js"></script><script src="js/retina.js"></script><script src="js/jquery.flexslider-min.js"></script><script src="js/waypoints.min.js"></script><script src="js/jquery.isotope.min.js"></script><script src="js/owl.carousel.min.js"></script><script src="js/jquery.tweet.min.js"></script><script src="js/jquery.custom-scrollbar.js"></script><script src="js/scripts.js"></script><script type="text/javascript" src="s7.addthis.com/js/300/addthis_widget.html#pubid=xa-5306f8f674bfda4c"></script><script>
+
+<!-- Automatic Slideshow - change image every 4 seconds--------------------------->
+		var myIndex = 0;
+			carousel();
+				function carousel()
+				{
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+				   	for (i = 0; i < x.length; i++) {x[i].style.display = "none";}myIndex++;
+				   	 if (myIndex > x.length) {myIndex = 1}
+		    			x[myIndex-1].style.display = "block";
+
+    						setTimeout(carousel, 3000);
+
+				}
+
+</script>
+</ul>
+
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script> <script type="text/javascript" src="../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script> <a href="https://www.gmdu.net/">Global Manufacturers</a> <a href="https://www.gmdu.net/"><img src="../www.gmdu.net/img/logo.png" /></a> <left> <a href="http://www.theleatherconnection.com/" target="_blank"><img border="" height="116" src="../www.theleatherconnection.com/08cf0740.html" width="240" /></a> <right> <a href="https://www.lcci.com.pk/" target="_blank"><img border="" height="116" src="images/lcci.jpg" width="240" /></a> <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","../chimpstatic.com/mcjs-connected/js/users/7c67ff9cbae4eb4f12db83e74/8098271f555a5db656e47b158.js");</script> </right></left><script type="text/javascript">  
+   $(function () {
+                $('#WAButton').floatingWhatsApp({
+               phone: '923237318592', //WhatsApp Business phone number
+               headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+               popupMessage: 'Hello, how can we help you?', //Popup Message
+               showPopup: true, //Enables popup display
+               buttonImage: '<img src="whatsapp.svg" />',
+               position: "right" //Position: left | right
+           });
+       });
+</script><script charset="utf-8" type="text/javascript" src="../js-eu1.hsforms.net/forms/shell.js"></script><script>
+  hbspt.forms.create({
+	region: "eu1",
+	portalId: "25610241",
+	formId: "7ad6b7b8-3899-4920-91d3-7cf3fbc03c50"
+});
+</script>
+<!-- Mirrored from www.premierexports.com.pk/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Mar 2023 18:13:49 GMT -->
+</html>

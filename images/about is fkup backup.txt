@@ -1,0 +1,43 @@
+<h2 class="tt_uppercase color_dark m_bottom_30">Profile</h2>
+
+<div class="clearfix">
+<p class="m_bottom_10" style="text-align: justify;">Premier Exports proudly presents itself as a leather manufacturer and exporter company of premium quality leather products &amp; made ups. Our leather products are manufactured in our Production Unit in Lahore with great care, to the highest standards of workmanship. Choose any leather from sheep, goat, cow &amp; buffalo in any color and size from our catalogue. We assure you of the best quality at an unmatched economical price.</p>
+&nbsp;
+
+<p style="text-align: justify;">The leather industry of Pakistan is the second biggest export-oriented industry in the manufacturing sector and is third in its contribution towards the National Exchequer. The leather industry&rsquo;s core products in Pakistan are leather jackets, leather gloves, leather bags, leather garments, tanned leather and footwear.</p>
+&nbsp;
+
+<p style="text-align: justify;">We have a 100% in house production facility and dedicated competent staff who understands organization&rsquo;s philosophy as well as key elements of customer&rsquo;s requirement. Our Production facility includes leather tanning, leather processing, bleaching, dying, calendering, raising, cutting, stitching, pressing, packing and quality control.</p>
+&nbsp;
+
+<p><b>Our products are:</b></p>
+&nbsp;
+
+<p><b>1) Safety Gloves<br />
+2) Cycling Gloves<br />
+3) Fashion Gloves<br />
+4) Motor Bike Gloves<br />
+5) Leather Jackets<br />
+6) Sports Gloves<br />
+7) Leather Bags &amp; Belts&nbsp;<br />
+8) Fire Fighting Gloves<br />
+9) Cotton Gloves<br />
+10) Work Wear</b></p>
+
+<p><b>11) COVID Protection</b></p>
+
+<p style="text-align: justify;">The name of the company has been a symbol of innovation, consistent quality, reliability and consumer satisfaction since its inception. We are looking forward to serving you in the best possible way and at the same time keep trying to improve ourselves. If you have any doubts regarding our services or need any other information, feel free to contact us.</p>
+</div>
+
+<p style="text-align: justify;"><!--tabs--></p>
+</section>
+</div>
+</div>
+</div>
+
+<p style="text-align: justify;"><!--markup footer--></p>
+
+<footer class="type_2" id="footer">
+<div class="footer_top_part">
+<div class="container t_align_c">
+<p style="text-align: justify;"><!--social icons--></p>

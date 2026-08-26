@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company — Premier Exports</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Premier Exports - Leading manufacturer and exporter of premium leather safety gloves, cycling gloves, motor bike gloves, and leather products in Pakistan." />
+    <meta name="keywords" content="Premier Exports, leather gloves, safety gloves, cycling gloves, motor bike gloves, leather jackets, Pakistan, Lahore" />
+    <meta name="author" content="Premier Exports (Pvt) Ltd" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        /* ============================================================
+           ROOT & RESET (same as practice.html)
+           ============================================================ */
+        :root {
+            --primary: #c0392b;
+            --primary-dark: #a93226;
+            --primary-light: #e74c3c;
+            --primary-gradient: linear-gradient(135deg, #c0392b, #e74c3c);
+            --dark: #0d0d0d;
+            --dark-card: #1a1a1a;
+            --dark-surface: #242424;
+            --light: #f8f9fa;
+            --gray: #888;
+            --gray-light: #eaeaea;
+            --shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+            --shadow-hover: 0 30px 80px rgba(0, 0, 0, 0.18);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --font: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font);
+            background: #f4f5f7;
+            color: #1a1a1a;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ============================================================
+           SCROLLBAR
+           ============================================================ */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--dark);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        /* ============================================================
+           REVEAL ANIMATIONS
+           ============================================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-60px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(60px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.92);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal-scale.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* ============================================================
+           TOP BAR (same as practice)
+           ============================================================ */
+        .top-bar {
+            background: var(--dark);
+            color: #aaa;
+            font-size: 13px;
+            padding: 8px 0;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .top-bar a {
+            color: #aaa;
+            transition: color 0.3s;
+            margin-left: 18px;
+        }
+        .top-bar a:hover {
+            color: #fff;
+        }
+        .top-bar .top-left span {
+            margin-right: 6px;
+        }
+        .top-bar .top-left i {
+            color: var(--primary);
+            margin-right: 4px;
+        }
+
+        /* ============================================================
+           MAIN HEADER (same as practice)
+           ============================================================ */
+        .main-header {
+            background: #fff;
+            padding: 16px 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.92);
+            transition: box-shadow 0.3s;
+        }
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            font-size: 22px;
+            letter-spacing: -0.5px;
+            color: var(--dark, #0d0d0d);
+        }
+        .logo img {
+            height: 56px;
+            width: auto;
+        }
+        .logo span {
+            color: var(--primary, #c0392b);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .header-certifications {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .header-certifications img {
+            height: 36px;
+            width: auto;
+            background: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+            object-fit: contain;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .header-certifications img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 768px) {
+            .main-header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo img {
+                height: 40px;
+            }
+            .logo {
+                font-size: 18px;
+            }
+            .header-certifications {
+                gap: 6px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .header-certifications img {
+                height: 28px;
+                padding: 3px 6px;
+            }
+        }
+        @media (max-width: 480px) {
+            .header-certifications img {
+                height: 22px;
+                padding: 2px 4px;
+            }
+            .logo img {
+                height: 32px;
+            }
+            .logo {
+                font-size: 16px;
+            }
+        }
+
+        /* ============================================================
+           NAVIGATION (same as practice)
+           ============================================================ */
+        .nav-wrapper {
+            background: var(--dark);
+            position: sticky;
+            top: 88px;
+            z-index: 999;
+            border-bottom: 2px solid var(--primary);
+        }
+        .nav-wrapper .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        .nav-links a {
+            color: #ccc;
+            padding: 14px 20px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            transition: all 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #fff;
+            background: rgba(192, 57, 43, 0.15);
+            border-bottom-color: var(--primary);
+        }
+        .nav-links a .highlight {
+            background: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            color: #fff;
+            margin-left: 4px;
+        }
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 8px 12px;
+        }
+
+        /* ============================================================
+           COMPANY HERO (CEO Message)
+           ============================================================ */
+        .company-hero {
+            position: relative;
+            min-height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 60px 0;
+            background: #0d0d0d;
+        }
+        .company-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.60);
+            z-index: 1;
+        }
+        .company-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 80% 20%, rgba(192, 57, 43, 0.20), transparent 60%),
+                        radial-gradient(circle at 20% 80%, rgba(192, 57, 43, 0.08), transparent 50%);
+            z-index: 1;
+            pointer-events: none;
+        }
+        .company-hero .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+        }
+        .company-hero h1 {
+            font-size: 48px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+        }
+        .company-hero h1 span {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .company-hero p {
+            font-size: 18px;
+            color: #ccc;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        .company-hero-video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        /* ============================================================
+           COMPANY CONTENT (CEO Message)
+           ============================================================ */
+        .company-content {
+            padding: 40px 0 60px;
+            background: #f4f5f7;
+        }
+        .company-content .container {
+            max-width: 900px;
+        }
+
+        /* CEO Card with photo & message */
+        .ceo-card {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 40px;
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 40px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+            margin-bottom: 30px;
+            border: 1px solid #f0f0f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .ceo-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+        .ceo-photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .ceo-photo .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 72px;
+            color: #fff;
+            box-shadow: 0 8px 30px rgba(192, 57, 43, 0.25);
+            margin-bottom: 14px;
+            border: 4px solid #fff;
+            outline: 2px solid var(--primary);
+        }
+        .ceo-photo .avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .ceo-photo h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 2px;
+        }
+        .ceo-photo p {
+            font-size: 14px;
+            color: #888;
+            margin: 0;
+        }
+        .ceo-photo .ceo-title {
+            font-size: 13px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        .ceo-message h2 {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+        .ceo-message h2 span {
+            color: var(--primary);
+        }
+        .ceo-message p {
+            color: #444;
+            line-height: 1.8;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        .ceo-message p:last-child {
+            margin-bottom: 0;
+        }
+        .ceo-message .highlight-text {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Key stats inline with message */
+        .ceo-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #f0f0f0;
+        }
+        .ceo-stats .stat-item {
+            text-align: center;
+        }
+        .ceo-stats .stat-item .number {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        .ceo-stats .stat-item .label {
+            font-size: 13px;
+            color: #888;
+            font-weight: 500;
+        }
+
+        /* Philosophy cards */
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+            margin: 30px 0 20px;
+        }
+        .philosophy-card {
+            background: #fff;
+            border-radius: var(--radius-sm);
+            padding: 24px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f0f0f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .philosophy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        .philosophy-card .icon {
+            font-size: 36px;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .philosophy-card h5 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 6px;
+        }
+        .philosophy-card p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Section title */
+        .section-title {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin: 40px 0 16px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 4px;
+            background: var(--primary-gradient);
+            border-radius: 4px;
+        }
+        .section-title.centered {
+            text-align: center;
+        }
+        .section-title.centered::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* ============================================================
+           TRUST BANNER & FOOTER (same as practice)
+           ============================================================ */
+        .trust-banner {
+            background: var(--dark);
+            padding: 40px 0;
+            margin: 20px 0 0;
+        }
+        .trust-banner .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: #ccc;
+        }
+        .trust-item i {
+            font-size: 32px;
+            color: var(--primary);
+        }
+        .trust-item h6 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 2px;
+        }
+        .trust-item p {
+            font-size: 13px;
+            color: #777;
+            margin: 0;
+        }
+
+        footer {
+            background: var(--dark);
+            color: #aaa;
+            padding: 50px 0 0;
+        }
+        footer .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        footer .footer-brand h4 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        footer .footer-brand h4 span {
+            color: var(--primary);
+        }
+        footer .footer-brand p {
+            font-size: 14px;
+            max-width: 300px;
+            line-height: 1.7;
+        }
+        footer .footer-col h6 {
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        footer .footer-col a {
+            display: block;
+            color: #888;
+            font-size: 14px;
+            padding: 4px 0;
+            transition: color 0.3s, padding-left 0.3s;
+        }
+        footer .footer-col a:hover {
+            color: #fff;
+            padding-left: 6px;
+        }
+        footer .social-row {
+            display: flex;
+            gap: 14px;
+            margin-top: 16px;
+        }
+        footer .social-row a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #fff;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        footer .social-row a:hover {
+            transform: translateY(-4px);
+        }
+        footer .social-row .fb:hover { background: #1877F2; }
+        footer .social-row .tw:hover { background: #1DA1F2; }
+        footer .social-row .ig:hover { background: #E4405F; }
+        footer .social-row .amz:hover { background: #FF9900; }
+        footer .copyright {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #2a2a2a;
+            margin-top: 20px;
+        }
+
+        /* ============================================================
+           RESPONSIVE
+           ============================================================ */
+        @media (max-width: 992px) {
+            .ceo-card {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 30px 24px;
+            }
+            .ceo-photo .avatar {
+                width: 150px;
+                height: 150px;
+                font-size: 60px;
+            }
+            .philosophy-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: var(--dark);
+                padding: 10px 0;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .nav-links a {
+                padding: 12px 20px;
+                border-bottom: 1px solid #2a2a2a;
+            }
+            .nav-toggle {
+                display: block;
+            }
+            .company-hero h1 {
+                font-size: 32px;
+            }
+            .company-hero p {
+                font-size: 15px;
+            }
+            .ceo-message h2 {
+                font-size: 24px;
+            }
+            .ceo-stats {
+                grid-template-columns: 1fr 1fr;
+            }
+            .philosophy-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            footer .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .trust-banner .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+        @media (max-width: 480px) {
+            .company-hero h1 {
+                font-size: 26px;
+            }
+            .ceo-stats {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+            .ceo-card {
+                padding: 20px 16px;
+            }
+            .ceo-photo .avatar {
+                width: 120px;
+                height: 120px;
+                font-size: 48px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================================
+    TOP BAR
+    ============================================================ -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-left">
+                <span><i class="fas fa-phone"></i> +92-42-1234567</span>
+                <span><i class="fas fa-envelope"></i> info@premierexports.pk</span>
+            </div>
+            <div class="top-right">
+                <a href="#"><i class="fas fa-user"></i> Login</a>
+                <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    MAIN HEADER
+    ============================================================ -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Premier Exports" />
+                <span>Premier</span>Exports
+            </a>
+            <div class="header-actions">
+                <div class="header-certifications">
+                    <img src="images/reach.png" alt="REACH">
+                    <img src="images/iso_logo.png" alt="ISO">
+                    <img src="images/ce_logo.png" alt="CE">
+                    <img src="images/lcci.png" alt="LCCI">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================
+    NAVIGATION
+    ============================================================ -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About</a>
+                <a href="ceo_message.html" class="active">Company</a>
+                <a href="inquiry_form.html">Inquiry</a>
+                <a href="contact_us.html">Contact</a>
+                <a href="safety_signs.html">Industrial</a>
+                <a href="leather_info.html">Sports</a>
+                <a href="covid_19.html">Apparel</a>
+                <a href="accreditations.html">Certifications</a>
+                <a href="download_cat.html"><span class="highlight">Download</span></a>
+                <a href="oem.html">OEM</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    COMPANY HERO
+    ============================================================ -->
+    <section class="company-hero">
+        <video class="company-hero-video-bg" autoplay loop muted playsinline>
+            <source src="images/Create_a_premium_cinematic_pro.mp4" type="video/mp4">
+            <img src="images/ChatGPT Image Aug 14, 2026, 08_08_32 PM.png" alt="Premier Exports Company">
+        </video>
+        <div class="container">
+            <h1>Message from the <span>Chief Executive</span></h1>
+            <p>Driving innovation, quality, and customer-centric excellence in the glove manufacturing industry.</p>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    COMPANY CONTENT
+    ============================================================ -->
+    <section class="company-content">
+        <div class="container">
+
+            <!-- CEO Card -->
+            <div class="ceo-card reveal">
+                <div class="ceo-photo">
+                    <div class="avatar">
+                        <!-- Replace src with actual CEO photo if available -->
+                        <img src="images/ceo-placeholder.jpg" alt="CEO - Premier Exports" onerror="this.style.display='none'; this.parentElement.innerHTML = '<i class=\'fas fa-user-tie\'></i>';">
+                        <i class="fas fa-user-tie" style="display:none;"></i>
+                    </div>
+                    <h4>Mr. Muhammad Ali</h4>
+                    <p class="ceo-title">Chief Executive Officer</p>
+                    <p style="font-size:13px;color:#999;margin-top:4px;">Premier Exports (Pvt) Ltd</p>
+                </div>
+                <div class="ceo-message">
+                    <h2>Our <span>Commitment</span> to Excellence</h2>
+                    <p>
+                        It gives me great pleasure to introduce <strong>PREMIER EXPORTS (PRIVATE) LIMITED</strong>, an organization committed to offering the most innovative and outstanding quality products with our diversified technology and expertise. Our philosophy is to provide <strong>"Customer-centric"</strong> products at the least possible prices. This philosophy has been cultivated in our staff since its inception. Our focus is to carve a niche in today's glove manufacturing industry and at the same time provide consistent quality services with the motto <span class="highlight-text">"Customer First"</span>.
+                    </p>
+                    <p>
+                        As a professional learning organization, our priority is to respond to our customer's growing demand. To achieve this goal, we have hired professional staff along with seasoned senior management of proven track record. We strictly adhere to our corporate philosophy, to become a leading company of the world. Your continued support in this regard will be highly appreciated. Our production Unit in Lahore has a production capacity of up to <strong>10,000 pairs</strong> of gloves in a single day. We are planning to increase it to <strong>15,000 pairs</strong> in the future.
+                    </p>
+                    <p>
+                        We have a clear long-term strategy which is based on our purpose, vision, mission and values. It is this foundation which helps us successfully shape the future of our company. In future, we want to generate continued profitable growth, to become more customer-focused, more innovative, more agile and fully digitized in our internal processes and customer-facing activities. To achieve this ambition, we will focus on our strategic priorities and financial commitments for the coming years. In addition, we aim to promote sustainability in all our business activities, reinforcing our position.
+                    </p>
+
+                    <!-- Stats inline -->
+                    <div class="ceo-stats">
+                        <div class="stat-item">
+                            <div class="number">10,000+</div>
+                            <div class="label">Pairs / Day Capacity</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="number">15,000</div>
+                            <div class="label">Target Capacity (Future)</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="number">100%</div>
+                            <div class="label">Customer-Centric Focus</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Philosophy Cards -->
+            <h2 class="section-title centered reveal">Our Corporate <span style="color:var(--primary);">Philosophy</span></h2>
+            <div class="philosophy-grid reveal">
+                <div class="philosophy-card">
+                    <div class="icon"><i class="fas fa-bullseye"></i></div>
+                    <h5>Vision</h5>
+                    <p>To be recognized globally as a premier manufacturer and trusted exporter of high-grade industrial safety gloves and protective handwear.</p>
+                </div>
+                <div class="philosophy-card">
+                    <div class="icon"><i class="fas fa-flag-checkered"></i></div>
+                    <h5>Mission</h5>
+                    <p>To deliver uncompromised safety and comfort by combining rigorous quality control, ethical sourcing, and advanced stitching technology.</p>
+                </div>
+                <div class="philosophy-card">
+                    <div class="icon"><i class="fas fa-heart"></i></div>
+                    <h5>Values</h5>
+                    <p>Customer First, Innovation, Integrity, Sustainability, and Excellence in everything we do.</p>
+                </div>
+            </div>
+
+            <!-- Additional context -->
+            <div class="ceo-card reveal" style="grid-template-columns:1fr; padding:30px 40px; border-left:4px solid var(--primary);">
+                <div style="text-align:center;">
+                    <p style="font-size:18px; font-weight:600; color:var(--dark); margin-bottom:6px;">
+                        <i class="fas fa-quote-left" style="color:var(--primary); margin-right:10px;"></i>
+                        Our focus is to carve a niche in today's glove manufacturing industry and provide consistent quality services with the motto <span style="color:var(--primary);">"Customer First"</span>.
+                        <i class="fas fa-quote-right" style="color:var(--primary); margin-left:10px;"></i>
+                    </p>
+                    <p style="font-size:14px; color:#888; margin:0;">— Mr. Muhammad Ali, CEO, Premier Exports</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TRUST BANNER (same as practice)
+    ============================================================ -->
+    <div class="trust-banner">
+        <div class="container">
+            <div class="trust-item">
+                <i class="fas fa-truck"></i>
+                <div>
+                    <h6>Free Shipping</h6>
+                    <p>On orders over $500</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                    <h6>Premium Quality</h6>
+                    <p>ISO &amp; CE certified</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-undo-alt"></i>
+                <div>
+                    <h6>Easy Returns</h6>
+                    <p>30‑day return policy</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <i class="fas fa-headset"></i>
+                <div>
+                    <h6>24/7 Support</h6>
+                    <p>Dedicated team</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    FOOTER (same as practice)
+    ============================================================ -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h4>Premier<span>Exports</span></h4>
+                    <p>Leading manufacturer and exporter of premium leather safety gloves, cycling gloves, motor bike gloves, and leather products in Pakistan.</p>
+                    <div class="social-row">
+                        <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="tw"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="amz"><i class="fab fa-amazon"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h6>Quick Links</h6>
+                    <a href="index.html">Home</a>
+                    <a href="about_us.html">About Us</a>
+                    <a href="ceo_message.html">Company</a>
+                    <a href="inquiry_form.html">Inquiry</a>
+                    <a href="contact_us.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h6>Products</h6>
+                    <a href="moter_bike_gloves.html">Motor Bike Gloves</a>
+                    <a href="cycling_gloves.html">Cycling Gloves</a>
+                    <a href="sports_gloves.html">Gym Gloves</a>
+                    <a href="leather_jackets.html">Leather Jackets</a>
+                    <a href="work_wear.html">Work Wear</a>
+                </div>
+                <div class="footer-col">
+                    <h6>Support</h6>
+                    <a href="privacypolicy.html">Privacy Policy</a>
+                    <a href="returnsrefund.html">Returns &amp; Refunds</a>
+                    <a href="shipping.html">Shipping</a>
+                    <a href="tc.html">Terms &amp; Conditions</a>
+                    <a href="download_cat.html">Download Catalog</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Premier Exports (Pvt.) Limited. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    SCRIPTS
+    ============================================================ -->
+    <script>
+        // Mobile nav toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('open');
+        });
+
+        // SCROLL REVEAL
+        function observeReveals() {
+            const els = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+            els.forEach(el => observer.observe(el));
+        }
+        observeReveals();
+
+        // HEADER SCROLL SHADOW
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 40) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
