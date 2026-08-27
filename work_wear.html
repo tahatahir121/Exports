@@ -142,6 +142,47 @@
 
         @media (max-width:768px) { .nav-links { display:none; flex-direction:column; width:100%; background:var(--dark); padding:10px 0; } .nav-links.open { display:flex; } .nav-links a { padding:12px 20px; border-bottom:1px solid #2a2a2a; } .nav-toggle { display:block; } .page-hero h1 { font-size:30px; } .page-hero p { font-size:14px; } .product-grid { grid-template-columns:repeat(auto-fill, minmax(160px,1fr)); gap:16px; } .product-card { padding:14px 12px; } .product-card .card-img { height:120px; } .product-card .card-img img { max-height:100px; } footer .footer-grid { grid-template-columns:1fr; gap:24px; } .trust-banner .container { flex-direction:column; align-items:center; text-align:center; } .section-header h2 { font-size:24px; } }
         @media (max-width:480px) { .page-hero h1 { font-size:26px; } .product-grid { grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:12px; } .product-card h6 { font-size:13px; } .product-card .product-code { font-size:11px; } }
+    .category {
+            position: relative;
+        }
+
+        .category-btn {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            color: white;
+            padding: 8px 0;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .category-btn span {
+            float: right;
+        }
+
+        .category-products {
+            display: none;
+            background: #222;
+            padding-left: 15px;
+        }
+
+        .category-products a {
+            display: block;
+            color: white;
+            padding: 7px 10px;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .category-products a:hover {
+            background: #333;
+        }
+
+        /* Opens DOWNWARD */
+        .category:hover .category-products {
+            display: block;
+        }
     </style>
 </head>
 
@@ -297,25 +338,47 @@
                     <a href="inquiry_form.html">Inquiry</a>
                     <a href="contact_us.html">Contact</a>
                 </div>
-                <div class="footer-col">
+                <div class="footer-col products-dropdown">
                     <h6>Products</h6>
-                    <a href="moter_bike_gloves.html">Motor Bike Gloves</a>
-                    <a href="cycling_gloves.html">Cycling Gloves</a>
-                    <a href="sports_gloves.html">Gym Gloves</a>
-                    <a href="fashion_gloves.html">Fashion Gloves</a>
-                    <a href="leather_jackets.html">Leather Jackets</a>
-                    <a href="leather_bags.html">Leather Bags &amp; Belts</a>
-                    <a href="fire_fighting_gloves.html">Fire Fighting Gloves</a>
-                    <a href="cutresistant.html">Cut Resistant Gloves</a>
-                    <a href="welding.html">Welding Gloves</a>
-                    <a href="splitleather.html">Split Leather Gloves</a>
-                    <a href="leatherfit.html">Leather Fit Gloves</a>
-                    <a href="hydrofugegloves.html">Hydrofuge Gloves</a>
-                    <a href="synthetic.html">Synthetic Leather Gloves</a>
-                    <a href="covid.html">Hospital Wear</a>
-                    <a href="impact_resistant_gloves.html">Impact Resistant Gloves</a>
-                    <a href="apparel.html">T-Shirts / Hoodies</a>
-                    <a href="work_wear.html">Work Wear</a>
+
+                    <!-- Gym Gloves -->
+                    <div class="category">
+                        <button class="category-btn">
+                            Gym Gloves <span>▾</span>
+                        </button>
+
+                        <div class="category-products">
+                            <a href="sports_gloves.html">Gym Gloves</a>
+                            <a href="gym_leather.html">Leather Gym Gloves</a>
+                            <a href="gym_cotton.html">Cotton Gym Gloves</a>
+                        </div>
+                    </div>
+
+                    <!-- Leather -->
+                    <div class="category">
+                        <button class="category-btn">
+                            Leather <span>▾</span>
+                        </button>
+
+                        <div class="category-products">
+                            <a href="leather_jackets.html">Leather Jackets</a>
+                            <a href="leather_bags.html">Leather Bags &amp; Belts</a>
+                            <a href="leatherfit.html">Leather Fit Gloves</a>
+                            <a href="splitleather.html">Split Leather Gloves</a>
+                        </div>
+                    </div>
+
+                    <!-- Cotton -->
+                    <div class="category">
+                        <button class="category-btn">
+                            Cotton <span>▾</span>
+                        </button>
+
+                        <div class="category-products">
+                            <a href="cotton_gloves.html">Cotton Gloves</a>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="footer-col">
                     <h6>Support</h6>

@@ -776,6 +776,47 @@
                 font-size: 11px;
             }
         }
+        .category {
+            position: relative;
+        }
+
+        .category-btn {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            color: white;
+            padding: 8px 0;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .category-btn span {
+            float: right;
+        }
+
+        .category-products {
+            display: none;
+            background: #222;
+            padding-left: 15px;
+        }
+
+        .category-products a {
+            display: block;
+            color: white;
+            padding: 7px 10px;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .category-products a:hover {
+            background: #333;
+        }
+
+        /* Opens DOWNWARD */
+        .category:hover .category-products {
+            display: block;
+        }
     </style>
 </head>
 
@@ -932,19 +973,47 @@
                     <a href="inquiry_form.html">Inquiry</a>
                     <a href="contact_us.html">Contact</a>
                 </div>
-                <div class="footer-col">
+                <div class="footer-col products-dropdown">
                     <h6>Products</h6>
-                    <a href="moter_bike_gloves.html">Motor Bike Gloves</a>
-                    <a href="cycling_gloves.html">Cycling Gloves</a>
-                    <a href="sports_gloves.html">Gym Gloves</a>
-                    <a href="fashion_gloves.html">Fashion Gloves</a>
-                    <a href="leather_jackets.html">Leather Jackets</a>
-                    <a href="leather_bags.html">Leather Bags &amp; Belts</a>
-                    <a href="fire_fighting_gloves.html">Fire Fighting Gloves</a>
-                    <a href="cutresistant.html">Cut Resistant Gloves</a>
-                    <a href="welding.html">Welding Gloves</a>
-                    <a href="splitleather.html">Split Leather Gloves</a>
-                    <a href="work_wear.html">Work Wear</a>
+
+                    <!-- Gym Gloves -->
+                    <div class="category">
+                        <button class="category-btn">
+                            Gym Gloves <span>▾</span>
+                        </button>
+
+                        <div class="category-products">
+                            <a href="sports_gloves.html">Gym Gloves</a>
+                            <a href="gym_leather.html">Leather Gym Gloves</a>
+                            <a href="gym_cotton.html">Cotton Gym Gloves</a>
+                        </div>
+                    </div>
+
+                    <!-- Leather -->
+                    <div class="category">
+                        <button class="category-btn">
+                            Leather <span>▾</span>
+                        </button>
+
+                        <div class="category-products">
+                            <a href="leather_jackets.html">Leather Jackets</a>
+                            <a href="leather_bags.html">Leather Bags &amp; Belts</a>
+                            <a href="leatherfit.html">Leather Fit Gloves</a>
+                            <a href="splitleather.html">Split Leather Gloves</a>
+                        </div>
+                    </div>
+
+                    <!-- Cotton -->
+                    <div class="category">
+                        <button class="category-btn">
+                            Cotton <span>▾</span>
+                        </button>
+
+                        <div class="category-products">
+                            <a href="cotton_gloves.html">Cotton Gloves</a>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="footer-col">
                     <h6>Support</h6>
