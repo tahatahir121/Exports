@@ -187,6 +187,145 @@
         .category:hover .category-products {
             display: block;
         }
+
+        /* ============================================================
+   PRODUCT DETAIL
+   ============================================================ */
+
+.product-detail-section {
+    display: none;
+    padding: 60px 0 80px;
+    background: #fff;
+}
+
+.product-detail-section.active {
+    display: block;
+}
+
+.back-products {
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 30px;
+    padding: 10px 0;
+}
+
+.back-products:hover {
+    color: var(--primary-dark);
+}
+
+.product-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.product-detail-image {
+    background: #f5f5f5;
+    border-radius: 20px;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.product-detail-image img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.detail-category {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.product-detail-content h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.product-detail-content > p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.detail-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.detail-info div {
+    background: #f7f7f7;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.detail-info span {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.detail-info strong {
+    display: block;
+    color: #222;
+    font-size: 14px;
+}
+
+.inquiry-btn {
+    border: none;
+    background: var(--primary-gradient);
+    color: #fff;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.inquiry-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(192,57,43,0.25);
+}
+
+@media (max-width: 768px) {
+
+    .product-detail {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .product-detail-image {
+        min-height: 300px;
+    }
+
+    .product-detail-content h2 {
+        font-size: 30px;
+    }
+
+    .detail-info {
+        grid-template-columns: 1fr;
+    }
+}
     </style>
 </head>
 
@@ -281,6 +420,65 @@
             </div>
         </div>
     </section>
+    <!-- PRODUCT DETAIL -->
+<section class="product-detail-section" id="productDetail">
+    <div class="container">
+
+        <button class="back-products" id="backProducts">
+            <i class="fas fa-arrow-left"></i>
+            Back to Products
+        </button>
+
+        <div class="product-detail">
+
+            <div class="product-detail-image">
+                <img id="detailImage" src="" alt="">
+            </div>
+
+            <div class="product-detail-content">
+
+                <span class="detail-category">COTTON GLOVES</span>
+
+                <h2 id="detailCode"></h2>
+
+                <p id="detailDescription"></p>
+
+                <div class="detail-info">
+                    <div>
+                        <span>Product Code</span>
+                        <strong id="detailProductCode"></strong>
+                    </div>
+
+                    <div>
+                        <span>Material</span>
+                        <strong id="detailMaterial"></strong>
+                    </div>
+
+                    <div>
+                        <span>Type</span>
+                        <strong id="detailType"></strong>
+                    </div>
+
+                    <div>
+                        <span>Usage</span>
+                        <strong id="detailUsage"></strong>
+                    </div>
+                                        <div>
+                        <span>Price</span>
+                        <strong id="price"></strong>
+                    </div>
+                </div>
+
+                <button class="inquiry-btn">
+                    <i class="fas fa-envelope"></i>
+                    Make an Inquiry
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+</section>
 
     <!-- ============================================================
     TRUST BANNER
@@ -413,49 +611,179 @@
         // ============================================================
         // COTTON GLOVES DATA (PCG 001 to PCG 012)
         // ============================================================
-        const cottonGloves = [
-            { code: 'PCG 001', img: 'images/products/cotton_gloves_placeholder.jpg', detailUrl: 'products_detail/cotton_gloves/pcg-001.html' },
-            { code: 'PCG 002', img: 'images/products/cotton_gloves_placeholder.jpg', detailUrl: 'products_detail/cotton_gloves/pcg-002.html' },
-            { code: 'PCG 003', img: 'images/products/cotton_gloves_placeholder.jpg', detailUrl: 'products_detail/cotton_gloves/pcg-003.html' },
-            { code: 'PCG 004', img: 'images/products/cotton_gloves_placeholder.jpg', detailUrl: 'products_detail/cotton_gloves/pcg-004.html' },
-            { code: 'PCG 005', img: 'images/products/cotton_gloves_placeholder.jpg', detailUrl: 'products_detail/cotton_gloves/pcg-005.html' },
-            { code: 'PCG 006', img: 'images/products/cotton_gloves_placeholder.jpg', detailUrl: 'products_detail/cotton_gloves/pcg-006.html' },
-            { code: 'PCG 007', img: 'images/products/cotton_gloves_placeholder.jpg', detailUrl: 'products_detail/cotton_gloves/pcg-007.html' },
-            { code: 'PCG 008', img: 'images/products/cotton_gloves_placeholder.jpg', detailUrl: 'products_detail/cotton_gloves/pcg-008.html' },
-            { code: 'PCG 009', img: 'images/products/cotton_gloves_placeholder.jpg', detailUrl: 'products_detail/cotton_gloves/pcg-009.html' },
-            { code: 'PCG 010', img: 'images/products/cotton_gloves_placeholder.jpg', detailUrl: 'products_detail/cotton_gloves/pcg-010.html' },
-            { code: 'PCG 011', img: 'images/products/cotton_gloves_placeholder.jpg', detailUrl: 'products_detail/cotton_gloves/pcg-011.html' },
-            { code: 'PCG 012', img: 'images/products/cotton_gloves_placeholder.jpg', detailUrl: 'products_detail/cotton_gloves/pcg-012.html' }
-        ];
+const cottonGloves = [
+
+    {
+        code: "Cotton Glove",
+        img: "images/products/cotton_gloves_placeholder.jpg",
+        description: "Premium quality cotton gloves designed for comfort, breathability and everyday protection.",
+        size: "S, M, L",
+        type: "Knitted Glove",
+        usage: "General Purpose"
+    },
+
+    {
+        code: "PCG 002",
+        img: "images/products/cotton_gloves_placeholder.jpg",
+        description: "Soft and breathable cotton gloves suitable for industrial handling and general applications.",
+        material: "Cotton",
+        type: "Knitted Glove",
+        usage: "Industrial"
+    },
+
+    {
+        code: "PCG 003",
+        img: "images/products/cotton_gloves_placeholder.jpg",
+        description: "Comfortable cotton gloves providing excellent flexibility and protection during daily work.",
+        material: "Cotton",
+        type: "Knitted Glove",
+        usage: "General Purpose"
+    },
+
+    {
+        code: "PCG 004",
+        img: "images/products/cotton_gloves_placeholder.jpg",
+        description: "Lightweight cotton gloves designed for comfortable handling and breathable protection.",
+        material: "Cotton",
+        type: "Knitted Glove",
+        usage: "Handling"
+    },
+
+    {
+        code: "PCG 005",
+        img: "images/products/cotton_gloves_placeholder.jpg",
+        description: "Durable cotton gloves suitable for a wide range of industrial and general-purpose applications.",
+        material: "Cotton",
+        type: "Knitted Glove",
+        usage: "Industrial"
+    },
+
+    {
+        code: "PCG 006",
+        img: "images/products/cotton_gloves_placeholder.jpg",
+        description: "Breathable cotton gloves offering comfort and flexibility for everyday use.",
+        material: "Cotton",
+        type: "Knitted Glove",
+        usage: "General Purpose"
+    },
+
+    {
+        code: "PCG 007",
+        img: "images/products/cotton_gloves_placeholder.jpg",
+        description: "High-quality cotton gloves designed for reliable handling protection.",
+        material: "Cotton",
+        type: "Knitted Glove",
+        usage: "Handling"
+    },
+
+    {
+        code: "PCG 008",
+        img: "images/products/cotton_gloves_placeholder.jpg",
+        description: "Soft cotton gloves providing breathable comfort for extended periods of use.",
+        material: "Cotton",
+        type: "Knitted Glove",
+        usage: "General Purpose"
+    },
+
+    {
+        code: "PCG 009",
+        img: "images/products/cotton_gloves_placeholder.jpg",
+        description: "Reliable cotton gloves suitable for workplace handling and everyday protection.",
+        material: "Cotton",
+        type: "Knitted Glove",
+        usage: "Industrial"
+    },
+
+    {
+        code: "PCG 010",
+        img: "images/products/cotton_gloves_placeholder.jpg",
+        description: "Comfortable and lightweight cotton gloves for general workplace applications.",
+        material: "Cotton",
+        type: "Knitted Glove",
+        usage: "General Purpose"
+    },
+
+    {
+        code: "PCG 011",
+        img: "images/products/cotton_gloves_placeholder.jpg",
+        description: "Premium knitted cotton gloves designed for comfort and everyday protection.",
+        material: "Cotton",
+        type: "Knitted Glove",
+        usage: "Handling"
+    },
+
+    {
+        code: "PCG 012",
+        img: "images/products/cotton_gloves_placeholder.jpg",
+        description: "Breathable and flexible cotton gloves suitable for various workplace applications.",
+        material: "Cotton",
+        type: "Knitted Glove",
+        usage: "Industrial"
+    },
+
+        {
+        code: "PCG 012",
+        img: "images/products/cotton_gloves_placeholder.jpg",
+        description: "Breathable taha and flexible cotton gloves suitable for various workplace applications.",
+        material: "Cotton",
+        type: "Knitted Glove",
+        usage: "Industrial",
+        price: "$5.99"
+    }
+
+];
 
         // ============================================================
         // RENDER PRODUCTS
         // ============================================================
-        function renderProducts() {
-            const grid = document.getElementById('productGrid');
-            let html = '';
-            cottonGloves.forEach(p => {
-                html += `
-                        <div class="product-card reveal-scale" data-code="${p.code}" data-url="${p.detailUrl}">
-                            <div class="card-img">
-                                <img src="${p.img}" alt="${p.code}" loading="lazy" />
-                            </div>
-                            <h6>${p.code}</h6>
-                            <div class="product-code">Cotton Glove</div>
-                        </div>
-                    `;
-            });
-            grid.innerHTML = html;
+function renderProducts() {
 
-            document.querySelectorAll('.product-card').forEach(card => {
-                card.addEventListener('click', function() {
-                    const url = this.dataset.url;
-                    if (url) { window.location.href = url; }
-                });
-            });
+    const grid = document.getElementById("productGrid");
 
-            observeReveals();
-        }
+    let html = "";
+
+    cottonGloves.forEach((product, index) => {
+
+        html += `
+            <div class="product-card reveal-scale"
+                 data-index="${index}">
+
+                <div class="card-img">
+                    <img 
+                        src="${product.img}" 
+                        alt="${product.code}"
+                        loading="lazy"
+                    />
+                </div>
+
+                <h6>${product.code}</h6>
+
+                <div class="product-code">
+                    Cotton Glove
+                </div>
+
+            </div>
+        `;
+
+    });
+
+    grid.innerHTML = html;
+
+    // CLICK PRODUCT
+    document.querySelectorAll(".product-card").forEach(card => {
+
+        card.addEventListener("click", function () {
+
+            const index = this.dataset.index;
+
+            showProduct(index);
+
+        });
+
+    });
+
+    observeReveals();
+}
 
         // ============================================================
         // MOBILE NAV TOGGLE
@@ -490,6 +818,64 @@
                 header.classList.remove('scrolled');
             }
         });
+
+        function showProduct(index) {
+
+    const product = cottonGloves[index];
+
+    if (!product) return;
+
+    // Fill product details
+    document.getElementById("detailImage").src = product.img;
+    document.getElementById("detailImage").alt = product.code;
+
+    document.getElementById("detailCode").textContent = product.code;
+
+    document.getElementById("detailDescription").textContent =
+        product.description;
+
+    document.getElementById("detailProductCode").textContent =
+        product.code;
+
+    document.getElementById("detailMaterial").textContent =
+        product.material;
+
+    document.getElementById("detailType").textContent =
+        product.type;
+
+    document.getElementById("detailUsage").textContent =
+        product.usage;
+        document.getElementById("price").textContent =
+        product.price;
+
+
+    // Hide product list
+    document.getElementById("products").style.display = "none";
+
+    // Show detail
+    const detail = document.getElementById("productDetail");
+
+    detail.classList.add("active");
+
+    // Scroll to detail
+    detail.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
+document.getElementById("backProducts").addEventListener("click", function () {
+
+    document.getElementById("productDetail")
+        .classList.remove("active");
+
+    document.getElementById("products").style.display = "";
+
+    document.getElementById("products").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
+});
 
         // ============================================================
         // INIT
