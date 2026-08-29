@@ -21,8 +21,8 @@
 
     <style>
         /* ============================================================
-                   ROOT & RESET (same as index.html)
-                   ============================================================ */
+           ROOT & RESET
+           ============================================================ */
         :root {
             --primary: #c0392b;
             --primary-dark: #a93226;
@@ -47,11 +47,9 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         html {
             scroll-behavior: smooth;
         }
-
         body {
             font-family: var(--font);
             background: #f4f5f7;
@@ -59,27 +57,20 @@
             overflow-x: hidden;
             line-height: 1.6;
         }
-
         a {
             text-decoration: none;
             color: inherit;
         }
-
         img {
             max-width: 100%;
             height: auto;
             display: block;
         }
-
         .container {
             max-width: 1280px;
             margin: 0 auto;
             padding: 0 24px;
         }
-
-        /* ============================================================
-                   SCROLLBAR
-                   ============================================================ */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -90,57 +81,46 @@
             background: var(--primary);
             border-radius: 10px;
         }
-
-        /* ============================================================
-                   REVEAL ANIMATIONS
-                   ============================================================ */
         .reveal {
             opacity: 0;
             transform: translateY(50px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-
         .reveal.visible {
             opacity: 1;
             transform: translateY(0);
         }
-
         .reveal-left {
             opacity: 0;
             transform: translateX(-60px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-
         .reveal-left.visible {
             opacity: 1;
             transform: translateX(0);
         }
-
         .reveal-right {
             opacity: 0;
             transform: translateX(60px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-
         .reveal-right.visible {
             opacity: 1;
             transform: translateX(0);
         }
-
         .reveal-scale {
             opacity: 0;
             transform: scale(0.92);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-
         .reveal-scale.visible {
             opacity: 1;
             transform: scale(1);
         }
 
         /* ============================================================
-                   HEADER
-                   ============================================================ */
+           TOP BAR
+           ============================================================ */
         .top-bar {
             background: var(--dark);
             color: #aaa;
@@ -148,7 +128,6 @@
             padding: 8px 0;
             border-bottom: 1px solid #2a2a2a;
         }
-
         .top-bar .container {
             display: flex;
             justify-content: space-between;
@@ -156,27 +135,25 @@
             flex-wrap: wrap;
             gap: 8px;
         }
-
         .top-bar a {
             color: #aaa;
             transition: color 0.3s;
             margin-left: 18px;
         }
-
         .top-bar a:hover {
             color: #fff;
         }
-
         .top-bar .top-left span {
             margin-right: 6px;
         }
-
         .top-bar .top-left i {
             color: var(--primary);
             margin-right: 4px;
         }
 
-        /* ===== MAIN HEADER ===== */
+        /* ============================================================
+           MAIN HEADER
+           ============================================================ */
         .main-header {
             background: #fff;
             padding: 16px 0;
@@ -188,7 +165,6 @@
             background: rgba(255, 255, 255, 0.92);
             transition: box-shadow 0.3s;
         }
-
         .main-header .container {
             display: flex;
             justify-content: space-between;
@@ -196,7 +172,6 @@
             flex-wrap: wrap;
             gap: 16px;
         }
-
         .logo {
             display: flex;
             align-items: center;
@@ -204,31 +179,25 @@
             font-weight: 800;
             font-size: 22px;
             letter-spacing: -0.5px;
-            color: var(--dark, #0d0d0d);
+            color: var(--dark);
         }
-
         .logo img {
             height: 56px;
             width: auto;
         }
-
         .logo span {
-            color: var(--primary, #c0392b);
+            color: var(--primary);
         }
-
-        /* ===== HEADER ACTIONS (certifications only) ===== */
         .header-actions {
             display: flex;
             align-items: center;
             gap: 12px;
         }
-
         .header-certifications {
             display: flex;
             align-items: center;
             gap: 10px;
         }
-
         .header-certifications img {
             height: 36px;
             width: auto;
@@ -239,57 +208,47 @@
             object-fit: contain;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         .header-certifications img:hover {
             transform: scale(1.08);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 768px) {
+        @media (max-width:768px) {
             .main-header .container {
                 flex-direction: column;
                 text-align: center;
             }
-
             .logo img {
                 height: 40px;
             }
-
             .logo {
                 font-size: 18px;
             }
-
             .header-certifications {
                 gap: 6px;
                 flex-wrap: wrap;
                 justify-content: center;
             }
-
             .header-certifications img {
                 height: 28px;
                 padding: 3px 6px;
             }
         }
-
-        @media (max-width: 480px) {
+        @media (max-width:480px) {
             .header-certifications img {
                 height: 22px;
                 padding: 2px 4px;
             }
-
             .logo img {
                 height: 32px;
             }
-
             .logo {
                 font-size: 16px;
             }
         }
 
         /* ============================================================
-                   NAVIGATION
-                   ============================================================ */
+           NAVIGATION
+           ============================================================ */
         .nav-wrapper {
             background: var(--dark);
             position: sticky;
@@ -297,19 +256,16 @@
             z-index: 999;
             border-bottom: 2px solid var(--primary);
         }
-
         .nav-wrapper .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
         .nav-links {
             display: flex;
             flex-wrap: wrap;
             gap: 0;
         }
-
         .nav-links a {
             color: #ccc;
             padding: 14px 20px;
@@ -320,14 +276,12 @@
             transition: all 0.3s;
             border-bottom: 2px solid transparent;
         }
-
         .nav-links a:hover,
         .nav-links a.active {
             color: #fff;
             background: rgba(192, 57, 43, 0.15);
             border-bottom-color: var(--primary);
         }
-
         .nav-links a .highlight {
             background: var(--primary);
             padding: 4px 12px;
@@ -336,7 +290,6 @@
             color: #fff;
             margin-left: 4px;
         }
-
         .nav-toggle {
             display: none;
             background: none;
@@ -348,11 +301,11 @@
         }
 
         /* ============================================================
-                   PAGE HERO (simple)
-                   ============================================================ */
+           PAGE HERO
+           ============================================================ */
         .page-hero {
             position: relative;
-            min-height: 250px;
+            min-height: 220px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -360,7 +313,6 @@
             padding: 40px 0;
             background: #0d0d0d;
         }
-
         .page-hero::before {
             content: '';
             position: absolute;
@@ -368,38 +320,32 @@
             background: rgba(0, 0, 0, 0.60);
             z-index: 1;
         }
-
         .page-hero::after {
             content: '';
             position: absolute;
             inset: 0;
-            background: radial-gradient(circle at 80% 20%, rgba(192, 57, 43, 0.20), transparent 60%),
-                        radial-gradient(circle at 20% 80%, rgba(192, 57, 43, 0.08), transparent 50%);
+            background: radial-gradient(circle at 80% 20%, rgba(192, 57, 43, 0.20), transparent 60%), radial-gradient(circle at 20% 80%, rgba(192, 57, 43, 0.08), transparent 50%);
             z-index: 1;
             pointer-events: none;
         }
-
         .page-hero .container {
             position: relative;
             z-index: 2;
             text-align: center;
             color: #fff;
         }
-
         .page-hero h1 {
             font-size: 40px;
             font-weight: 900;
             letter-spacing: -1px;
             margin-bottom: 8px;
         }
-
         .page-hero h1 span {
             background: linear-gradient(135deg, #e74c3c, #c0392b);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
         .page-hero p {
             font-size: 16px;
             color: #ccc;
@@ -407,7 +353,6 @@
             margin: 0 auto;
             line-height: 1.6;
         }
-
         .page-hero-video-bg {
             position: absolute;
             top: 0;
@@ -419,12 +364,11 @@
         }
 
         /* ============================================================
-                   PRODUCTS SECTION
-                   ============================================================ */
+           PRODUCTS GRID
+           ============================================================ */
         .products-section {
             padding: 40px 0 70px;
         }
-
         .section-header {
             display: flex;
             justify-content: space-between;
@@ -433,14 +377,12 @@
             flex-wrap: wrap;
             gap: 16px;
         }
-
         .section-header h2 {
             font-size: 28px;
             font-weight: 800;
             letter-spacing: -0.5px;
             position: relative;
         }
-
         .section-header h2::after {
             content: '';
             position: absolute;
@@ -451,19 +393,16 @@
             background: var(--primary-gradient);
             border-radius: 4px;
         }
-
         .section-header .product-count {
             color: #888;
             font-size: 14px;
             font-weight: 500;
         }
-
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 28px;
         }
-
         .product-card {
             background: #fff;
             border-radius: var(--radius);
@@ -474,15 +413,13 @@
             padding: 20px 16px 18px;
             text-align: center;
             border: 1px solid rgba(0, 0, 0, 0.03);
-            cursor: pointer;  /* <--- Makes whole card clickable */
+            cursor: pointer;
         }
-
         .product-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-hover);
             border-color: rgba(192, 57, 43, 0.10);
         }
-
         .product-card .card-img {
             height: 150px;
             display: flex;
@@ -491,33 +428,20 @@
             margin-bottom: 12px;
             position: relative;
         }
-
         .product-card .card-img img {
             max-height: 130px;
             width: auto;
             transition: transform 0.5s ease;
         }
-
         .product-card:hover .card-img img {
             transform: scale(1.06);
         }
-
         .product-card h6 {
             font-size: 15px;
             font-weight: 600;
             color: #1a1a1a;
             margin-bottom: 4px;
         }
-
-        .product-card h6 a {
-            color: #1a1a1a;
-            transition: color 0.3s;
-        }
-
-        .product-card h6 a:hover {
-            color: var(--primary);
-        }
-
         .product-card .product-code {
             font-size: 13px;
             color: #999;
@@ -525,40 +449,268 @@
         }
 
         /* ============================================================
-                   TRUST BANNER (same as index)
-                   ============================================================ */
+           MODAL / POPUP — premium style
+           ============================================================ */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            animation: fadeInOverlay 0.4s ease;
+        }
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        @keyframes fadeInOverlay {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .modal-box {
+            background: #fff;
+            border-radius: var(--radius);
+            max-width: 960px;
+            width: 100%;
+            max-height: 92vh;
+            overflow-y: auto;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.35);
+            animation: slideUpModal 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+            position: relative;
+        }
+        .modal-box::-webkit-scrollbar {
+            width: 5px;
+        }
+        .modal-box::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        @keyframes slideUpModal {
+            from {
+                opacity: 0;
+                transform: translateY(60px) scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 14px;
+            right: 18px;
+            background: rgba(0, 0, 0, 0.06);
+            border: none;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            font-size: 20px;
+            color: #444;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+        .modal-close:hover {
+            background: var(--primary);
+            color: #fff;
+            transform: rotate(90deg);
+        }
+
+        .modal-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            padding: 0;
+        }
+
+        /* Left — Image */
+        .modal-image-wrap {
+            background: #f5f6f8;
+            border-radius: var(--radius) 0 0 var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 32px;
+            min-height: 380px;
+            position: relative;
+            overflow: hidden;
+        }
+        .modal-image-wrap::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 30% 40%, rgba(192, 57, 43, 0.04), transparent 70%);
+            pointer-events: none;
+        }
+        .modal-image-wrap img {
+            max-width: 100%;
+            max-height: 380px;
+            object-fit: contain;
+            border-radius: 8px;
+            position: relative;
+            z-index: 1;
+            transition: transform 0.5s ease;
+        }
+        .modal-image-wrap img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Right — Details */
+        .modal-details {
+            padding: 36px 38px 32px 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .modal-details .badge-category {
+            display: inline-block;
+            background: rgba(192, 57, 43, 0.10);
+            color: var(--primary);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 4px 14px;
+            border-radius: 20px;
+            align-self: flex-start;
+            margin-bottom: 4px;
+        }
+
+        .modal-details h2 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 2px;
+            letter-spacing: -0.5px;
+        }
+        .modal-details .product-subcode {
+            font-size: 14px;
+            color: #888;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .modal-details .desc {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .modal-details .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 20px;
+            margin-bottom: 18px;
+        }
+        .modal-details .info-grid .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+        .modal-details .info-grid .info-item .label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #aaa;
+            font-weight: 600;
+        }
+        .modal-details .info-grid .info-item .value {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-top: 1px;
+        }
+
+        .modal-details .price-row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 4px;
+            padding-top: 14px;
+            border-top: 1px solid #eee;
+        }
+        .modal-details .price-row .price {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        .modal-details .price-row .price-label {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .modal-details .inquiry-btn {
+            border: none;
+            background: var(--primary-gradient);
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            align-self: flex-start;
+            margin-top: 4px;
+        }
+        .modal-details .inquiry-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(192, 57, 43, 0.30);
+        }
+        .modal-details .inquiry-btn i {
+            font-size: 16px;
+        }
+
+        /* ============================================================
+           TRUST BANNER
+           ============================================================ */
         .trust-banner {
             background: var(--dark);
             padding: 40px 0;
             margin: 0;
         }
-
         .trust-banner .container {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             gap: 30px;
         }
-
         .trust-item {
             display: flex;
             align-items: center;
             gap: 14px;
             color: #ccc;
         }
-
         .trust-item i {
             font-size: 32px;
             color: var(--primary);
         }
-
         .trust-item h6 {
             font-size: 15px;
             font-weight: 600;
             color: #fff;
             margin-bottom: 2px;
         }
-
         .trust-item p {
             font-size: 13px;
             color: #777;
@@ -566,14 +718,13 @@
         }
 
         /* ============================================================
-                   FOOTER (same as index)
-                   ============================================================ */
+           FOOTER
+           ============================================================ */
         footer {
             background: var(--dark);
             color: #aaa;
             padding: 50px 0 0;
         }
-
         footer .footer-grid {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -581,31 +732,26 @@
             padding-bottom: 40px;
             border-bottom: 1px solid #2a2a2a;
         }
-
         footer .footer-brand h4 {
             font-size: 24px;
             font-weight: 800;
             color: #fff;
             margin-bottom: 10px;
         }
-
         footer .footer-brand h4 span {
             color: var(--primary);
         }
-
         footer .footer-brand p {
             font-size: 14px;
             max-width: 300px;
             line-height: 1.7;
         }
-
         footer .footer-col h6 {
             color: #fff;
             font-weight: 700;
             font-size: 16px;
             margin-bottom: 16px;
         }
-
         footer .footer-col a {
             display: block;
             color: #888;
@@ -613,18 +759,15 @@
             padding: 4px 0;
             transition: color 0.3s, padding-left 0.3s;
         }
-
         footer .footer-col a:hover {
             color: #fff;
             padding-left: 6px;
         }
-
         footer .social-row {
             display: flex;
             gap: 14px;
             margin-top: 16px;
         }
-
         footer .social-row a {
             display: inline-flex;
             align-items: center;
@@ -637,11 +780,9 @@
             font-size: 18px;
             transition: all 0.3s;
         }
-
         footer .social-row a:hover {
             transform: translateY(-4px);
         }
-
         footer .social-row .fb:hover {
             background: #1877F2;
         }
@@ -654,7 +795,6 @@
         footer .social-row .amz:hover {
             background: #FF9900;
         }
-
         footer .copyright {
             text-align: center;
             padding: 20px 0;
@@ -665,8 +805,8 @@
         }
 
         /* ============================================================
-                   FLOATING WHATSAPP (same as index)
-                   ============================================================ */
+           FLOATING WHATSAPP
+           ============================================================ */
         .wa-float {
             position: fixed;
             bottom: 30px;
@@ -685,12 +825,10 @@
             transition: all 0.3s;
             animation: pulseWA 2.5s ease-in-out infinite;
         }
-
         .wa-float:hover {
             transform: scale(1.08);
             box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
         }
-
         @keyframes pulseWA {
             0%,
             100% {
@@ -702,93 +840,14 @@
         }
 
         /* ============================================================
-                   RESPONSIVE
-                   ============================================================ */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                background: var(--dark);
-                padding: 10px 0;
-            }
-
-            .nav-links.open {
-                display: flex;
-            }
-
-            .nav-links a {
-                padding: 12px 20px;
-                border-bottom: 1px solid #2a2a2a;
-            }
-
-            .nav-toggle {
-                display: block;
-            }
-
-            .page-hero h1 {
-                font-size: 30px;
-            }
-
-            .page-hero p {
-                font-size: 14px;
-            }
-
-            .product-grid {
-                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-                gap: 16px;
-            }
-
-            .product-card {
-                padding: 14px 12px;
-            }
-
-            .product-card .card-img {
-                height: 120px;
-            }
-
-            .product-card .card-img img {
-                max-height: 100px;
-            }
-
-            footer .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 24px;
-            }
-
-            .trust-banner .container {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            .section-header h2 {
-                font-size: 24px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .page-hero h1 {
-                font-size: 26px;
-            }
-
-            .product-grid {
-                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-                gap: 12px;
-            }
-
-            .product-card h6 {
-                font-size: 13px;
-            }
-
-            .product-card .product-code {
-                font-size: 11px;
-            }
+           FOOTER DROPDOWN (products)
+           ============================================================ */
+        .products-dropdown {
+            position: relative;
         }
         .category {
             position: relative;
         }
-
         .category-btn {
             width: 100%;
             text-align: left;
@@ -799,17 +858,14 @@
             cursor: pointer;
             font-size: 14px;
         }
-
         .category-btn span {
             float: right;
         }
-
         .category-products {
             display: none;
             background: #222;
             padding-left: 15px;
         }
-
         .category-products a {
             display: block;
             color: white;
@@ -817,14 +873,139 @@
             text-decoration: none;
             font-size: 13px;
         }
-
         .category-products a:hover {
             background: #333;
         }
-
-        /* Opens DOWNWARD */
         .category:hover .category-products {
             display: block;
+        }
+
+        /* ============================================================
+           RESPONSIVE
+           ============================================================ */
+        @media (max-width: 992px) {
+            .modal-body {
+                grid-template-columns: 1fr;
+            }
+            .modal-image-wrap {
+                border-radius: var(--radius) var(--radius) 0 0;
+                min-height: 240px;
+                padding: 24px;
+            }
+            .modal-image-wrap img {
+                max-height: 220px;
+            }
+            .modal-details {
+                padding: 28px 24px 24px;
+            }
+            .modal-details h2 {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width:768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: var(--dark);
+                padding: 10px 0;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .nav-links a {
+                padding: 12px 20px;
+                border-bottom: 1px solid #2a2a2a;
+            }
+            .nav-toggle {
+                display: block;
+            }
+            .page-hero h1 {
+                font-size: 30px;
+            }
+            .page-hero p {
+                font-size: 14px;
+            }
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 16px;
+            }
+            .product-card {
+                padding: 14px 12px;
+            }
+            .product-card .card-img {
+                height: 120px;
+            }
+            .product-card .card-img img {
+                max-height: 100px;
+            }
+            footer .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .trust-banner .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .section-header h2 {
+                font-size: 24px;
+            }
+            .modal-box {
+                max-height: 96vh;
+                border-radius: 12px;
+            }
+            .modal-details .info-grid {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+            .modal-details .price-row {
+                flex-wrap: wrap;
+            }
+            .modal-details .inquiry-btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .modal-overlay {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width:480px) {
+            .page-hero h1 {
+                font-size: 26px;
+            }
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                gap: 12px;
+            }
+            .product-card h6 {
+                font-size: 13px;
+            }
+            .product-card .product-code {
+                font-size: 11px;
+            }
+            .modal-details h2 {
+                font-size: 20px;
+            }
+            .modal-details {
+                padding: 20px 16px 18px;
+            }
+            .modal-image-wrap {
+                min-height: 180px;
+                padding: 16px;
+            }
+            .modal-image-wrap img {
+                max-height: 160px;
+            }
+            .modal-close {
+                top: 10px;
+                right: 12px;
+                width: 34px;
+                height: 34px;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -856,7 +1037,6 @@
                 <img src="images/logo.png" alt="Premier Exports" />
                 <span>Premier</span>Exports
             </a>
-
             <div class="header-actions">
                 <div class="header-certifications">
                     <img src="images/reach.png" alt="REACH">
@@ -907,7 +1087,7 @@
     </section>
 
     <!-- ============================================================
-    PRODUCTS
+    PRODUCTS GRID
     ============================================================ -->
     <section class="products-section" id="products">
         <div class="container">
@@ -915,12 +1095,50 @@
                 <h2>Our Motor Bike Gloves</h2>
                 <span class="product-count">16 models</span>
             </div>
-
             <div class="product-grid" id="productGrid">
                 <!-- Products injected by JS -->
             </div>
         </div>
     </section>
+
+    <!-- ============================================================
+    MODAL / POPUP — shows image, code, size, description, price
+    ============================================================ -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" id="modalClose" aria-label="Close product details">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="modal-body">
+                <!-- Left: Image -->
+                <div class="modal-image-wrap">
+                    <img id="modalImage" src="" alt="Product" />
+                </div>
+
+                <!-- Right: Details -->
+                <div class="modal-details">
+                    <span class="badge-category">Motor Bike Gloves</span>
+                    <h2 id="modalTitle">Product Name</h2>
+                    <div class="product-subcode" id="modalCode">PE-7001</div>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="label">Size</span>
+                            <span class="value" id="modalSize">S, M, L, XL</span>
+                        </div>
+
+                    </div>
+
+                    <p class="desc" id="modalDescription">
+                        Premium leather motor bike gloves designed for comfort, grip, and protection on every ride.
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- ============================================================
     TRUST BANNER
@@ -984,26 +1202,16 @@
                 </div>
                 <div class="footer-col products-dropdown">
                     <h6>Products</h6>
-
-                    <!-- Gym Gloves -->
                     <div class="category">
-                        <button class="category-btn">
-                            Gym Gloves <span>▾</span>
-                        </button>
-
+                        <button class="category-btn">Gym Gloves <span>▾</span></button>
                         <div class="category-products">
                             <a href="sports_gloves.html">Gym Gloves</a>
                             <a href="gym_leather.html">Leather Gym Gloves</a>
                             <a href="gym_cotton.html">Cotton Gym Gloves</a>
                         </div>
                     </div>
-
-                    <!-- Leather -->
                     <div class="category">
-                        <button class="category-btn">
-                            Leather <span>▾</span>
-                        </button>
-
+                        <button class="category-btn">Leather <span>▾</span></button>
                         <div class="category-products">
                             <a href="leather_jackets.html">Leather Jackets</a>
                             <a href="leather_bags.html">Leather Bags &amp; Belts</a>
@@ -1011,18 +1219,12 @@
                             <a href="splitleather.html">Split Leather Gloves</a>
                         </div>
                     </div>
-
-                    <!-- Cotton -->
                     <div class="category">
-                        <button class="category-btn">
-                            Cotton <span>▾</span>
-                        </button>
-
+                        <button class="category-btn">Cotton <span>▾</span></button>
                         <div class="category-products">
                             <a href="cotton_gloves.html">Cotton Gloves</a>
                         </div>
                     </div>
-
                 </div>
                 <div class="footer-col">
                     <h6>Support</h6>
@@ -1051,64 +1253,200 @@
     ============================================================ -->
     <script>
         // ============================================================
-        // MOTOR BIKE GLOVES DATA
+        // MOTOR BIKE GLOVES DATA — each includes image, code, size, description, price, etc.
         // ============================================================
-        const motorBikeGloves = [
-            { code: 'PE 7001', img: 'products_detail/motor_bike/pe_7001.png' },
-            { code: 'PE 7002', img: 'products_detail/motor_bike/pe_7002.png' },
-            { code: 'PE 7003', img: 'products_detail/motor_bike/pe_7003.png' },
-            { code: 'PE 7004', img: 'products_detail/motor_bike/pe_7004.png' },
-            { code: 'PE 7005', img: 'products_detail/motor_bike/pe_7005.png' },
-            { code: 'PE 7006', img: 'products_detail/motor_bike/pe_7006.png' },
-            { code: 'PE 7007', img: 'products_detail/motor_bike/pe_7007.png' },
-            { code: 'PE 7008', img: 'products_detail/motor_bike/pe_7008.png' },
-            { code: 'PE 7009', img: 'products_detail/motor_bike/pe_7009.png' },
-            { code: 'PE 7010', img: 'products_detail/motor_bike/pe_7010.png' },
-            { code: 'PE 7011', img: 'products_detail/motor_bike/pe_7011.png' },
-            { code: 'PE 7012', img: 'products_detail/motor_bike/pe_7012.png' },
-            { code: 'PE 7013', img: 'products_detail/motor_bike/pe_7013.png' },
-            { code: 'PE 7014', img: 'products_detail/motor_bike/pe_7014.png' },
-            { code: 'PE 7015', img: 'products_detail/motor_bike/pe_7015.png' },
-            { code: 'PE 7016', img: 'products_detail/motor_bike/pe_7016.png' }
-        ];
+        const motorBikeGloves = [{
+            code: "PE-7001",
+            name: "Racer Pro Glove",
+            img: "products_detail/motor_bike/pe_7001.png",
+            description: "Premium full-grain leather racing glove with reinforced knuckle protection and enhanced grip for high-speed performance.",
+            size: "S, M, L, XL",
+            material: "Full-Grain Leather",
+            price: "$34.99"
+        }, {
+            code: "PE-7002",
+            name: "Adventure Touring Glove",
+            img: "products_detail/motor_bike/pe_7002.png",
+            description: "Versatile touring glove with weather-resistant leather, touchscreen fingertips, and padded palm for long-distance comfort.",
+            size: "M, L, XL, XXL",
+            material: "Premium Leather + Mesh",
+            price: "$39.99"
+        }, {
+            code: "PE-7003",
+            name: "Street Fighter Glove",
+            img: "products_detail/motor_bike/pe_7003.png",
+            description: "Urban riding glove with carbon-fiber knuckle protectors, ventilated leather, and a secure hook-and-loop closure.",
+            size: "S, M, L",
+            material: "Leather + Carbon",
+            price: "$29.99"
+        }, {
+            code: "PE-7004",
+            name: "Cruiser Classic Glove",
+            img: "products_detail/motor_bike/pe_7004.png",
+            description: "Classic cruiser-style glove with premium leather, ventilated fingers, and comfortable foam padding for relaxed rides.",
+            size: "M, L, XL",
+            material: "Leather",
+            price: "$27.99"
+        }, {
+            code: "PE-7005",
+            name: "Motocross Glove",
+            img: "products_detail/motor_bike/pe_7005.png",
+            description: "Durable motocross glove with impact-absorbing padding, breathable mesh panels, and a secure grip for off-road control.",
+            size: "S, M, L, XL",
+            material: "Leather + Mesh",
+            price: "$32.99"
+        }, {
+            code: "PE-7006",
+            name: "Sports Touring Glove",
+            img: "products_detail/motor_bike/pe_7006.png",
+            description: "Sport-touring glove combining race-inspired protection with touring comfort. Features a reinforced palm and pre-curved fingers.",
+            size: "M, L, XL",
+            material: "Leather + Kevlar",
+            price: "$44.99"
+        }, {
+            code: "PE-7007",
+            name: "Vintage Cafe Glove",
+            img: "products_detail/motor_bike/pe_7007.png",
+            description: "Retro-styled café racer glove with distressed leather finish, brass hardware, and a comfortable cotton-lined interior.",
+            size: "S, M, L",
+            material: "Distressed Leather",
+            price: "$31.99"
+        }, {
+            code: "PE-7008",
+            name: "Urban Commuter Glove",
+            img: "products_detail/motor_bike/pe_7008.png",
+            description: "Lightweight commuter glove with touchscreen compatibility, padded palm, and breathable mesh for city riding.",
+            size: "S, M, L, XL",
+            material: "Leather + Spandex",
+            price: "$24.99"
+        }, {
+            code: "PE-7009",
+            name: "Enduro Glove",
+            img: "products_detail/motor_bike/pe_7009.png",
+            description: "Enduro-specific glove with reinforced palm, knuckle protection, and moisture-wicking fabric for aggressive trail riding.",
+            size: "M, L, XL",
+            material: "Leather + Nylon",
+            price: "$36.99"
+        }, {
+            code: "PE-7010",
+            name: "Track Day Glove",
+            img: "products_detail/motor_bike/pe_7010.png",
+            description: "Full-race glove with TPU sliders, kangaroo leather palm, and a secure gauntlet cuff for maximum track performance.",
+            size: "L, XL, XXL",
+            material: "Kangaroo Leather",
+            price: "$59.99"
+        }, {
+            code: "PE-7011",
+            name: "Summer Mesh Glove",
+            img: "products_detail/motor_bike/pe_7011.png",
+            description: "Ultra-breathable summer glove with mesh panels, leather palm, and ventilated fingers for hot-weather riding.",
+            size: "S, M, L, XL",
+            material: "Leather + Mesh",
+            price: "$22.99"
+        }, {
+            code: "PE-7012",
+            name: "Winter Thermal Glove",
+            img: "products_detail/motor_bike/pe_7012.png",
+            description: "Insulated winter glove with thermal lining, waterproof leather, and adjustable cuff for cold-weather protection.",
+            size: "M, L, XL, XXL",
+            material: "Waterproof Leather",
+            price: "$42.99"
+        }, {
+            code: "PE-7013",
+            name: "Scrambler Glove",
+            img: "products_detail/motor_bike/pe_7013.png",
+            description: "Scrambler-style glove with a rugged leather build, reinforced stitching, and a comfortable fit for mixed-terrain riding.",
+            size: "S, M, L, XL",
+            material: "Leather",
+            price: "$28.99"
+        }, {
+            code: "PE-7014",
+            name: "Adventure Pro Glove",
+            img: "products_detail/motor_bike/pe_7014.png",
+            description: "Premium adventure glove with Gore-Tex lining, hard knuckle protection, and touchscreen compatibility for long tours.",
+            size: "L, XL, XXL",
+            material: "Gore-Tex + Leather",
+            price: "$54.99"
+        }, {
+            code: "PE-7015",
+            name: "Scooter Glove",
+            img: "products_detail/motor_bike/pe_7015.png",
+            description: "Lightweight scooter glove with perforated leather, gel-padded palm, and a simple hook-and-loop closure for urban mobility.",
+            size: "S, M, L",
+            material: "Leather",
+            price: "$19.99"
+        }, {
+            code: "PE-7016",
+            name: "Carbon Racing Glove",
+            img: "products_detail/motor_bike/pe_7016.png",
+            description: "Premium carbon racing glove with full knuckle protection, kangaroo leather palm, and aero-designed cuffs for high-speed performance.",
+            size: "M, L, XL",
+            material: "Carbon + Leather",
+            price: "$64.99"
+        }];
 
         // ============================================================
-        // RENDER PRODUCTS - ENTIRE CARD CLICKABLE
+        // RENDER PRODUCTS
         // ============================================================
         function renderProducts() {
-            const grid = document.getElementById('productGrid');
-
-            let html = '';
-            motorBikeGloves.forEach(p => {
-                // Extract number from "PE 7001" -> "7001"
-                const codeNumber = p.code.replace('PE ', '');
-                // Link to detail page: products_detail/motor_bike/pe_7001.html
-                const detailPage = 'products_detail/motor_bike/pe_' + codeNumber.toLowerCase() + '.html';
+            const grid = document.getElementById("productGrid");
+            let html = "";
+            motorBikeGloves.forEach((product, index) => {
                 html += `
-                        <div class="product-card reveal-scale" data-code="${p.code}" data-url="${detailPage}">
+                        <div class="product-card reveal-scale" data-index="${index}">
                             <div class="card-img">
-                                <img src="${p.img}" alt="${p.code}" loading="lazy" />
+                                <img src="${product.img}" alt="${product.name}" loading="lazy" />
                             </div>
-                            <h6>${p.code}</h6>
-                            <div class="product-code">Motor Bike Glove</div>
+                            <h6>${product.name}</h6>
+                            <div class="product-code">${product.code}</div>
                         </div>
                     `;
             });
-
             grid.innerHTML = html;
 
-            // Make entire card clickable
-            document.querySelectorAll('.product-card').forEach(card => {
-                card.addEventListener('click', function() {
-                    const url = this.dataset.url;
-                    if (url) {
-                        window.location.href = url;
-                    }
+            document.querySelectorAll(".product-card").forEach(card => {
+                card.addEventListener("click", function() {
+                    const index = this.dataset.index;
+                    openModal(index);
                 });
             });
-
-            observeReveals();
         }
+
+        // ============================================================
+        // MODAL — shows image, code, size, description, price, etc.
+        // ============================================================
+        const modal = document.getElementById("productModal");
+        const closeBtn = document.getElementById("modalClose");
+
+        function openModal(index) {
+            const p = motorBikeGloves[index];
+            if (!p) return;
+
+            document.getElementById("modalImage").src = p.img;
+            document.getElementById("modalImage").alt = p.name;
+            document.getElementById("modalTitle").textContent = p.name;
+            document.getElementById("modalCode").textContent = p.code;
+            document.getElementById("modalSize").textContent = p.size || "S, M, L, XL";
+
+            document.getElementById("modalDescription").textContent = p.description;
+    
+
+            modal.classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeModal() {
+            modal.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+
+        closeBtn.addEventListener("click", closeModal);
+        modal.addEventListener("click", function(e) {
+            if (e.target === this) closeModal();
+        });
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape") closeModal();
+        });
 
         // ============================================================
         // MOBILE NAV TOGGLE
@@ -1129,7 +1467,6 @@
                     }
                 });
             }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
             els.forEach(el => observer.observe(el));
         }
 

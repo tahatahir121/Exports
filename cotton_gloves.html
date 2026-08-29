@@ -21,8 +21,8 @@
 
     <style>
         /* ============================================================
-                   ROOT & RESET (same as other pages)
-                   ============================================================ */
+           ROOT & RESET
+           ============================================================ */
         :root {
             --primary: #c0392b;
             --primary-dark: #a93226;
@@ -42,114 +42,776 @@
             --font: 'Inter', sans-serif;
         }
 
-        * { margin:0; padding:0; box-sizing:border-box; }
-        html { scroll-behavior:smooth; }
-        body { font-family:var(--font); background:#f4f5f7; color:#1a1a1a; overflow-x:hidden; line-height:1.6; }
-        a { text-decoration:none; color:inherit; }
-        img { max-width:100%; height:auto; display:block; }
-        .container { max-width:1280px; margin:0 auto; padding:0 24px; }
-        ::-webkit-scrollbar { width:8px; }
-        ::-webkit-scrollbar-track { background:var(--dark); }
-        ::-webkit-scrollbar-thumb { background:var(--primary); border-radius:10px; }
-        .reveal { opacity:0; transform:translateY(50px); transition:opacity 0.8s ease, transform 0.8s ease; }
-        .reveal.visible { opacity:1; transform:translateY(0); }
-        .reveal-left { opacity:0; transform:translateX(-60px); transition:opacity 0.8s ease, transform 0.8s ease; }
-        .reveal-left.visible { opacity:1; transform:translateX(0); }
-        .reveal-right { opacity:0; transform:translateX(60px); transition:opacity 0.8s ease, transform 0.8s ease; }
-        .reveal-right.visible { opacity:1; transform:translateX(0); }
-        .reveal-scale { opacity:0; transform:scale(0.92); transition:opacity 0.8s ease, transform 0.8s ease; }
-        .reveal-scale.visible { opacity:1; transform:scale(1); }
-
-        .top-bar { background:var(--dark); color:#aaa; font-size:13px; padding:8px 0; border-bottom:1px solid #2a2a2a; }
-        .top-bar .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; }
-        .top-bar a { color:#aaa; transition:color 0.3s; margin-left:18px; }
-        .top-bar a:hover { color:#fff; }
-        .top-bar .top-left span { margin-right:6px; }
-        .top-bar .top-left i { color:var(--primary); margin-right:4px; }
-
-        .main-header { background:#fff; padding:16px 0; box-shadow:0 2px 20px rgba(0,0,0,0.06); position:sticky; top:0; z-index:1000; backdrop-filter:blur(12px); background:rgba(255,255,255,0.92); transition:box-shadow 0.3s; }
-        .main-header .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
-        .logo { display:flex; align-items:center; gap:12px; font-weight:800; font-size:22px; letter-spacing:-0.5px; color:var(--dark); }
-        .logo img { height:56px; width:auto; }
-        .logo span { color:var(--primary); }
-        .header-actions { display:flex; align-items:center; gap:12px; }
-        .header-certifications { display:flex; align-items:center; gap:10px; }
-        .header-certifications img { height:36px; width:auto; background:#fff; padding:4px 8px; border-radius:4px; box-shadow:0 1px 6px rgba(0,0,0,0.08); object-fit:contain; transition:transform 0.3s ease, box-shadow 0.3s ease; }
-        .header-certifications img:hover { transform:scale(1.08); box-shadow:0 4px 12px rgba(0,0,0,0.15); }
-        @media (max-width:768px) { .main-header .container { flex-direction:column; text-align:center; } .logo img { height:40px; } .logo { font-size:18px; } .header-certifications { gap:6px; flex-wrap:wrap; justify-content:center; } .header-certifications img { height:28px; padding:3px 6px; } }
-        @media (max-width:480px) { .header-certifications img { height:22px; padding:2px 4px; } .logo img { height:32px; } .logo { font-size:16px; } }
-
-        .nav-wrapper { background:var(--dark); position:sticky; top:88px; z-index:999; border-bottom:2px solid var(--primary); }
-        .nav-wrapper .container { display:flex; justify-content:space-between; align-items:center; }
-        .nav-links { display:flex; flex-wrap:wrap; gap:0; }
-        .nav-links a { color:#ccc; padding:14px 20px; font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.4px; transition:all 0.3s; border-bottom:2px solid transparent; }
-        .nav-links a:hover, .nav-links a.active { color:#fff; background:rgba(192,57,43,0.15); border-bottom-color:var(--primary); }
-        .nav-links a .highlight { background:var(--primary); padding:4px 12px; border-radius:20px; font-size:11px; color:#fff; margin-left:4px; }
-        .nav-toggle { display:none; background:none; border:none; color:#fff; font-size:24px; cursor:pointer; padding:8px 12px; }
-
-        .page-hero { position:relative; min-height:250px; display:flex; align-items:center; justify-content:center; overflow:hidden; padding:40px 0; background:#0d0d0d; }
-        .page-hero::before { content:''; position:absolute; inset:0; background:rgba(0,0,0,0.60); z-index:1; }
-        .page-hero::after { content:''; position:absolute; inset:0; background:radial-gradient(circle at 80% 20%, rgba(192,57,43,0.20), transparent 60%), radial-gradient(circle at 20% 80%, rgba(192,57,43,0.08), transparent 50%); z-index:1; pointer-events:none; }
-        .page-hero .container { position:relative; z-index:2; text-align:center; color:#fff; }
-        .page-hero h1 { font-size:40px; font-weight:900; letter-spacing:-1px; margin-bottom:8px; }
-        .page-hero h1 span { background:linear-gradient(135deg, #e74c3c, #c0392b); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
-        .page-hero p { font-size:16px; color:#ccc; max-width:600px; margin:0 auto; line-height:1.6; }
-        .page-hero-video-bg { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:0; }
-
-        .products-section { padding:40px 0 70px; }
-        .section-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:30px; flex-wrap:wrap; gap:16px; }
-        .section-header h2 { font-size:28px; font-weight:800; letter-spacing:-0.5px; position:relative; }
-        .section-header h2::after { content:''; position:absolute; bottom:-6px; left:0; width:50px; height:4px; background:var(--primary-gradient); border-radius:4px; }
-        .section-header .product-count { color:#888; font-size:14px; font-weight:500; }
-        .product-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:28px; }
-        .product-card { background:#fff; border-radius:var(--radius); overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.05); transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94); position:relative; padding:20px 16px 18px; text-align:center; border:1px solid rgba(0,0,0,0.03); cursor:pointer; }
-        .product-card:hover { transform:translateY(-10px); box-shadow:var(--shadow-hover); border-color:rgba(192,57,43,0.10); }
-        .product-card .card-img { height:150px; display:flex; align-items:center; justify-content:center; margin-bottom:12px; position:relative; }
-        .product-card .card-img img { max-height:130px; width:auto; transition:transform 0.5s ease; }
-        .product-card:hover .card-img img { transform:scale(1.06); }
-        .product-card h6 { font-size:15px; font-weight:600; color:#1a1a1a; margin-bottom:4px; }
-        .product-card h6 a { color:#1a1a1a; transition:color 0.3s; }
-        .product-card h6 a:hover { color:var(--primary); }
-        .product-card .product-code { font-size:13px; color:#999; font-weight:400; }
-
-        .trust-banner { background:var(--dark); padding:40px 0; margin:0; }
-        .trust-banner .container { display:flex; justify-content:space-around; flex-wrap:wrap; gap:30px; }
-        .trust-item { display:flex; align-items:center; gap:14px; color:#ccc; }
-        .trust-item i { font-size:32px; color:var(--primary); }
-        .trust-item h6 { font-size:15px; font-weight:600; color:#fff; margin-bottom:2px; }
-        .trust-item p { font-size:13px; color:#777; margin:0; }
-
-        footer { background:var(--dark); color:#aaa; padding:50px 0 0; }
-        footer .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; padding-bottom:40px; border-bottom:1px solid #2a2a2a; }
-        footer .footer-brand h4 { font-size:24px; font-weight:800; color:#fff; margin-bottom:10px; }
-        footer .footer-brand h4 span { color:var(--primary); }
-        footer .footer-brand p { font-size:14px; max-width:300px; line-height:1.7; }
-        footer .footer-col h6 { color:#fff; font-weight:700; font-size:16px; margin-bottom:16px; }
-        footer .footer-col a { display:block; color:#888; font-size:14px; padding:4px 0; transition:color 0.3s, padding-left 0.3s; }
-        footer .footer-col a:hover { color:#fff; padding-left:6px; }
-        footer .social-row { display:flex; gap:14px; margin-top:16px; }
-        footer .social-row a { display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:50%; background:#2a2a2a; color:#fff; font-size:18px; transition:all 0.3s; }
-        footer .social-row a:hover { transform:translateY(-4px); }
-        footer .social-row .fb:hover { background:#1877F2; }
-        footer .social-row .tw:hover { background:#1DA1F2; }
-        footer .social-row .ig:hover { background:#E4405F; }
-        footer .social-row .amz:hover { background:#FF9900; }
-        footer .copyright { text-align:center; padding:20px 0; font-size:14px; color:#666; border-top:1px solid #2a2a2a; margin-top:20px; }
-
-        .wa-float { position:fixed; bottom:30px; right:30px; z-index:900; background:#25D366; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-size:32px; box-shadow:0 8px 30px rgba(37,211,102,0.4); transition:all 0.3s; animation:pulseWA 2.5s ease-in-out infinite; }
-        .wa-float:hover { transform:scale(1.08); box-shadow:0 12px 40px rgba(37,211,102,0.5); }
-        @keyframes pulseWA { 0%,100% { box-shadow:0 8px 30px rgba(37,211,102,0.4); } 50% { box-shadow:0 8px 50px rgba(37,211,102,0.6); } }
-
-        @media (max-width:768px) { .nav-links { display:none; flex-direction:column; width:100%; background:var(--dark); padding:10px 0; } .nav-links.open { display:flex; } .nav-links a { padding:12px 20px; border-bottom:1px solid #2a2a2a; } .nav-toggle { display:block; } .page-hero h1 { font-size:30px; } .page-hero p { font-size:14px; } .product-grid { grid-template-columns:repeat(auto-fill, minmax(160px,1fr)); gap:16px; } .product-card { padding:14px 12px; } .product-card .card-img { height:120px; } .product-card .card-img img { max-height:100px; } footer .footer-grid { grid-template-columns:1fr; gap:24px; } .trust-banner .container { flex-direction:column; align-items:center; text-align:center; } .section-header h2 { font-size:24px; } }
-        @media (max-width:480px) { .page-hero h1 { font-size:26px; } .product-grid { grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:12px; } .product-card h6 { font-size:13px; } .product-card .product-code { font-size:11px; } }
-                .products-dropdown {
-            position: relative;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: var(--font);
+            background: #f4f5f7;
+            color: #1a1a1a;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--dark);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
         }
 
+        /* ============================================================
+           TOP BAR
+           ============================================================ */
+        .top-bar {
+            background: var(--dark);
+            color: #aaa;
+            font-size: 13px;
+            padding: 8px 0;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .top-bar a {
+            color: #aaa;
+            transition: color 0.3s;
+            margin-left: 18px;
+        }
+        .top-bar a:hover {
+            color: #fff;
+        }
+        .top-bar .top-left span {
+            margin-right: 6px;
+        }
+        .top-bar .top-left i {
+            color: var(--primary);
+            margin-right: 4px;
+        }
+
+        /* ============================================================
+           MAIN HEADER
+           ============================================================ */
+        .main-header {
+            background: #fff;
+            padding: 16px 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.92);
+            transition: box-shadow 0.3s;
+        }
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            font-size: 22px;
+            letter-spacing: -0.5px;
+            color: var(--dark);
+        }
+        .logo img {
+            height: 56px;
+            width: auto;
+        }
+        .logo span {
+            color: var(--primary);
+        }
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .header-certifications {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .header-certifications img {
+            height: 36px;
+            width: auto;
+            background: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+            object-fit: contain;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .header-certifications img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        @media (max-width:768px) {
+            .main-header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo img {
+                height: 40px;
+            }
+            .logo {
+                font-size: 18px;
+            }
+            .header-certifications {
+                gap: 6px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .header-certifications img {
+                height: 28px;
+                padding: 3px 6px;
+            }
+        }
+        @media (max-width:480px) {
+            .header-certifications img {
+                height: 22px;
+                padding: 2px 4px;
+            }
+            .logo img {
+                height: 32px;
+            }
+            .logo {
+                font-size: 16px;
+            }
+        }
+
+        /* ============================================================
+           NAVIGATION
+           ============================================================ */
+        .nav-wrapper {
+            background: var(--dark);
+            position: sticky;
+            top: 88px;
+            z-index: 999;
+            border-bottom: 2px solid var(--primary);
+        }
+        .nav-wrapper .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        .nav-links a {
+            color: #ccc;
+            padding: 14px 20px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            transition: all 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #fff;
+            background: rgba(192, 57, 43, 0.15);
+            border-bottom-color: var(--primary);
+        }
+        .nav-links a .highlight {
+            background: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            color: #fff;
+            margin-left: 4px;
+        }
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 8px 12px;
+        }
+
+        /* ============================================================
+           PAGE HERO
+           ============================================================ */
+        .page-hero {
+            position: relative;
+            min-height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 40px 0;
+            background: #0d0d0d;
+        }
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.60);
+            z-index: 1;
+        }
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 80% 20%, rgba(192, 57, 43, 0.20), transparent 60%), radial-gradient(circle at 20% 80%, rgba(192, 57, 43, 0.08), transparent 50%);
+            z-index: 1;
+            pointer-events: none;
+        }
+        .page-hero .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+        }
+        .page-hero h1 {
+            font-size: 40px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 8px;
+        }
+        .page-hero h1 span {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .page-hero p {
+            font-size: 16px;
+            color: #ccc;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .page-hero-video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        /* ============================================================
+           PRODUCTS GRID
+           ============================================================ */
+        .products-section {
+            padding: 40px 0 70px;
+        }
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .section-header h2 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            position: relative;
+        }
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 50px;
+            height: 4px;
+            background: var(--primary-gradient);
+            border-radius: 4px;
+        }
+        .section-header .product-count {
+            color: #888;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 28px;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            padding: 20px 16px 18px;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+            cursor: pointer;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(192, 57, 43, 0.10);
+        }
+        .product-card .card-img {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            position: relative;
+        }
+        .product-card .card-img img {
+            max-height: 130px;
+            width: auto;
+            transition: transform 0.5s ease;
+        }
+        .product-card:hover .card-img img {
+            transform: scale(1.06);
+        }
+        .product-card h6 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+        .product-card .product-code {
+            font-size: 13px;
+            color: #999;
+            font-weight: 400;
+        }
+
+        /* ============================================================
+           MODAL / POPUP — premium style
+           ============================================================ */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            animation: fadeInOverlay 0.4s ease;
+        }
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        @keyframes fadeInOverlay {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .modal-box {
+            background: #fff;
+            border-radius: var(--radius);
+            max-width: 960px;
+            width: 100%;
+            max-height: 92vh;
+            overflow-y: auto;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.35);
+            animation: slideUpModal 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+            position: relative;
+        }
+        .modal-box::-webkit-scrollbar {
+            width: 5px;
+        }
+        .modal-box::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        @keyframes slideUpModal {
+            from {
+                opacity: 0;
+                transform: translateY(60px) scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 14px;
+            right: 18px;
+            background: rgba(0, 0, 0, 0.06);
+            border: none;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            font-size: 20px;
+            color: #444;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+        .modal-close:hover {
+            background: var(--primary);
+            color: #fff;
+            transform: rotate(90deg);
+        }
+
+        .modal-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            padding: 0;
+        }
+
+        /* Left — Image */
+        .modal-image-wrap {
+            background: #f5f6f8;
+            border-radius: var(--radius) 0 0 var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 32px;
+            min-height: 380px;
+            position: relative;
+            overflow: hidden;
+        }
+        .modal-image-wrap::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 30% 40%, rgba(192, 57, 43, 0.04), transparent 70%);
+            pointer-events: none;
+        }
+        .modal-image-wrap img {
+            max-width: 100%;
+            max-height: 380px;
+            object-fit: contain;
+            border-radius: 8px;
+            position: relative;
+            z-index: 1;
+            transition: transform 0.5s ease;
+        }
+        .modal-image-wrap img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Right — Details */
+        .modal-details {
+            padding: 36px 38px 32px 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .modal-details .badge-category {
+            display: inline-block;
+            background: rgba(192, 57, 43, 0.10);
+            color: var(--primary);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 4px 14px;
+            border-radius: 20px;
+            align-self: flex-start;
+            margin-bottom: 4px;
+        }
+
+        .modal-details h2 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 2px;
+            letter-spacing: -0.5px;
+        }
+        .modal-details .product-subcode {
+            font-size: 14px;
+            color: #888;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .modal-details .desc {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .modal-details .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 20px;
+            margin-bottom: 18px;
+        }
+        .modal-details .info-grid .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+        .modal-details .info-grid .info-item .label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #aaa;
+            font-weight: 600;
+        }
+        .modal-details .info-grid .info-item .value {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-top: 1px;
+        }
+
+        .modal-details .price-row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 4px;
+            padding-top: 14px;
+            border-top: 1px solid #eee;
+        }
+        .modal-details .price-row .price {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        .modal-details .price-row .price-label {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .modal-details .inquiry-btn {
+            border: none;
+            background: var(--primary-gradient);
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            align-self: flex-start;
+            margin-top: 4px;
+        }
+        .modal-details .inquiry-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(192, 57, 43, 0.30);
+        }
+        .modal-details .inquiry-btn i {
+            font-size: 16px;
+        }
+
+        /* ============================================================
+           TRUST BANNER
+           ============================================================ */
+        .trust-banner {
+            background: var(--dark);
+            padding: 40px 0;
+            margin: 0;
+        }
+        .trust-banner .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: #ccc;
+        }
+        .trust-item i {
+            font-size: 32px;
+            color: var(--primary);
+        }
+        .trust-item h6 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 2px;
+        }
+        .trust-item p {
+            font-size: 13px;
+            color: #777;
+            margin: 0;
+        }
+
+        /* ============================================================
+           FOOTER
+           ============================================================ */
+        footer {
+            background: var(--dark);
+            color: #aaa;
+            padding: 50px 0 0;
+        }
+        footer .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        footer .footer-brand h4 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        footer .footer-brand h4 span {
+            color: var(--primary);
+        }
+        footer .footer-brand p {
+            font-size: 14px;
+            max-width: 300px;
+            line-height: 1.7;
+        }
+        footer .footer-col h6 {
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        footer .footer-col a {
+            display: block;
+            color: #888;
+            font-size: 14px;
+            padding: 4px 0;
+            transition: color 0.3s, padding-left 0.3s;
+        }
+        footer .footer-col a:hover {
+            color: #fff;
+            padding-left: 6px;
+        }
+        footer .social-row {
+            display: flex;
+            gap: 14px;
+            margin-top: 16px;
+        }
+        footer .social-row a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #fff;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        footer .social-row a:hover {
+            transform: translateY(-4px);
+        }
+        footer .social-row .fb:hover {
+            background: #1877F2;
+        }
+        footer .social-row .tw:hover {
+            background: #1DA1F2;
+        }
+        footer .social-row .ig:hover {
+            background: #E4405F;
+        }
+        footer .social-row .amz:hover {
+            background: #FF9900;
+        }
+        footer .copyright {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #2a2a2a;
+            margin-top: 20px;
+        }
+
+        /* ============================================================
+           FLOATING WHATSAPP
+           ============================================================ */
+        .wa-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 900;
+            background: #25D366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 32px;
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s;
+            animation: pulseWA 2.5s ease-in-out infinite;
+        }
+        .wa-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
+        }
+        @keyframes pulseWA {
+            0%,
+            100% {
+                box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 8px 50px rgba(37, 211, 102, 0.6);
+            }
+        }
+
+        /* ============================================================
+           FOOTER DROPDOWN (products)
+           ============================================================ */
+        .products-dropdown {
+            position: relative;
+        }
         .category {
             position: relative;
         }
-
         .category-btn {
             width: 100%;
             text-align: left;
@@ -160,17 +822,14 @@
             cursor: pointer;
             font-size: 14px;
         }
-
         .category-btn span {
             float: right;
         }
-
         .category-products {
             display: none;
             background: #222;
             padding-left: 15px;
         }
-
         .category-products a {
             display: block;
             color: white;
@@ -178,154 +837,140 @@
             text-decoration: none;
             font-size: 13px;
         }
-
         .category-products a:hover {
             background: #333;
         }
-
-        /* Opens DOWNWARD */
         .category:hover .category-products {
             display: block;
         }
 
         /* ============================================================
-   PRODUCT DETAIL
-   ============================================================ */
+           RESPONSIVE
+           ============================================================ */
+        @media (max-width: 992px) {
+            .modal-body {
+                grid-template-columns: 1fr;
+            }
+            .modal-image-wrap {
+                border-radius: var(--radius) var(--radius) 0 0;
+                min-height: 240px;
+                padding: 24px;
+            }
+            .modal-image-wrap img {
+                max-height: 220px;
+            }
+            .modal-details {
+                padding: 28px 24px 24px;
+            }
+            .modal-details h2 {
+                font-size: 24px;
+            }
+        }
 
-.product-detail-section {
-    display: none;
-    padding: 60px 0 80px;
-    background: #fff;
-}
+        @media (max-width:768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: var(--dark);
+                padding: 10px 0;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .nav-links a {
+                padding: 12px 20px;
+                border-bottom: 1px solid #2a2a2a;
+            }
+            .nav-toggle {
+                display: block;
+            }
+            .page-hero h1 {
+                font-size: 30px;
+            }
+            .page-hero p {
+                font-size: 14px;
+            }
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 16px;
+            }
+            .product-card {
+                padding: 14px 12px;
+            }
+            .product-card .card-img {
+                height: 120px;
+            }
+            .product-card .card-img img {
+                max-height: 100px;
+            }
+            footer .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .trust-banner .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .section-header h2 {
+                font-size: 24px;
+            }
+            .modal-box {
+                max-height: 96vh;
+                border-radius: 12px;
+            }
+            .modal-details .info-grid {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+            .modal-details .price-row {
+                flex-wrap: wrap;
+            }
+            .modal-details .inquiry-btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .modal-overlay {
+                padding: 10px;
+            }
+        }
 
-.product-detail-section.active {
-    display: block;
-}
-
-.back-products {
-    background: none;
-    border: none;
-    color: var(--primary);
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-bottom: 30px;
-    padding: 10px 0;
-}
-
-.back-products:hover {
-    color: var(--primary-dark);
-}
-
-.product-detail {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.product-detail-image {
-    background: #f5f5f5;
-    border-radius: 20px;
-    min-height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-}
-
-.product-detail-image img {
-    max-width: 100%;
-    max-height: 400px;
-    object-fit: contain;
-}
-
-.detail-category {
-    display: inline-block;
-    color: var(--primary);
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-.product-detail-content h2 {
-    font-size: 40px;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-
-.product-detail-content > p {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 30px;
-}
-
-.detail-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-bottom: 30px;
-}
-
-.detail-info div {
-    background: #f7f7f7;
-    padding: 16px;
-    border-radius: 10px;
-}
-
-.detail-info span {
-    display: block;
-    color: #999;
-    font-size: 12px;
-    margin-bottom: 4px;
-}
-
-.detail-info strong {
-    display: block;
-    color: #222;
-    font-size: 14px;
-}
-
-.inquiry-btn {
-    border: none;
-    background: var(--primary-gradient);
-    color: #fff;
-    padding: 14px 25px;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.inquiry-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(192,57,43,0.25);
-}
-
-@media (max-width: 768px) {
-
-    .product-detail {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .product-detail-image {
-        min-height: 300px;
-    }
-
-    .product-detail-content h2 {
-        font-size: 30px;
-    }
-
-    .detail-info {
-        grid-template-columns: 1fr;
-    }
-}
+        @media (max-width:480px) {
+            .page-hero h1 {
+                font-size: 26px;
+            }
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                gap: 12px;
+            }
+            .product-card h6 {
+                font-size: 13px;
+            }
+            .product-card .product-code {
+                font-size: 11px;
+            }
+            .modal-details h2 {
+                font-size: 20px;
+            }
+            .modal-details {
+                padding: 20px 16px 18px;
+            }
+            .modal-image-wrap {
+                min-height: 180px;
+                padding: 16px;
+            }
+            .modal-image-wrap img {
+                max-height: 160px;
+            }
+            .modal-close {
+                top: 10px;
+                right: 12px;
+                width: 34px;
+                height: 34px;
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 
@@ -406,7 +1051,7 @@
     </section>
 
     <!-- ============================================================
-    PRODUCTS
+    PRODUCTS GRID
     ============================================================ -->
     <section class="products-section" id="products">
         <div class="container">
@@ -414,71 +1059,49 @@
                 <h2>Our Cotton Gloves</h2>
                 <span class="product-count">12 models</span>
             </div>
-
             <div class="product-grid" id="productGrid">
                 <!-- Products injected by JS -->
             </div>
         </div>
     </section>
-    <!-- PRODUCT DETAIL -->
-<section class="product-detail-section" id="productDetail">
-    <div class="container">
 
-        <button class="back-products" id="backProducts">
-            <i class="fas fa-arrow-left"></i>
-            Back to Products
-        </button>
+    <!-- ============================================================
+    MODAL / POPUP — shows image, code, size, description
+    ============================================================ -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" id="modalClose" aria-label="Close product details">
+                <i class="fas fa-times"></i>
+            </button>
 
-        <div class="product-detail">
-
-            <div class="product-detail-image">
-                <img id="detailImage" src="" alt="">
-            </div>
-
-            <div class="product-detail-content">
-
-                <span class="detail-category">COTTON GLOVES</span>
-
-                <h2 id="detailCode"></h2>
-
-                <p id="detailDescription"></p>
-
-                <div class="detail-info">
-                    <div>
-                        <span>Product Code</span>
-                        <strong id="detailProductCode"></strong>
-                    </div>
-
-                    <div>
-                        <span>Material</span>
-                        <strong id="detailMaterial"></strong>
-                    </div>
-
-                    <div>
-                        <span>Type</span>
-                        <strong id="detailType"></strong>
-                    </div>
-
-                    <div>
-                        <span>Usage</span>
-                        <strong id="detailUsage"></strong>
-                    </div>
-                                        <div>
-                        <span>Price</span>
-                        <strong id="price"></strong>
-                    </div>
+            <div class="modal-body">
+                <!-- Left: Image -->
+                <div class="modal-image-wrap">
+                    <img id="modalImage" src="" alt="Product" />
                 </div>
 
-                <button class="inquiry-btn">
-                    <i class="fas fa-envelope"></i>
-                    Make an Inquiry
-                </button>
+                <!-- Right: Details -->
+                <div class="modal-details">
+                    <span class="badge-category">Cotton Gloves</span>
+                    <h2 id="modalTitle">Product Name</h2>
+                    <div class="product-subcode" id="modalCode">PCG-001</div>
 
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="label">Size</span>
+                            <span class="value" id="modalSize">S, M, L</span>
+                        </div>
+
+                    </div>
+
+                    <p class="desc" id="modalDescription">
+                        Premium quality cotton gloves designed for comfort, breathability and everyday protection.
+                    </p>
+
+                </div>
             </div>
-
         </div>
     </div>
-</section>
 
     <!-- ============================================================
     TRUST BANNER
@@ -542,26 +1165,16 @@
                 </div>
                 <div class="footer-col products-dropdown">
                     <h6>Products</h6>
-
-                    <!-- Gym Gloves -->
                     <div class="category">
-                        <button class="category-btn">
-                            Gym Gloves <span>▾</span>
-                        </button>
-
+                        <button class="category-btn">Gym Gloves <span>▾</span></button>
                         <div class="category-products">
                             <a href="sports_gloves.html">Gym Gloves</a>
                             <a href="gym_leather.html">Leather Gym Gloves</a>
                             <a href="gym_cotton.html">Cotton Gym Gloves</a>
                         </div>
                     </div>
-
-                    <!-- Leather -->
                     <div class="category">
-                        <button class="category-btn">
-                            Leather <span>▾</span>
-                        </button>
-
+                        <button class="category-btn">Leather <span>▾</span></button>
                         <div class="category-products">
                             <a href="leather_jackets.html">Leather Jackets</a>
                             <a href="leather_bags.html">Leather Bags &amp; Belts</a>
@@ -569,18 +1182,12 @@
                             <a href="splitleather.html">Split Leather Gloves</a>
                         </div>
                     </div>
-
-                    <!-- Cotton -->
                     <div class="category">
-                        <button class="category-btn">
-                            Cotton <span>▾</span>
-                        </button>
-
+                        <button class="category-btn">Cotton <span>▾</span></button>
                         <div class="category-products">
                             <a href="cotton_gloves.html">Cotton Gloves</a>
                         </div>
                     </div>
-
                 </div>
                 <div class="footer-col">
                     <h6>Support</h6>
@@ -609,181 +1216,168 @@
     ============================================================ -->
     <script>
         // ============================================================
-        // COTTON GLOVES DATA (PCG 001 to PCG 012)
+        // COTTON GLOVES DATA — each includes image, code, size, description
         // ============================================================
-const cottonGloves = [
-
-    {
-        code: "Cotton Glove",
-        img: "images/products/cotton_gloves_placeholder.jpg",
-        description: "Premium quality cotton gloves designed for comfort, breathability and everyday protection.",
-        size: "S, M, L",
-        type: "Knitted Glove",
-        usage: "General Purpose"
-    },
-
-    {
-        code: "PCG 002",
-        img: "images/products/cotton_gloves_placeholder.jpg",
-        description: "Soft and breathable cotton gloves suitable for industrial handling and general applications.",
-        material: "Cotton",
-        type: "Knitted Glove",
-        usage: "Industrial"
-    },
-
-    {
-        code: "PCG 003",
-        img: "images/products/cotton_gloves_placeholder.jpg",
-        description: "Comfortable cotton gloves providing excellent flexibility and protection during daily work.",
-        material: "Cotton",
-        type: "Knitted Glove",
-        usage: "General Purpose"
-    },
-
-    {
-        code: "PCG 004",
-        img: "images/products/cotton_gloves_placeholder.jpg",
-        description: "Lightweight cotton gloves designed for comfortable handling and breathable protection.",
-        material: "Cotton",
-        type: "Knitted Glove",
-        usage: "Handling"
-    },
-
-    {
-        code: "PCG 005",
-        img: "images/products/cotton_gloves_placeholder.jpg",
-        description: "Durable cotton gloves suitable for a wide range of industrial and general-purpose applications.",
-        material: "Cotton",
-        type: "Knitted Glove",
-        usage: "Industrial"
-    },
-
-    {
-        code: "PCG 006",
-        img: "images/products/cotton_gloves_placeholder.jpg",
-        description: "Breathable cotton gloves offering comfort and flexibility for everyday use.",
-        material: "Cotton",
-        type: "Knitted Glove",
-        usage: "General Purpose"
-    },
-
-    {
-        code: "PCG 007",
-        img: "images/products/cotton_gloves_placeholder.jpg",
-        description: "High-quality cotton gloves designed for reliable handling protection.",
-        material: "Cotton",
-        type: "Knitted Glove",
-        usage: "Handling"
-    },
-
-    {
-        code: "PCG 008",
-        img: "images/products/cotton_gloves_placeholder.jpg",
-        description: "Soft cotton gloves providing breathable comfort for extended periods of use.",
-        material: "Cotton",
-        type: "Knitted Glove",
-        usage: "General Purpose"
-    },
-
-    {
-        code: "PCG 009",
-        img: "images/products/cotton_gloves_placeholder.jpg",
-        description: "Reliable cotton gloves suitable for workplace handling and everyday protection.",
-        material: "Cotton",
-        type: "Knitted Glove",
-        usage: "Industrial"
-    },
-
-    {
-        code: "PCG 010",
-        img: "images/products/cotton_gloves_placeholder.jpg",
-        description: "Comfortable and lightweight cotton gloves for general workplace applications.",
-        material: "Cotton",
-        type: "Knitted Glove",
-        usage: "General Purpose"
-    },
-
-    {
-        code: "PCG 011",
-        img: "images/products/cotton_gloves_placeholder.jpg",
-        description: "Premium knitted cotton gloves designed for comfort and everyday protection.",
-        material: "Cotton",
-        type: "Knitted Glove",
-        usage: "Handling"
-    },
-
-    {
-        code: "PCG 012",
-        img: "images/products/cotton_gloves_placeholder.jpg",
-        description: "Breathable and flexible cotton gloves suitable for various workplace applications.",
-        material: "Cotton",
-        type: "Knitted Glove",
-        usage: "Industrial"
-    },
-
-        {
-        code: "PCG 012",
-        img: "images/products/cotton_gloves_placeholder.jpg",
-        description: "Breathable taha and flexible cotton gloves suitable for various workplace applications.",
-        material: "Cotton",
-        type: "Knitted Glove",
-        usage: "Industrial",
-        price: "$5.99"
-    }
-
-];
+        const cottonGloves = [{
+            code: "PCG-001",
+            name: "Classic Cotton Glove",
+            img: "images/products/cotton_gloves_placeholder.jpg",
+            description: "Premium quality cotton gloves designed for comfort, breathability and everyday protection. Ideal for light handling and general use.",
+            size: "S, M, L",
+            material: "100% Cotton",
+            price: "$5.99"
+        }, {
+            code: "PCG-002",
+            name: "Industrial Cotton Glove",
+            img: "images/products/cotton_gloves_placeholder.jpg",
+            description: "Soft and breathable cotton gloves suitable for industrial handling and general applications. Durable construction for daily wear.",
+            size: "M, L, XL",
+            material: "Cotton Blend",
+            price: "$6.49"
+        }, {
+            code: "PCG-003",
+            name: "Flexi Cotton Glove",
+            img: "images/products/cotton_gloves_placeholder.jpg",
+            description: "Comfortable cotton gloves providing excellent flexibility and protection during daily work. Lightweight and breathable.",
+            size: "S, M, L",
+            material: "100% Cotton",
+            price: "$5.49"
+        }, {
+            code: "PCG-004",
+            name: "Lightweight Handling Glove",
+            img: "images/products/cotton_gloves_placeholder.jpg",
+            description: "Lightweight cotton gloves designed for comfortable handling and breathable protection. Perfect for assembly and inspection.",
+            size: "S, M",
+            material: "Cotton",
+            price: "$4.99"
+        }, {
+            code: "PCG-005",
+            name: "Duty Cotton Glove",
+            img: "images/products/cotton_gloves_placeholder.jpg",
+            description: "Durable cotton gloves suitable for a wide range of industrial and general-purpose applications. Built for longevity.",
+            size: "M, L, XL",
+            material: "Cotton Blend",
+            price: "$6.99"
+        }, {
+            code: "PCG-006",
+            name: "Breeze Cotton Glove",
+            img: "images/products/cotton_gloves_placeholder.jpg",
+            description: "Breathable cotton gloves offering comfort and flexibility for everyday use. Keeps hands cool during extended wear.",
+            size: "S, M, L",
+            material: "100% Cotton",
+            price: "$5.29"
+        }, {
+            code: "PCG-007",
+            name: "Grip Cotton Glove",
+            img: "images/products/cotton_gloves_placeholder.jpg",
+            description: "High-quality cotton gloves designed for reliable handling protection. Enhanced grip for secure handling.",
+            size: "M, L",
+            material: "Cotton",
+            price: "$5.79"
+        }, {
+            code: "PCG-008",
+            name: "Comfort Cotton Glove",
+            img: "images/products/cotton_gloves_placeholder.jpg",
+            description: "Soft cotton gloves providing breathable comfort for extended periods of use. Ideal for long shifts.",
+            size: "S, M, L, XL",
+            material: "100% Cotton",
+            price: "$5.99"
+        }, {
+            code: "PCG-009",
+            name: "Workhorse Cotton Glove",
+            img: "images/products/cotton_gloves_placeholder.jpg",
+            description: "Reliable cotton gloves suitable for workplace handling and everyday protection. Tough yet comfortable.",
+            size: "M, L, XL",
+            material: "Cotton Blend",
+            price: "$6.49"
+        }, {
+            code: "PCG-010",
+            name: "Light Duty Cotton Glove",
+            img: "images/products/cotton_gloves_placeholder.jpg",
+            description: "Comfortable and lightweight cotton gloves for general workplace applications. Easy to wear and remove.",
+            size: "S, M, L",
+            material: "100% Cotton",
+            price: "$4.79"
+        }, {
+            code: "PCG-011",
+            name: "Premium Knitted Cotton Glove",
+            img: "images/products/cotton_gloves_placeholder.jpg",
+            description: "Premium knitted cotton gloves designed for comfort and everyday protection. Superior quality construction.",
+            size: "M, L",
+            material: "Cotton",
+            price: "$6.29"
+        }, {
+            code: "PCG-012",
+            name: "Versatile Cotton Glove",
+            img: "images/products/cotton_gloves_placeholder.jpg",
+            description: "Breathable and flexible cotton gloves suitable for various workplace applications. Versatile and dependable.",
+            size: "S, M, L, XL",
+            material: "Cotton Blend",
+            price: "$6.99"
+        }];
 
         // ============================================================
         // RENDER PRODUCTS
         // ============================================================
-function renderProducts() {
+        function renderProducts() {
+            const grid = document.getElementById("productGrid");
+            let html = "";
+            cottonGloves.forEach((product, index) => {
+                html += `
+                        <div class="product-card" data-index="${index}">
+                            <div class="card-img">
+                                <img src="${product.img}" alt="${product.name}" loading="lazy" />
+                            </div>
+                            <h6>${product.name}</h6>
+                            <div class="product-code">${product.code}</div>
+                        </div>
+                    `;
+            });
+            grid.innerHTML = html;
 
-    const grid = document.getElementById("productGrid");
+            document.querySelectorAll(".product-card").forEach(card => {
+                card.addEventListener("click", function() {
+                    const index = this.dataset.index;
+                    openModal(index);
+                });
+            });
+        }
 
-    let html = "";
+        // ============================================================
+        // MODAL — shows image, code, size, description
+        // ============================================================
+        const modal = document.getElementById("productModal");
+        const closeBtn = document.getElementById("modalClose");
 
-    cottonGloves.forEach((product, index) => {
+        function openModal(index) {
+            const p = cottonGloves[index];
+            if (!p) return;
 
-        html += `
-            <div class="product-card reveal-scale"
-                 data-index="${index}">
+            document.getElementById("modalImage").src = p.img;
+            document.getElementById("modalImage").alt = p.name;
+            document.getElementById("modalTitle").textContent = p.name;
+            document.getElementById("modalCode").textContent = p.code;
+            document.getElementById("modalSize").textContent = p.size || "S, M, L";
 
-                <div class="card-img">
-                    <img 
-                        src="${product.img}" 
-                        alt="${product.code}"
-                        loading="lazy"
-                    />
-                </div>
+            document.getElementById("modalDescription").textContent = p.description;
 
-                <h6>${product.code}</h6>
 
-                <div class="product-code">
-                    Cotton Glove
-                </div>
+            modal.classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
 
-            </div>
-        `;
+        function closeModal() {
+            modal.classList.remove("active");
+            document.body.style.overflow = "";
+        }
 
-    });
-
-    grid.innerHTML = html;
-
-    // CLICK PRODUCT
-    document.querySelectorAll(".product-card").forEach(card => {
-
-        card.addEventListener("click", function () {
-
-            const index = this.dataset.index;
-
-            showProduct(index);
-
+        closeBtn.addEventListener("click", closeModal);
+        modal.addEventListener("click", function(e) {
+            if (e.target === this) closeModal();
         });
-
-    });
-
-    observeReveals();
-}
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape") closeModal();
+        });
 
         // ============================================================
         // MOBILE NAV TOGGLE
@@ -791,21 +1385,6 @@ function renderProducts() {
         document.getElementById('navToggle').addEventListener('click', function() {
             document.getElementById('navLinks').classList.toggle('open');
         });
-
-        // ============================================================
-        // SCROLL REVEAL
-        // ============================================================
-        function observeReveals() {
-            const els = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-            els.forEach(el => observer.observe(el));
-        }
 
         // ============================================================
         // HEADER SCROLL SHADOW
@@ -819,69 +1398,10 @@ function renderProducts() {
             }
         });
 
-        function showProduct(index) {
-
-    const product = cottonGloves[index];
-
-    if (!product) return;
-
-    // Fill product details
-    document.getElementById("detailImage").src = product.img;
-    document.getElementById("detailImage").alt = product.code;
-
-    document.getElementById("detailCode").textContent = product.code;
-
-    document.getElementById("detailDescription").textContent =
-        product.description;
-
-    document.getElementById("detailProductCode").textContent =
-        product.code;
-
-    document.getElementById("detailMaterial").textContent =
-        product.material;
-
-    document.getElementById("detailType").textContent =
-        product.type;
-
-    document.getElementById("detailUsage").textContent =
-        product.usage;
-        document.getElementById("price").textContent =
-        product.price;
-
-
-    // Hide product list
-    document.getElementById("products").style.display = "none";
-
-    // Show detail
-    const detail = document.getElementById("productDetail");
-
-    detail.classList.add("active");
-
-    // Scroll to detail
-    detail.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
-}
-document.getElementById("backProducts").addEventListener("click", function () {
-
-    document.getElementById("productDetail")
-        .classList.remove("active");
-
-    document.getElementById("products").style.display = "";
-
-    document.getElementById("products").scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
-
-});
-
         // ============================================================
         // INIT
         // ============================================================
         renderProducts();
-        setTimeout(observeReveals, 200);
     </script>
 
 </body>
