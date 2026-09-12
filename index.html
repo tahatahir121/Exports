@@ -1077,15 +1077,54 @@
             background: #FF9900;
         }
 
-        footer .copyright {
-            text-align: center;
-            padding: 20px 0;
-            font-size: 14px;
-            color: #666;
-            border-top: 1px solid #2a2a2a;
-            margin-top: 20px;
-        }
+/* ============================================================
+   FOOTER COPYRIGHT — LEFT / RIGHT SPLIT CHANEGES AMDES BY TAHA
+   ============================================================ */
+footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px 0;
+    margin-top: 0;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #2a2a2a;
+}
 
+footer .copyright .copy-left {
+    line-height: 1.5;
+}
+
+footer .copyright .copy-right {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.5;
+}
+
+footer .copyright .copy-right img {
+    display: inline-block;
+    height: 16px;
+    width: auto;
+    vertical-align: middle;
+}
+
+/* Stack & center on small screens */
+@media (max-width: 768px) {
+    footer .copyright {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 8px;
+    }
+}
+/* ============================================================
+   TILL HERE
+   ============================================================ */
+
+   
         /* ============================================================
                    FLOATING WHATSAPP
                    ============================================================ */
@@ -1619,52 +1658,30 @@
                 <div class="footer-col">
                     <h6>Support</h6>
                     <a href="privacypolicy.html">Privacy Policy</a>
-                    <a href="returnsrefund.html">Returns &amp; Refunds</a>
-                    <a href="shipping.html">Shipping</a>
-                    <a href="tc.html">Terms &amp; Conditions</a>
-                    <a href="download_cat.html">Download Catalog</a>
-                </div>
+                    </div>
+
             </div>
-            <div class="copyright">
-                &copy; 2026 Premier Exports (Pvt.) Limited. All Rights Reserved.
-            </div>
+<!-- ============================================================
+     FOOTER COPYRIGHT (left / right split) CHANGES MADE BY TAHA
+     ============================================================ -->
+<div class="copyright">
+    <span class="copy-left">
+        &copy; 2026 Premier Exports (Pvt.) Limited. All Rights Reserved.
+    </span>
+    <span class="copy-right">
+        <img src="images/logo-mark.png" alt="Hyperion7">
+        Created by Hyperion7
+        
+    </span>
+</div>
         </div>
+        <!-- ============================================================
+     TILL HERE FOOTER COPYRIGHT (left / right split) CHANGES MADE BY TAHA
+     ============================================================ -->
     </footer>
 
-    <!-- ============================================================
-    CART SIDEBAR (kept but will always be empty since no add-to-cart)
-    ============================================================ -->
-    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
-    <div class="cart-sidebar" id="cartSidebar">
-        <div class="cart-header">
-            <h3>Your <span>Cart</span></h3>
-            <button class="close-btn" onclick="toggleCart()">&times;</button>
-        </div>
-        <div class="cart-items" id="cartItems">
-            <div class="cart-empty">
-                <i class="fas fa-shopping-bag"></i>
-                <p>Your cart is empty.</p>
-                <p style="font-size:13px;color:#bbb;">Start adding some products!</p>
-            </div>
-        </div>
-        <div class="cart-footer">
-            <div class="cart-total">
-                <span>Total</span>
-                <span class="total-price" id="cartTotal">$0.00</span>
-            </div>
-            <button class="checkout-btn" onclick="checkout()">
-                <i class="fas fa-lock"></i> Proceed to Checkout
-            </button>
-        </div>
-    </div>
 
-    <!-- ============================================================
-    TOAST
-    ============================================================ -->
-    <div class="toast" id="toast">
-        <i class="fas fa-check-circle"></i>
-        <span id="toastMsg">Added to cart!</span>
-    </div>
+
 
     <!-- ============================================================
     FLOATING WHATSAPP
