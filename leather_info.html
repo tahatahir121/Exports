@@ -587,13 +587,45 @@
             background: #FF9900;
         }
         footer .copyright {
-            text-align: center;
-            padding: 20px 0;
-            font-size: 14px;
-            color: #666;
-            border-top: 1px solid #2a2a2a;
-            margin-top: 20px;
-        }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px 0;
+    margin-top: 0;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #2a2a2a;
+}
+
+footer .copyright .copy-left {
+    line-height: 1.5;
+}
+
+footer .copyright .copy-right {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.5;
+}
+
+footer .copyright .copy-right img {
+    display: inline-block;
+    height: 16px;
+    width: auto;
+    vertical-align: middle;
+}
+
+/* Stack & center on small screens */
+@media (max-width: 768px) {
+    footer .copyright {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 8px;
+    }
+}
 
         /* ============================================================
                    FLOATING WHATSAPP
@@ -950,15 +982,18 @@
                 <div class="footer-col">
                     <h6>Support</h6>
                     <a href="privacypolicy.html">Privacy Policy</a>
-                    <a href="returnsrefund.html">Returns &amp; Refunds</a>
-                    <a href="shipping.html">Shipping</a>
-                    <a href="tc.html">Terms &amp; Conditions</a>
-                    <a href="download_cat.html">Download Catalog</a>
                 </div>
             </div>
-            <div class="copyright">
-                &copy; 2026 Premier Exports (Pvt.) Limited. All Rights Reserved.
-            </div>
+           <div class="copyright">
+    <span class="copy-left">
+        &copy; 2026 Premier Exports (Pvt.) Limited. All Rights Reserved.
+    </span>
+    <span class="copy-right">
+        <img src="images/logo-mark.png" alt="Hyperion7">
+        Created by Hyperion7
+        
+    </span>
+</div>
         </div>
     </footer>
 
