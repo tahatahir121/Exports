@@ -137,6 +137,46 @@ footer .copyright .copy-right img {
         .category-products a { display: block; color: white; padding: 7px 10px; text-decoration: none; font-size: 13px; }
         .category-products a:hover { background: #333; }
         .category:hover .category-products { display: block; }
+         footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px 0;
+    margin-top: 0;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #2a2a2a;
+}
+
+footer .copyright .copy-left {
+    line-height: 1.5;
+}
+
+footer .copyright .copy-right {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.5;
+}
+
+footer .copyright .copy-right img {
+    display: inline-block;
+    height: 16px;
+    width: auto;
+    vertical-align: middle;
+}
+
+/* Stack & center on small screens */
+@media (max-width: 768px) {
+    footer .copyright {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 8px;
+    }
+}
     </style>
 </head>
 <body>
