@@ -223,7 +223,12 @@ footer .copyright .copy-right img {
     </span>
 </div>
     </footer>
-    <a href="https://wa.me/92421234567" target="_blank" class="wa-float"><i class="fab fa-whatsapp"></i></a>
+     <!-- ============================================================
+    FLOATING WHATSAPP
+    ============================================================ -->
+    <a href="https://wa.me/923237318592" target="_blank" class="wa-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
     <script>
         document.getElementById('navToggle').addEventListener('click', function() { document.getElementById('navLinks').classList.toggle('open'); });
         function observeReveals() { const els = document.querySelectorAll('.reveal'); const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } }); }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }); els.forEach(el => observer.observe(el)); }
