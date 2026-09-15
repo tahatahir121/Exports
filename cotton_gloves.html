@@ -181,6 +181,39 @@ footer .copyright .copy-right img {
 
         @media (max-width:768px) { .nav-links { display:none; flex-direction:column; width:100%; background:var(--dark); padding:10px 0; } .nav-links.open { display:flex; } .nav-links a { padding:12px 20px; border-bottom:1px solid #2a2a2a; } .nav-toggle { display:block; } .page-hero h1 { font-size:30px; } .page-hero p { font-size:14px; } .product-grid { grid-template-columns:repeat(auto-fill, minmax(160px,1fr)); gap:16px; } .product-card { padding:14px 12px; } .product-card .card-img { height:120px; } .product-card .card-img img { max-height:100px; } footer .footer-grid { grid-template-columns:1fr; gap:24px; } .trust-banner .container { flex-direction:column; align-items:center; text-align:center; } .section-header h2 { font-size:24px; } }
         @media (max-width:480px) { .page-hero h1 { font-size:26px; } .product-grid { grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:12px; } .product-card h6 { font-size:13px; } .product-card .product-code { font-size:11px; } }
+    
+        .category-btn {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: white;
+    padding: 8px 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+}
+.category-btn span {
+    float: right;
+}
+.category-products {
+    display: none;
+    background: #222;
+    padding-left: 15px;
+}
+.category-products a {
+    display: block;
+    color: white;
+    padding: 7px 10px;
+    text-decoration: none;
+    font-size: 13px;
+}
+.category-products a:hover {
+    background: #333;
+}
+.category:hover .category-products {
+    display: block;
+}
     </style>
 </head>
 
@@ -315,17 +348,18 @@ footer .copyright .copy-right img {
     <!-- ============================================================
     FOOTER
     ============================================================ -->
-    <footer>
+   <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h4>Premier<span>Exports</span></h4>
-                    <p>Leading manufacturer and exporter of premium leather safety gloves, cycling gloves, motor bike gloves, and leather products in Pakistan.</p>
+                    <p>Leading manufacturer and exporter of premium leather safety gloves, cycling gloves, motor bike
+                        gloves, and leather products in Pakistan.</p>
                     <div class="social-row">
-                        <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="tw"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="amz"><i class="fab fa-amazon"></i></a>
+                        <a href="https://www.facebook.com/premier.coltd.7" class="fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/exports_premier" class="tw"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/premier_exportsltd" class="ig"><i class="fab fa-instagram"></i></a>
+                        <a href="https://amazon.com" class="amz"><i class="fab fa-amazon"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -336,33 +370,78 @@ footer .copyright .copy-right img {
                     <a href="inquiry_form.html">Inquiry</a>
                     <a href="contact_us.html">Contact</a>
                 </div>
-                <div class="footer-col">
+                <div class="footer-col products-dropdown">
                     <h6>Products</h6>
-                    <a href="moter_bike_gloves.html">Motor Bike Gloves</a>
-                    <a href="cycling_gloves.html">Cycling Gloves</a>
-                    <a href="sports_gloves.html">Gym Gloves</a>
-                    <a href="fashion_gloves.html">Fashion Gloves</a>
-                    <a href="leather_jackets.html">Leather Jackets</a>
-                    <a href="leather_bags.html">Leather Bags &amp; Belts</a>
-                    <a href="fire_fighting_gloves.html">Fire Fighting Gloves</a>
-                    <a href="cutresistant.html">Cut Resistant Gloves</a>
-                    <a href="welding.html">Welding Gloves</a>
-                    <a href="splitleather.html">Split Leather Gloves</a>
-                    <a href="leatherfit.html">Leather Fit Gloves</a>
-                    <a href="hydrofugegloves.html">Hydrofuge Gloves</a>
-                    <a href="synthetic.html">Synthetic Leather Gloves</a>
-                    <a href="covid.html">Hospital Wear</a>
-                    <a href="impact_resistant_gloves.html">Impact Resistant Gloves</a>
-                    <a href="apparel.html">T-Shirts / Hoodies</a>
-                    <a href="work_wear.html">Work Wear</a>
-                    <a href="cotton_gloves.html">Cotton Gloves</a>
+
+                    <!-- Sports Gloves -->
+                    <div class="category">
+                        <button class="category-btn">
+                            Sports Gloves <span>▾</span>
+                        </button>
+
+                        <div class="category-products">
+                            <a href="sports_gloves.html">Gym Gloves</a>
+                            <a href="cycling_gloves.html">Cycling Gloves</a>
+                            <a href="moter_bike_gloves.html">Motor Bike Gloves</a>
+                        </div>
+                    </div>
+
+                    <!-- Leather Apparel -->
+                    <div class="category">
+                        <button class="category-btn">
+                            Leather Apparel <span>▾</span>
+                        </button>
+
+                        <div class="category-products">
+                            <a href="leather_jackets.html">Leather Jackets</a>
+                            <a href="leather_bags.html">Leather Bags &amp; Belts</a>
+                            <a href="leatherfit.html">Leather Fit Gloves</a>
+                            <a href="splitleather.html">Split Leather Gloves</a>
+                            <a href="fashion_gloves.html">Fashion Gloves</a>
+                        </div>
+                    </div>
+
+                    <!-- Safety & Industrial -->
+                    <div class="category">
+                        <button class="category-btn">
+                            Safety &amp; Industrial <span>▾</span>
+                        </button>
+
+                        <div class="category-products">
+                            <a href="cutresistant.html">Cut Resistant</a>
+                            <a href="impact_resistant_gloves.html">Impact Resistant</a>
+                            <a href="welding.html">Welding</a>
+                            <a href="fire_fighting_gloves.html">Fire Fighting</a>
+                            <a href="hydrofugegloves.html">Hydrofuge</a>
+                            <a href="synthetic.html">Synthetic Fit</a>
+                            <a href="work_wear.html">Work Wear</a>
+                        </div>
+                    </div>
+
+                    <!-- More Categories -->
+                    <div class="category">
+                        <button class="category-btn">
+                            More Categories <span>▾</span>
+                        </button>
+
+                        <div class="category-products">
+                            <a href="cotton_gloves.html">Cotton Gloves</a>
+                            <a href="apparel.html">Apparel</a>
+                            <a href="covid.html">Hospital Wear</a>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="footer-col">
                     <h6>Support</h6>
                     <a href="privacypolicy.html">Privacy Policy</a>
-                </div>
+                    </div>
+
             </div>
-            <div class="copyright">
+<!-- ============================================================
+     FOOTER COPYRIGHT (left / right split) CHANGES MADE BY TAHA
+     ============================================================ -->
+<div class="copyright">
     <span class="copy-left">
         &copy; 2026 Premier Exports (Pvt.) Limited. All Rights Reserved.
     </span>
@@ -373,6 +452,9 @@ footer .copyright .copy-right img {
     </span>
 </div>
         </div>
+        <!-- ============================================================
+     TILL HERE FOOTER COPYRIGHT (left / right split) CHANGES MADE BY TAHA
+     ============================================================ -->
     </footer>
 
     <!-- ============================================================
