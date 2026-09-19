@@ -219,8 +219,27 @@
         }
 
         .logo span {
-            color: var(--primary, #c0392b);
+            color:  #ff1800;
         }
+        /* taha1111 */
+
+        .logo-text {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.logo-text span:first-child {
+    color: #ff1800;
+}
+
+.logo-text span:last-child {
+    color: #5b5858;
+    font-weight: 300;
+}
+     /* taha1111 */
+
+
 
         /* ===== HEADER ACTIONS (certifications only) ===== */
         .header-actions {
@@ -1007,11 +1026,13 @@
             color: #fff;
             margin-bottom: 10px;
         }
+        /* taha1111 */
 
         footer .footer-brand h4 span {
-            color: var(--primary);
+            color: #ff1800;
+            font-weight: 300;
         }
-
+        /* taha1111 */
         footer .footer-brand p {
             font-size: 14px;
             max-width: 300px;
@@ -1436,10 +1457,18 @@ footer .copyright .copy-right img {
     ============================================================ -->
     <header class="main-header" id="mainHeader">
         <div class="container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Premier Exports" />
-                <span>Premier</span>Exports
-            </a>
+     <!-- ============================================================
+    change my taha1111
+    ============================================================ -->
+ <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="Premier Exports" />
+    <div class="logo-text">
+        <span>Premier</span><span>Exports</span>
+    </div>
+</a>
+  <!-- ============================================================
+    change my taha1111
+ ============================================================ -->
 
             <div class="header-actions">
                 <!-- Certifications placed here instead of cart/theme -->
@@ -1575,7 +1604,15 @@ footer .copyright .copy-right img {
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h4>Premier<span>Exports</span></h4>
+  <!-- ============================================================
+    change my taha1111
+    ============================================================ -->
+                   <h4 style="color: #A9A9A9;">
+    Premier<span style="margin-left: 5px;">Exports</span>
+</h4>
+    <!-- ============================================================
+    1111111
+    ============================================================ -->
                     <p>Leading manufacturer and exporter of premium leather safety gloves, cycling gloves, motor bike
                         gloves, and leather products in Pakistan.</p>
                     <div class="social-row">
@@ -1768,116 +1805,7 @@ footer .copyright .copy-right img {
             
         ];
 
-        // ============================================================
-        // CART STATE (kept but no longer used)
-        // ============================================================
-        let cart = JSON.parse(localStorage.getItem('premierCart')) || [];
-
-        function saveCart() {
-            localStorage.setItem('premierCart', JSON.stringify(cart));
-            updateCartUI();
-        }
-
-        function updateCartUI() {
-            const count = cart.reduce((sum, item) => sum + item.qty, 0);
-            document.getElementById('cartCount').textContent = count;
-
-            const itemsContainer = document.getElementById('cartItems');
-            const totalEl = document.getElementById('cartTotal');
-
-            if (cart.length === 0) {
-                itemsContainer.innerHTML = `
-                <div class="cart-empty">
-                    <i class="fas fa-shopping-bag"></i>
-                    <p>Your cart is empty.</p>
-                    <p style="font-size:13px;color:#bbb;">Start adding some products!</p>
-                </div>
-            `;
-                totalEl.textContent = '$0.00';
-                return;
-            }
-
-            let html = '';
-            let total = 0;
-
-            cart.forEach((item, index) => {
-                const prod = products.find(p => p.id === item.id);
-                if (!prod) return;
-                const subtotal = prod.price * item.qty;
-                total += subtotal;
-
-                html += `
-                <div class="cart-item">
-                    <img src="${prod.img}" alt="${prod.name}" />
-                    <div class="item-info">
-                        <h6>${prod.name}</h6>
-                        <div class="item-price">$${prod.price.toFixed(2)}</div>
-                        <div class="item-qty">
-                            <button onclick="updateQty(${index}, -1)">−</button>
-                            <span>${item.qty}</span>
-                            <button onclick="updateQty(${index}, 1)">+</button>
-                        </div>
-                    </div>
-                    <button class="remove-btn" onclick="removeItem(${index})">
-                        <i class="fas fa-trash-alt"></i>
-                    </button>
-                </div>
-            `;
-            });
-
-            itemsContainer.innerHTML = html;
-            totalEl.textContent = '$' + total.toFixed(2);
-        }
-
-        function updateQty(index, delta) {
-            if (cart[index]) {
-                cart[index].qty += delta;
-                if (cart[index].qty <= 0) {
-                    cart.splice(index, 1);
-                }
-                saveCart();
-            }
-        }
-
-        function removeItem(index) {
-            cart.splice(index, 1);
-            saveCart();
-        }
-
-        function addToCart(productId) {
-            const prod = products.find(p => p.id === productId);
-            if (!prod) return;
-
-            const existing = cart.find(item => item.id === productId);
-            if (existing) {
-                existing.qty += 1;
-            } else {
-                cart.push({ id: productId, qty: 1 });
-            }
-
-            saveCart();
-            showToast(`${prod.name} added to cart!`);
-        }
-
-        function toggleCart() {
-            const overlay = document.getElementById('cartOverlay');
-            const sidebar = document.getElementById('cartSidebar');
-            overlay.classList.toggle('open');
-            sidebar.classList.toggle('open');
-            document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
-        }
-
-        function checkout() {
-            if (cart.length === 0) {
-                showToast('Your cart is empty!');
-                return;
-            }
-            alert('Thank you for your order! This is a demo store.');
-            cart = [];
-            saveCart();
-            toggleCart();
-            showToast('Order placed successfully!');
-        }
+  
 
         // ============================================================
         // TOAST
@@ -2018,8 +1946,7 @@ footer .copyright .copy-right img {
         // INIT
         // ============================================================
         renderProducts('all');
-        updateCartUI();
-
+        
         // Re-observe after render
         setTimeout(observeReveals, 200);
 
