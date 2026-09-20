@@ -166,7 +166,20 @@
         .logo span {
             color: var(--primary);
         }
+     .logo-text {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
 
+.logo-text span:first-child {
+    color: #ff1800;
+}
+
+.logo-text span:last-child {
+    color: #5b5858;
+    font-weight: 300;
+}
         .header-actions {
             display: flex;
             align-items: center;
@@ -493,8 +506,9 @@
             margin-bottom: 10px;
         }
 
-        footer .footer-brand h4 span {
-            color: var(--primary);
+         footer .footer-brand h4 span {
+            color: #ff1800;
+            font-weight: 300;
         }
 
         footer .footer-brand p {
@@ -696,8 +710,12 @@
         </div>
     </div>
     <header class="main-header" id="mainHeader">
-        <div class="container"><a href="../../index.html" class="logo"><img src="../../images/logo.png"
-                    alt="Premier Exports" /><span>Premier</span>Exports</a>
+        <div class="container"><a href="index.html" class="logo">
+    <img src="../../images/logo.png" alt="Premier Exports" />
+    <div class="logo-text">
+        <span>Premier</span><span>Exports</span>
+    </div>
+</a>
             <div class="header-actions">
                 <div class="header-certifications"><img src="../../images/reach.png" alt="REACH"><img
                         src="../../images/iso_logo.png" alt="ISO"><img src="../../images/ce_logo.png" alt="CE"><img
@@ -775,7 +793,9 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h4>Premier<span>Exports</span></h4>
+                    <h4 style="color: #A9A9A9;">
+                        Premier<span style="margin-left: 5px;">Exports</span>
+                    </h4>
                     <p>Leading manufacturer and exporter of premium leather safety gloves, cycling gloves, motor bike
                         gloves, and leather products in Pakistan.</p>
                     <div class="social-row">
