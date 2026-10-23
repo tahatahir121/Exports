@@ -1115,13 +1115,13 @@ footer .copyright .copy-right img {
         // GYM GLOVES DATA
         // ============================================================
         const gymGloves = [
-            { code: 'PE 3001', img: 'products_detail/sports_gloves/pe_7701.jpg' },
-            { code: 'PE 3002', img: 'products_detail/sports_gloves/pe_7702.jpg' },
-            { code: 'PE 3003', img: 'products_detail/sports_gloves/pe_7703.jpg' },
-            { code: 'PE 3004', img: 'products_detail/sports_gloves/pe_7704.jpg' },
-            { code: 'PE 3005', img: 'products_detail/sports_gloves/pe_7705.jpg' },
-            { code: 'PE 3006', img: 'products_detail/sports_gloves/pe_7706.jpg' },
-            { code: 'PE 3007', img: 'products_detail/sports_gloves/pe_7707.jpg' }
+            { code: 'PE 3001', img: 'products_detail/sports_gloves/pe3001.png' },
+            { code: 'PE 3002', img: 'products_detail/sports_gloves/pe3002.png' },
+            { code: 'PE 3003', img: 'products_detail/sports_gloves/pe3003.png' },
+            { code: 'PE 3004', img: 'products_detail/sports_gloves/pe3004.png' },
+            { code: 'PE 3005', img: 'products_detail/sports_gloves/pe3005.png' },
+            { code: 'PE 3006', img: 'products_detail/sports_gloves/pe3006.png' },
+            { code: 'PE 3007', img: 'products_detail/sports_gloves/pe3007.png' }
         ];
 
         // ============================================================
@@ -1132,9 +1132,9 @@ footer .copyright .copy-right img {
 
             let html = '';
             gymGloves.forEach(p => {
-                // Extract number from "PE 7701" -> "7701"
+                // Extract number from "PE 3001" -> "3001"
                 const codeNumber = p.code.replace('PE ', '');
-                // Detail page path: products_detail/sports_gloves/pe_7701.html
+                // Detail page path: products_detail/sports_gloves/pe_3001.html
                 const detailPage = 'products_detail/sports_gloves/pe_' + codeNumber.toLowerCase() + '.html';
                 html += `
                         <div class="product-card reveal-scale" data-code="${p.code}" data-url="${detailPage}">
